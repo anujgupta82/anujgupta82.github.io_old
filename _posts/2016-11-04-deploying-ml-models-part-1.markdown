@@ -144,13 +144,13 @@ curl -i http://localhost:5000/tasks/4
 </div>
 
 
-	3) Add a task:     
+3) Add a task:     
 
 ```python
 curl -i -H "Content-Type: application/json" -X POST -d '{"title":"Read a book"}' http://localhost:5000/tasks/
 ```     
 
-	4) Update a specific task:     
+4) Update a specific task:     
 
 ```python
 curl -i -H "Content-Type: application/json" -X PUT -d '{"done":true}' http://localhost:5000/tasks/2
