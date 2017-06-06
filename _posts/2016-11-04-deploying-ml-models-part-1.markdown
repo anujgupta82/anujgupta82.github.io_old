@@ -240,4 +240,4 @@ Once we have the payload in right format, we invoke the function – get_predict
 
 We have a model that is up and running as service. Now you can go ahead and add more functionality like resetting the model, training the model if not already trained, and lot more.
 
-If you face any issue with the code, please open a "[New issue](https://github.com/anujgupta82/Musings/issues)" on Github. All the above 4 files are available [here](https://github.com/anujgupta82/Musings/tree/master/flask).
+If you face any issue with the code, please open a "[New issue](https://github.com/anujgupta82/Musings/issues)" on Github. All the above 4 code files are available [here](https://github.com/anujgupta82/Musings/tree/master/flask).
