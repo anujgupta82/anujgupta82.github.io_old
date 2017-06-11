@@ -73,7 +73,7 @@ Like wise http://127.0.0.1:5000/2 should work. This is a simple flask applicatio
 
 #### REST (in peace)
 
-There are a couple of terms that are part and parcel on micro services. Lets quickly  understand something about them.
+There are a couple of terms that are part and parcel of micro services. Lets quickly  understand something about them.
 
     1) API : Application Program Interface - set of routines, protocols, and tools for building software applications.     
 
