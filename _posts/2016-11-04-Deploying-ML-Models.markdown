@@ -24,5 +24,5 @@ Microserivce is an architecture pattern. It can best be thought as being complet
 
 
 [Part 1 - Flask](https://anujgupta82.github.io/2016/11/04/deploying-ml-models-part-1/)   
-[Part 2 - Falcon](https://anujgupta82.github.io/2016/11/04/deploying-ml-models-part-2/)   
+[Part 2 - Falcon](https://anujgupta82.github.io/2016/11/09/deploying-ml-models-part-2/)   
 Part 3 - Notebook    
