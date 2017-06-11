@@ -62,6 +62,17 @@ class hello_world(object):
 
 Here codes does following: creates a class hello_world with on_post() - it takes a request and response object. Consume the request object and set the attributes of the response object. Let's get the code running.
 
+#### Show time:
+Prerequisite: You need to install gunicorn server. load you virtual environment and execute:
+
+```python
+pip install gunicorn
+```
+
+I used python 2.7 and gunicorn==19.6.0
+
+#### Run the following steps in terminal:
+
 
 
 To run this:
