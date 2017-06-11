@@ -15,7 +15,8 @@ For simplicity, imagine we have M data points with a set of initial values. Furt
 
 We record the initial set of values, Then these values get updated, then the update happens again, and again. Row 1 stores the initial values, row 2 stores the subsequent updated values, row 3 stores values after next update, so on and so forth. In esence, the matrix A stores the entire history of values. 
 
-Now we will like to plot these values. Where the graph starts with values in first row, then gets updated to values in 2nd row, then gets updated tp values in 3rd row, so on and so forth.
+Now we will like to plot these values. Where the graph starts with values in first row, then gets updated to values in 2nd row, then gets updated tp values in 3rd row, so on and so forth. [This notebook](https://github.com/anujgupta82/Musings/blob/master/Dynamic%20or%20Live%20update%20of%20a%20Plot.ipynb) is about how to plot such graphs
+
 
 [This is especially useful in machine learning, where you want to visualize how a particular property of model/data evolves with time (training) ]
 
@@ -26,7 +27,6 @@ Our matrix is of MxN dimensions, initialised randonly.
 
 
 
-This notebook is about how to plot such graphs
 
 
 ### Falcon
