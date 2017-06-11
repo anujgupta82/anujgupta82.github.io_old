@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title:  "Deploying ML models - Part 1"
-excerpt: "Deploy ML model using Flask"
+excerpt: "Deploy ML model using Falcon"
 date:   2016-11-04 15:40:00
 mathjax: false
 ---
