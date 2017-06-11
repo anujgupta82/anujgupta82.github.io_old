@@ -23,7 +23,7 @@ I used python 2.7 and falcon==1.1.0. This will get falcon installed.
 
 #### Bare bones Example
 
-The code consists if 2 files - [app.py](https://github.com/anujgupta82/Musings/blob/master/falcon/app.py) [contains app structure and end points] while [functionality.py](https://github.com/anujgupta82/Musings/blob/master/falcon/functionality.py) contains the code to support the functionality.
+The code consists if 2 files - [app.py](https://github.com/anujgupta82/Musings/blob/master/falcon/app.py) [contains app structure and end points] and [functionality.py](https://github.com/anujgupta82/Musings/blob/master/falcon/functionality.py) [contains the code to support the functionality].
 
 __app.py__
 
@@ -73,24 +73,16 @@ I used python 2.7 and gunicorn==19.6.0
 
 #### Run the following steps in terminal:
 
-
-
-To run this:
-
-    1. Save it as simple_app.py    
-    2. Install Flask in your virtual environment [pip install Flask]     
-    3. Open terminal, go to the directory where app.py is saved. Run following two commands     
-
 ```python
-export FLASK_APP=simple_app.py
-flask run
+1. Use cd to get pwd to path where app.py is saved.
+2. gunicorn app
 ```
 
-This should have the flask server up and running on http://127.0.0.1:5000
+This should get the gunicorn server up and running :
 
 <div class="imgcap">
-<img src="/assets/ml_models_1/image_1.png">
-<div class="thecap">Flask Server up and running</div>
+<img src="/assets/ml_models_2/image_1.png">
+<div class="thecap">gunicorn server up and running</div>
 </div>
 
 
