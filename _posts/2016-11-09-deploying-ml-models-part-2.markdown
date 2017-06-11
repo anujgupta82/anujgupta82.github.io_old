@@ -1,9 +1,9 @@
 ---
 layout: post
 comments: true
-title:  "Deploying ML models - Part 1"
+title:  "Deploying ML models - Part 2"
 excerpt: "Deploy ML model using Falcon"
-date:   2016-11-04 15:40:00
+date:   2016-11-09 05:20:00
 mathjax: false
 ---
 
