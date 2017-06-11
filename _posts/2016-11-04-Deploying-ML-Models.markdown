@@ -13,9 +13,9 @@ I have often heard Data scientist/ML people asking "I have a ML model thats doin
 
 This is a 3 part blog series. We will see how to deploy a ML model as a microservice. We will see 3 different ways of doing the same using:
 
-1. [Flask]() 
-2. [Falcon]()
-3. [Jupyter notebook as service]() (Wow!)
+1. Flask
+2. Falcon
+3. Jupyter notebook as service (Wow!)
 
 
 ### Microservice - what and why ?
