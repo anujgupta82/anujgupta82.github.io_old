@@ -7,38 +7,62 @@ date:   2016-11-09 05:20:00
 mathjax: false
 ---
 
-### Flask
+### Falcon
 
-Flask is a lightweight Python web framework to create microservices. Wanna read [more](https://code.tutsplus.com/tutorials/an-introduction-to-pythons-flask-framework--net-28822) ? I am a ML guy, and this sounds complex :-( Rather than reading lets code a simple one quickly !
+In the last [post](https://anujgupta82.github.io/2016/11/04/deploying-ml-models-part-1/), we used flask to deploy our ML model. Today, we will be exploring a different framework to achieve the same - Falcon. Falcon is pretty simple to work with. Lets get coding :
 
-#### Install Flask
+#### Install Falcon
+
+Load your virtual environment and execute
 
 ```python
-pip install flask
+pip install falcon
 ```
 
-I used python 2.7 and Flask==0.11.1
+I used python 2.7 and falcon==1.1.0. This will get falcon installed.
 
 #### Bare bones Example
 
-Open am editor and copy paste code from my [git repo](https://github.com/anujgupta82/Musings/blob/master/flask/simple_app.py)
+The code consists if 2 files - [app.py](https://github.com/anujgupta82/Musings/blob/master/falcon/app.py) [contains app structure and end points] while [functionality.py](https://github.com/anujgupta82/Musings/blob/master/falcon/functionality.py) contains the code to support the functionality.
+
+__app.py__
 
 ```python
-from flask import Flask
+import functionality
 
-app = Flask(__name__)
+api = application = falcon.API()
 
-@app.route('/1')   # path to resource on server
-def index_1():        # action to take
-  return "Hello_world 1"
+hello_world = functionality.hello_world()
 
-@app.route('/2')
-def index_2():
-  return "Hello_world 2"
-
-if __name__ == '__main__':
-  app.run(debug=True)
+api.add_route('/hi', hello_world)
 ```
+
+All this code does is:
+
+imports falcon package and create a basic application; access hello_world object from functionality.py and create an end point 'hi' where when data is sent via POST request, an appropriate function of hello_world object is invoked.
+
+__functionality.py__
+
+```python
+import falcon
+import json
+
+class hello_world(object):
+  def __init__(self):
+    print "init"
+
+  def on_post(self, req, resp):
+    print "post: hello_world"
+    result = {}
+
+    result['msg'] = "hello world"
+    resp.status = falcon.HTTP_200
+    resp.body = json.dumps(result, encoding='utf-8')
+```
+
+Here codes does following: creates a class hello_world with on_post() - it takes a request and response object. Consume the request object and set the attributes of the response object. Let's get the code running.
+
+
 
 To run this:
 
