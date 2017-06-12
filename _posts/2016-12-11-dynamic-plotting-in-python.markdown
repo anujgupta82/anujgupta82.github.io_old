@@ -42,4 +42,4 @@ curl -i -H "Content-Type: application/json" -X POST http://127.0.0.1:8000/hi
 
 
 
-If you face any issue with the code, please open a "[New issue](https://github.com/anujgupta82/Musings/issues)" on Github. All the code in the snippets above can be found in the following [jupyter notebook](https://github.com/anujgupta82/Musings/blob/master/Dynamic%20or%20Live%20update%20of%20a%20Plot.ipynb).
+All the code in the snippets above can be found in the following [jupyter notebook](https://github.com/anujgupta82/Musings/blob/master/Dynamic%20or%20Live%20update%20of%20a%20Plot.ipynb). If you face any issue with the code, please open a "[New issue](https://github.com/anujgupta82/Musings/issues)" on Github. 
