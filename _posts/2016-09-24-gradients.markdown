@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title:  "Computing Gradients"
-excerpt: "Training Neural Nets"
+excerpt: "Gradients behind training Neural Nets"
 date:   2016-09-24 15:40:00
 mathjax: false
 ---
@@ -11,7 +11,7 @@ mathjax: false
 
 Training neural nets ia all about computing gradients. In this post we will systmatically see the maths that goes into computing these gradients. The complexity of calculations depends on 3 things: 
 
-1. Deapth of the network
+1. Depth of the network
 2. Number of training examples (1 or more)
 3. Number of input nodes (1=scalar, more=vector)
 
