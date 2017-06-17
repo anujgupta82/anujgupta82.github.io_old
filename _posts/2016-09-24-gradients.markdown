@@ -70,7 +70,7 @@ $$
 \end{align}
 $$
 
-Let $$ \delta l_{1} = (y - \hat{y}) \times \hat{y} \times (1- \hat{y}) $$
+Let $$ \Delta l_{1} = (y - \hat{y}) \times \hat{y} \times (1- \hat{y}) $$
 
 
 
