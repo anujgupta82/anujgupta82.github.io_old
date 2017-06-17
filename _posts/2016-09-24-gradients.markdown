@@ -37,7 +37,7 @@ Consider a simplest version of a neural net - 1 layer, 1 input node (scalar)
 Input is (x,y) : x, y both are scalars. In matrix form (just becuase later on every thing will be a matric), they are $$[X]_{\scriptscriptstyle 1\times 1}$$ and $$[y]_{\scriptscriptstyle 1\times 1}$$. Let W be weight matrix. In this case its $$[y]_{\scriptscriptstyle 1\times 1}$$
 
 
-Predicted output ($$ \hat{y} $$) &= $$\frac{1}{1 + e^{[X] . [W]}} \label{ref0} \tag{0}$$
+Predicted output ($$ \hat{y} $$) $$&= \frac{1}{1 + e^{-[X] . [W]}} \label{ref0} \tag{0}$$
 
 Let loss ($$ L $$) = $$\frac{1}{2} (y - \hat{y})^{2} $$
 
@@ -65,9 +65,14 @@ Substituting \eqref{ref2} & \eqref{ref3} in \eqref{ref1}, we get
 
 $$
 \begin{align}
-\frac{\partial L}{\partial W} &= \big{(} (-1) \times (y - \hat{y}) \big{)} \times \big{(} \hat{y} \times (1- \hat{y}) \times x \big{)}
+\frac{\partial L}{\partial W} &= \big{(} (-1) \times (y - \hat{y}) \big{)} \times \big{(} \hat{y} \times (1- \hat{y}) \times -x \big{)}\\ \\
+&= (y - \hat{y}) \times \hat{y} \times (1- \hat{y}) \times x \label{ref4} \tag{4} \\
 \end{align}
 $$
+
+Let $$ \delta l_{1} = (y - \hat{y}) \times \hat{y} \times (1- \hat{y}) $$
+
+
 
 
 
