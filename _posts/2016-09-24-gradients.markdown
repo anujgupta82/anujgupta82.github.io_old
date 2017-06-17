@@ -34,7 +34,7 @@ Consider a simplest version of a neural net - 1 layer, 1 input node (scalar)
 Input is (x,y) : x, y both are scalars. In matrix form (just becuase later on every thing will be a matric), they are $$[x]_{1x1}$$
 
 
-Predicted output ($$ \hat{y} $$) = $$
+Predicted output ($$ \hat{y} $$) = $$A$$
 
 #### 1 layer network, 1 input (vector)
 
@@ -49,7 +49,15 @@ Predicted output ($$ \hat{y} $$) = $$
 
 Deriving Policy Gradients. I'd like to also give a sketch of where Policy Gradients come from mathematically. Policy Gradients are a special case of a more general score function gradient estimator. The general case is that when we have an expression of the form \(E_{x \sim p(x \mid \theta)} [f(x)] \) - i.e. the expectation of some scalar valued score function \(f(x)\) under some probability distribution \(p(x;\theta)\) parameterized by some \(\theta\). Hint hint, \(f(x)\) will become our reward function (or advantage function more generally) and \(p(x)\) will be our policy network, which is really a model for \(p(a \mid I)\), giving a distribution over actions for any image \(I\). Then we are interested in finding how we should shift the distribution (through its parameters \(\theta\)) to increase the scores of its samples, as judged by \(f\) (i.e. how do we change the network's parameters so that action samples get higher rewards). We have that:
 
-$$ \begin{align} \nabla_{\theta} E_x[f(x)] &= \nabla_{\theta} \sum_x p(x) f(x) & \text{definition of expectation} \ & = \sum_x \nabla_{\theta} p(x) f(x) & \text{swap sum and gradient} \ & = \sum_x p(x) \frac{\nabla_{\theta} p(x)}{p(x)} f(x) & \text{both multiply and divide by } p(x) \ & = \sum_x p(x) \nabla_{\theta} \log p(x) f(x) & \text{use the fact that } \nabla_{\theta} \log(z) = \frac{1}{z} \nabla_{\theta} z \ & = E_x[f(x) \nabla_{\theta} \log p(x) ] & \text{definition of expectation} \end{align} $$
+$$
+\begin{align}
+\nabla_{\theta} E_x[f(x)] &= \nabla_{\theta} \sum_x p(x) f(x) & \text{definition of expectation} \\
+& = \sum_x \nabla_{\theta} p(x) f(x) & \text{swap sum and gradient} \\
+& = \sum_x p(x) \frac{\nabla_{\theta} p(x)}{p(x)} f(x) & \text{both multiply and divide by } p(x) \\
+& = \sum_x p(x) \nabla_{\theta} \log p(x) f(x) & \text{use the fact that } \nabla_{\theta} \log(z) = \frac{1}{z} \nabla_{\theta} z \\
+& = E_x[f(x) \nabla_{\theta} \log p(x) ] & \text{definition of expectation}
+\end{align}
+$$
 
 
 
