@@ -77,7 +77,7 @@ $$
 \end{align}
 $$
 
-Then,  
+Then, eq \eqref{ref1} reduces to:
 $$ 
 \begin{align}
 \frac{\partial L}{\partial W} = \Delta l_{1} \times x \\
