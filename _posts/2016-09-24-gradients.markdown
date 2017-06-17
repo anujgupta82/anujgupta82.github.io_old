@@ -21,7 +21,7 @@ Training neural nets ia all about computing gradients. In this post we will syst
 
 Through out this post we assume:
 1. There is no bias term.
-2. All activations are (sigmoid)[]
+2. All activations are (sigmoid)[https://www.quora.com/What-is-the-sigmoid-function-and-what-is-its-use-in-machine-learnings-neural-networks]
 3. Number of input nodes (1=scalar, more=vector)
 
 
@@ -31,7 +31,7 @@ We will start with the simplest case and increase the complexity gradually.
 
 Consider a simplest version of a neural net - 1 layer, 1 input node (scalar)
 
-Input is (x,y) : x, y both are scalars. In matrix form (just becuase later on every thing will be a matric), they are $$[x]_{1 \mul x X 1}$$
+Input is (x,y) : x, y both are scalars. In matrix form (just becuase later on every thing will be a matric), they are $$[x]_{1 X 1}$$
 
 
 Predicted output ($$ \hat{y} $$) = $$A$$
