@@ -7,6 +7,10 @@ date:   2016-09-24 15:40:00
 mathjax: true
 ---
 
+In an implementation we would enter gradient of 1.0 on the log probability of UP and run backprop to compute the gradient vector \\(\nabla_{W} \log p(y=UP \mid x) \\). This gradient would tell us how we should change every one of our million parameters to make the network slightly more likely to predict UP. 
+
+**Policy Gradients**. 
+
 ### Introduction
 
 Training neural nets ia all about computing gradients. In this post we will systmatically see the maths that goes into computing these gradients. The complexity of calculations depends on 3 things: 
