@@ -44,6 +44,10 @@ Predicted output ($$ \hat{y} $$) = $$[X] . [W]$$
 
 Let loss ($$ L $$) = $$\frac{1}{2} (y - \hat{y})^{2} $$
 
+Let's compute gradients of W, \nabla_{\theta} W = \frac{\partial L}{\partial W} $$
+
+
+
 $$A_{\scriptscriptstyle p\times k}x_{\scriptscriptstyle k\times 1}=b_{\scriptscriptstyle p\times 1}$$
 
 #### 1 layer network, 1 input (vector)
