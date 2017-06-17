@@ -1,8 +1,8 @@
 ---
 layout: post
 comments: true
-title:  "Deep Reinforcement Learning: Pong from Pixels"
-excerpt: "I'll discuss the core ideas, pros and cons of policy gradients, a standard approach to the rapidly growing and exciting area of deep reinforcement learning. As a running example we'll learn to play ATARI 2600 Pong from raw pixels."
+title:  "Testing Latext"
+excerpt: "Testing latext"
 date:   2016-05-31 11:00:00
 mathjax: true
 ---
