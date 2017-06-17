@@ -95,9 +95,9 @@ $$
 
 
 
-#### 1 layer network, 1 input (vector)
+#### __1 layer network, 1 input (vector)__
 
-#### 1 layer network, multiple inputs (each is a vector)
+#### __1 layer network, multiple inputs (each is a vector)__
 
 
 
