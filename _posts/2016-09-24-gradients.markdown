@@ -31,7 +31,7 @@ We will start with the simplest case and increase the complexity gradually.
 
 Consider a simplest version of a neural net - 1 layer, 1 input node (scalar)
 
-Input is (x,y) : x, y both are scalars. In matrix form (just becuase later on every thing will be a matric), they are $$[x]_{1 \times 1}$$ $$[x]_{\scriptscriptstyle p\times k}$$
+Input is (x,y) : x, y both are scalars. In matrix form (just becuase later on every thing will be a matric), they are $$[x]_{\scriptscriptstyle 1\times 1}$$ and $$[x]_{\scriptscriptstyle 1\times 1}$$
 
 
 Predicted output ($$ \hat{y} $$) = $$A$$
