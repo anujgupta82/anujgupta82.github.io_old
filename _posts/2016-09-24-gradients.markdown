@@ -48,7 +48,14 @@ Let's compute gradients, $$\nabla_{\theta} W = \frac{\partial L}{\partial W} $$
   \label{eq:sample}
 \end{equation}
 
-(@myeqn1) 
+
+\begin{equation}
+  \frac{\partial L}{\partial W} = \frac{\partial L}{\partial \hat{y}} \times \frac{\partial \hat{y}}{\partial W}
+  \label{eq:eq1}
+\end{equation}
+
+
+
 $$
 \begin{align}
 \frac{\partial L}{\partial W} &= \frac{\partial L}{\partial \hat{y}} \times \frac{\partial \hat{y}}{\partial W}\\
@@ -57,13 +64,7 @@ $$
 \end{align}
 $$
 
-$$
-\begin{align}
-\frac{\partial L}{\partial W} &= \frac{\partial L}{\partial \hat{y}} \times \frac{\partial \hat{y}}{\partial W} {#eq:description}\\
-\frac{\partial L}{\partial \hat{y}} = \frac{1}{2} \times 2 \times (y - \hat{y})^{2} \times (-1)\\
-\frac{\partial \hat{y}}{\partial W}
-\end{align}
-$$
+
 
 $$
 \begin{align}
