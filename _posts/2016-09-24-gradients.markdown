@@ -45,7 +45,7 @@ Let's compute gradients, $$\nabla_{\theta} W = \frac{\partial L}{\partial W} $$
 
 \begin{equation}
   \frac{\partial L}{\partial W} = \frac{\partial L}{\partial \hat{y}} \times \frac{\partial \hat{y}}{\partial W}
-  \label{eq:eq1}
+  \tag{eq1}
 \end{equation}
 
 
