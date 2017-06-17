@@ -7,9 +7,6 @@ date:   2016-09-24 15:40:00
 mathjax: true
 ---
 
-In an implementation we would enter gradient of 1.0 on the log probability of UP and run backprop to compute the gradient vector \\(\nabla_{W} \log p(y=UP \mid x) \\). This gradient would tell us how we should change every one of our million parameters to make the network slightly more likely to predict UP. 
-
-**Policy Gradients**. 
 
 ### Introduction
 
@@ -34,7 +31,7 @@ Consider a simplest version of a neural net - 1 layer, 1 input node (scalar)
 
 <div class="imgcap">
 <img src="/assets/gradients/NN_1.png">
-<div class="thecap">Flask Server up and running</div>
+<div class="thecap">simple neural net</div>
 </div>
 
 Input is (x,y) : x, y both are scalars. In matrix form (just becuase later on every thing will be a matric), they are $$[X]_{\scriptscriptstyle 1\times 1}$$ and $$[y]_{\scriptscriptstyle 1\times 1}$$. Let W be weight matrix. In this case its $$[y]_{\scriptscriptstyle 1\times 1}$$
@@ -44,7 +41,17 @@ Predicted output ($$ \hat{y} $$) = $$[X] . [W]$$
 
 Let loss ($$ L $$) = $$\frac{1}{2} (y - \hat{y})^{2} $$
 
-Let's compute gradients of W, \nabla_{\theta} W = \frac{\partial L}{\partial W} $$
+Let's compute gradients, $$\nabla_{\theta} W = \frac{\partial L}{\partial W} $$
+
+$$
+\begin{align}
+\nabla_{\theta} E_x[f(x)] &= \nabla_{\theta} \sum_x p(x) f(x) & \text{definition of expectation} \\
+& = \sum_x \nabla_{\theta} p(x) f(x) & \text{swap sum and gradient} \\
+& = \sum_x p(x) \frac{\nabla_{\theta} p(x)}{p(x)} f(x) & \text{both multiply and divide by } p(x) \\
+& = \sum_x p(x) \nabla_{\theta} \log p(x) f(x) & \text{use the fact that } \nabla_{\theta} \log(z) = \frac{1}{z} \nabla_{\theta} z \\
+& = E_x[f(x) \nabla_{\theta} \log p(x) ] & \text{definition of expectation}
+\end{align}
+$$
 
 
 
