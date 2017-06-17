@@ -28,7 +28,7 @@ Through out this post we assume:
 
 We will start with the simplest case and increase the complexity gradually. 
 
-#### 1 layer network, 1 input (scalar)
+#### **1 layer network, 1 input (scalar)**
 
 Consider a simplest version of a neural net - 1 layer, 1 input node (scalar)
 
