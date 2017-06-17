@@ -36,6 +36,8 @@ Input is (x,y) : x, y both are scalars. In matrix form (just becuase later on ev
 
 Predicted output ($$ \hat{y} $$) = $$A$$
 
+$$A_{\scriptscriptstyle p\times k}x_{\scriptscriptstyle k\times 1}=b_{\scriptscriptstyle p\times 1}$$
+
 #### 1 layer network, 1 input (vector)
 
 #### 1 layer network, multiple inputs (each is a vector)
