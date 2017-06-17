@@ -23,6 +23,7 @@ Through out this post we assume:
 1. There is no bias term.
 2. All activations are (sigmoid)[https://www.quora.com/What-is-the-sigmoid-function-and-what-is-its-use-in-machine-learnings-neural-networks]
 3. Number of input nodes (1=scalar, more=vector)
+4. $$\dot$$ is matrix multiplication while $$*$$ is element wise product. 
 
 
 We will start with the simplest case and increase the complexity gradually. 
@@ -36,10 +37,12 @@ Consider a simplest version of a neural net - 1 layer, 1 input node (scalar)
 <div class="thecap">Flask Server up and running</div>
 </div>
 
-Input is (x,y) : x, y both are scalars. In matrix form (just becuase later on every thing will be a matric), they are $$[x]_{\scriptscriptstyle 1\times 1}$$ and $$[x]_{\scriptscriptstyle 1\times 1}$$
+Input is (x,y) : x, y both are scalars. In matrix form (just becuase later on every thing will be a matric), they are $$[X]_{\scriptscriptstyle 1\times 1}$$ and $$[y]_{\scriptscriptstyle 1\times 1}$$. Let W be weight matrix. In this case its $$[y]_{\scriptscriptstyle 1\times 1}$$
 
 
-Predicted output ($$ \hat{y} $$) = $$A$$
+Predicted output ($$ \hat{y} $$) = $$[X] \dot [W]$$
+
+Let loss ($$ L $$) = $$\freac{1}{2} (y - \hat{y})^{2} $$
 
 $$A_{\scriptscriptstyle p\times k}x_{\scriptscriptstyle k\times 1}=b_{\scriptscriptstyle p\times 1}$$
 
