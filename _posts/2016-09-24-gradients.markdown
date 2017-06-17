@@ -45,6 +45,15 @@ Let's compute gradients, $$\nabla_{\theta} W = \frac{\partial L}{\partial W} $$
 
 $$
 \begin{align}
+\frac{\partial L}{\partial W} = \frac{\partial L}{\partial \hat{y}} \times \frac{\partial \hat{y}}{\partial W}
+
+
+
+\end{align}
+$$
+
+$$
+\begin{align}
 \nabla_{\theta} E_x[f(x)] &= \nabla_{\theta} \sum_x p(x) f(x) & \text{definition of expectation} \\
 & = \sum_x \nabla_{\theta} p(x) f(x) & \text{swap sum and gradient} \\
 & = \sum_x p(x) \frac{\nabla_{\theta} p(x)}{p(x)} f(x) & \text{both multiply and divide by } p(x) \\
