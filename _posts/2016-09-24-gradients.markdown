@@ -43,17 +43,15 @@ Let loss ($$ L $$) = $$\frac{1}{2} (y - \hat{y})^{2} $$
 
 Let's compute gradients, $$\nabla_{\theta} W = \frac{\partial L}{\partial W} $$
 
-
 \begin{equation}
   \frac{\partial L}{\partial W} = \frac{\partial L}{\partial \hat{y}} \times \frac{\partial \hat{y}}{\partial W}
   \label{eq:eq1}
 \end{equation}
 
 
-
 $$
 \begin{align}
-\frac{\partial L}{\partial \hat{y}} &= \frac{1}{2} \times 2 \times (y - \hat{y})^{1} \times (-1)\\
+\frac{\partial L}{\partial \hat{y}} &= \frac{1}{2} \times 2 \times (y - \hat{y})^{1} \times (-1) \tag{a}\\
 \frac{\partial \hat{y}}{\partial W} &= \big{(} \frac{1}{1 + e^{[X] . [W]}} \big{)} \times \big{(}1- \frac{1}{1 + e^{[X] . [W]}} \big{)} \times x\\
 \end{align}
 $$
