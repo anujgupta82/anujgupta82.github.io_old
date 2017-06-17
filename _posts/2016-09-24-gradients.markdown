@@ -54,7 +54,7 @@ Let's compute gradients, $$\nabla_{\theta} W = \frac{\partial L}{\partial W} $$
 
 $$
 \begin{align}
-\frac{\partial L}{\partial W} &= \frac{\partial L}{\partial \hat{y}} \times \frac{\partial \hat{y}}{\partial W} \label{ref1} \tag{1}\\
+\frac{\partial L}{\partial W} & = \frac{\partial L}{\partial \hat{y}} \times \frac{\partial \hat{y}}{\partial W} \label{ref1} \tag{1}\\
 \frac{\partial L}{\partial \hat{y}} &= \frac{1}{2} \times 2 \times (y - \hat{y})^{1} \times (-1) \label{ref2} \tag{2}\\
 \frac{\partial \hat{y}}{\partial W} &= \big{(} \frac{1}{1 + e^{-[X] . [W]}} \big{)} \times \big{(}1- \frac{1}{1 + e^{-[X] . [W]}} \big{)} \times x \\
 & = \hat{y} \times (1- \hat{y}) \times x \dots && \text{using \eqref{ref0}} \label{ref3} \tag{3}\\
@@ -80,8 +80,8 @@ $$
 Then,  
 $$ 
 \begin{align}
-\frac{\partial L}{\partial W} = \Delta l_{1} \times -x \\
-&= [X^{T}] . \Delta l_{1} \label{ref6} \tag{6} \\
+\frac{\partial L}{\partial W} = \Delta l_{1} \times x \\
+& = [X^{T}] . \Delta l_{1} \label{ref6} \tag{6} \\
 \end{align}
 $$
 
