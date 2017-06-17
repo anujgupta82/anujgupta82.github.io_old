@@ -37,7 +37,7 @@ Consider a simplest version of a neural net - 1 layer, 1 input node (scalar)
 Input is (x,y) : x, y both are scalars. In matrix form (just becuase later on every thing will be a matric), they are $$[X]_{\scriptscriptstyle 1\times 1}$$ and $$[y]_{\scriptscriptstyle 1\times 1}$$. Let W be weight matrix. In this case its $$[y]_{\scriptscriptstyle 1\times 1}$$
 
 
-Predicted output ($$ \hat{y} $$) = $$[X] . [W]$$
+Predicted output ($$ \hat{y} $$) = $$\frac{1}{1 + e^{[X] . [W]}}$$
 
 Let loss ($$ L $$) = $$\frac{1}{2} (y - \hat{y})^{2} $$
 
@@ -45,8 +45,13 @@ Let's compute gradients, $$\nabla_{\theta} W = \frac{\partial L}{\partial W} $$
 
 $$
 \begin{align}
-\frac{\partial L}{\partial W} = \frac{\partial L}{\partial \hat{y}} \times \frac{\partial \hat{y}}{\partial W}
+\frac{\partial L}{\partial W} &= \frac{\partial L}{\partial \hat{y}} \times \frac{\partial \hat{y}}{\partial W} {#eq:description}
 
+\frac{\partial L}{\partial \hat{y}} = \frac{1}{2} \times 2 \times (y - \hat{y})^{2} \times (-1)
+
+\frac{\partial \hat{y}}{\partial W} = 
+
+& = 
 
 
 \end{align}
