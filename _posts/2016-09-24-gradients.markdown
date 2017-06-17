@@ -61,11 +61,11 @@ $$
 \end{align}
 $$
 
-Substituting (2) & (3) in (1), we get 
+Substituting \eqref{ref2} & \eqref{ref3} in \eqref{ref1}, we get 
 
 $$
 \begin{align}
-\frac{\partial L}{\partial W} &= (-1) \times (y - \hat{y}) \times \hat{y} \times (1- \hat{y}) \times x
+\frac{\partial L}{\partial W} &= \big{(} (-1) \times (y - \hat{y}) \big{)} \times \big{(} \hat{y} \times (1- \hat{y}) \times x \big{)}
 \end{align}
 $$
 
