@@ -47,7 +47,7 @@ $$
 \begin{align}
 \frac{\partial L}{\partial W} &= \frac{\partial L}{\partial \hat{y}} \times \frac{\partial \hat{y}}{\partial W} \\
 \frac{\partial L}{\partial \hat{y}} &= \frac{1}{2} \times 2 \times (y - \hat{y})^{1} \times (-1)\\
-\frac{\partial \hat{y}}{\partial W} &= (\frac{1}{1 + e^{[X] . [W]}}) \times (1- \frac{1}{1 + e^{[X] . [W]}}) \times [X]\\
+\frac{\partial \hat{y}}{\partial W} &= \big( \frac{1}{1 + e^{[X] . [W]}} \big{)} \times (1- \frac{1}{1 + e^{[X] . [W]}}) \times x\\
 \end{align}
 $$
 
