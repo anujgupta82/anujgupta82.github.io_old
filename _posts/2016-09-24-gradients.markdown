@@ -77,6 +77,14 @@ $$
 \end{align}
 $$
 
+Then,  
+$$ 
+\begin{align}
+\frac{\partial L}{\partial W} = \Delta l_{1} \times -x \\
+&= [X^{T}] . \Delta l_{1} \label{ref6} \tag{6} \\
+\end{align}
+$$
+
 
 
 
