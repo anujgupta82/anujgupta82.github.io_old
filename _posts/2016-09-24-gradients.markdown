@@ -10,7 +10,7 @@ mathjax: true
 
 ### Introduction
 
-Training neural nets ia all about (computing gradients)[http://deeplearning.stanford.edu/wiki/index.php/Deriving_gradients_using_the_backpropagation_idea]. In this post we will systmatically see the maths that goes into computing these gradients. The complexity of calculations depends on 3 things: 
+Training neural nets ia all about [computing gradients](http://deeplearning.stanford.edu/wiki/index.php/Deriving_gradients_using_the_backpropagation_idea). In this post we will systmatically see the maths that goes into computing these gradients. The complexity of calculations depends on 3 things: 
 
 1. Depth of the network
 2. Number of training examples (1 or more)
@@ -18,7 +18,7 @@ Training neural nets ia all about (computing gradients)[http://deeplearning.stan
 
 Through out this post we assume:
 1. There is no bias term.
-2. All activations are (sigmoid)[https://www.quora.com/What-is-the-sigmoid-function-and-what-is-its-use-in-machine-learnings-neural-networks]
+2. All activations are [sigmoid](https://www.quora.com/What-is-the-sigmoid-function-and-what-is-its-use-in-machine-learnings-neural-networks)
 3. Number of input nodes (1=scalar, more=vector)
 4. `.` is matrix multiplication, `*` is element wise product and `$$\times$$ ` is normal multiplication. 
 
