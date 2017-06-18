@@ -104,7 +104,7 @@ Our neural net still has 1 layer, but input now is a vector.
 
 Input is (\vec{X},y) : X is a vector, while y is a scalars. 
 
-\\(X = [x^1 x^2 x^3]\\)		&nbsp; &nbsp; &nbsp; \\(x^i = i^{th} component of X\\).
+\\(X = [x^1 x^2 x^3]\\)		&nbsp; &nbsp; &nbsp; \\(x^i = i^{th}\\) component of \\(\vec{X}\\).
 
 W = \big [ w_1 \big ]
 
@@ -115,8 +115,16 @@ W &= \begin{bmatrix}
            \vdots \\
            x_{m}
          \end{bmatrix}
-
 $$
+
+\begin{equation}
+     A=\begin{bmatrix}
+         X_{t_{k}} \\
+         Y_{t_{k}} \\
+         \dot{X}_{t_{k}}\\
+         \dot{Y}_{t_{k}}
+        \end{bmatrix}
+ \end{equation}
 
 Thus, in matrix form x,y are $$[X]_{\scriptscriptstyle 1\times 3}$$ and $$[y]_{\scriptscriptstyle 1\times 1}$$. Let W be weight matrix. In this case its $$[W]_{\scriptscriptstyle 3 \times 1}$$
 
