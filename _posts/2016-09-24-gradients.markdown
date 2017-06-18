@@ -36,7 +36,7 @@ Consider a simplest version of a neural net - 1 layer, 1 input node (scalar)
 
 Input is (x,y) : x, y both are scalars. In matrix form (later on every thing will be a matrix, so just to be using same notaion we will express scalars as matrix of dimension 1 \(\times\) 1), they are $$[X]_{\scriptscriptstyle 1\times 1}$$ and $$[y]_{\scriptscriptstyle 1\times 1}$$. Let W be weight matrix. In this case its $$[y]_{\scriptscriptstyle 1\times 1}$$
 
- \(E_{x \sim p(x \mid \theta)} [f(x)] \)
+Deriving Policy Gradients. I'd like to also give a sketch of where Policy Gradients come from mathematically. Policy Gradients are a special case of a more general score function gradient estimator. The general case is that when we have an expression of the form \(E_{x \sim p(x \mid \theta)} [f(x)] \) - i.e. the expectation of some scalar valued score function \(f(x)\) under some probability distribution \(p(x;\theta)\) parameterized by some \(\theta\). Hint hint, \(f(x)\) will become our reward function
 
 
 Predicted output ($$ \hat{y} $$) &= $$\frac{1}{1 + e^{-[X] . [W]}} \label{ref0} \tag{0}$$
