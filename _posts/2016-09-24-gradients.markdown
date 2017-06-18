@@ -104,7 +104,7 @@ Our neural net still has 1 layer, but input now is a vector.
 
 Input is (\vec{X},y) : X is a vector, while y is a scalars. 
 
-\\(X = [x^1 x^2 x^3]\\)		&nbsp; &nbsp; &nbsp; \\(x^i = i^{th}\\) component of \\(\vec{X}\\).
+\\(X = [x^1 ~~x^2 ~~x^3]\\)		&nbsp; &nbsp; &nbsp; \\(x^i = i^{th}\\) component of \\(\vec{X}\\).
 
 W = \big [ w_1 \big ]
 
