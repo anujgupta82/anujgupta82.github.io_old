@@ -117,6 +117,7 @@ W &= \begin{bmatrix}
          \end{bmatrix}
 $$
 
+$$
 \begin{equation}
      A=\begin{bmatrix}
          X_{t_{k}} \\
@@ -124,7 +125,8 @@ $$
          \dot{X}_{t_{k}}\\
          \dot{Y}_{t_{k}}
         \end{bmatrix}
- \end{equation}
+\end{equation}
+$$
 
 Thus, in matrix form x,y are $$[X]_{\scriptscriptstyle 1\times 3}$$ and $$[y]_{\scriptscriptstyle 1\times 1}$$. Let W be weight matrix. In this case its $$[W]_{\scriptscriptstyle 3 \times 1}$$
 
