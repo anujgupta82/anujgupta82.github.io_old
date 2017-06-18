@@ -131,6 +131,10 @@ Let's compute gradients.
 
 $$\nabla_{W} L = \frac{\partial L}{\partial W} $$
 
+\begin{equation}
+\nabla_{W} L = \frac{\partial L}{\partial W}
+\end{equation}
+
 <!--
 \begin{equation}
 \nabla_{W} L &= \frac{\partial L}{\partial W} 
