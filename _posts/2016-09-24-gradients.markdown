@@ -20,7 +20,7 @@ Through out this post we assume:
 1. There is no bias term.
 2. All activations are [sigmoid](https://www.quora.com/What-is-the-sigmoid-function-and-what-is-its-use-in-machine-learnings-neural-networks)
 3. Number of input nodes (1=scalar, more=vector)
-4. `.` is matrix multiplication, `*` is element wise product and ` $$\times$$ ` ` X ` is normal multiplication. 
+4. `.` is matrix multiplication, `*` is element wise product and ` $$\times$$ ` `X` is normal multiplication. 
 
 
 We will start with the simplest case and increase the complexity gradually. 
