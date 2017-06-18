@@ -127,7 +127,17 @@ $$
 
 Like before, we will use half of squared error loss. $$ L  = \frac{1}{2} (y - \hat{y})^{2} $$
 
-Let's compute $$\nabla_{W} L = \frac{\partial L}{\partial w_1} $$
+Let's compute 
+$$
+\nabla_{W} L &= \frac{\partial L}{\partial W} 
+& = \begin{bmatrix}
+         \frac{\partial L}{\partial w_{1}} \\
+         \frac{\partial L}{\partial w_{2}} \\
+         \frac{\partial L}{\partial w_{3}} \\
+         \end{bmatrix}
+$$
+
+
 
 
 #### __1 layer network, multiple inputs (each is a vector)__
