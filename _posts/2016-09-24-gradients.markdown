@@ -144,7 +144,9 @@ $$
 So, lets compute \\( \frac{\partial L}{\partial w_{1}} \\)
 
 \begin{align}
-\frac{\partial L}{\partial w_1} = \frac{\partial L}{\partial l_1} * \frac{\partial l_1}{\partial w_1}
+\frac{\partial L}{\partial w_1} = \frac{\partial L}{\partial \hat{y}} * \frac{\partial \hat{y}}{\partial w_1}
+\frac{\partial L}{\partial \hat{y}} &= \frac{1}{2} \times 2 \times (y - \hat{y})^{1} \times (-1) \label{ref22} \tag{2}\\
+\frac{\partial \hat{y}}{\partial w_1} &= \big{(} \frac{1}{1 + e^{-[X] . [W]}} \big{)} \times \big{(}1- \frac{1}{1 + e^{-[X] . [W]}} \big{)} * x_1 \label{ref23} \tag{3}\\
 \end{align}
 
 
