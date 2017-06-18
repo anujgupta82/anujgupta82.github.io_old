@@ -75,11 +75,11 @@ $$
 $$
 
 Let,  
-$
+
 \begin{align}
 \Delta l_{1} = (y - \hat{y}) \times \hat{y} \times (1- \hat{y}) \label{ref5} \tag{5} \\
 \end{align}
-$
+
 
 Then, eq \eqref{ref1} reduces to:	
 $$ 
