@@ -120,9 +120,15 @@ $$
 \end{equation}
 $$
 
-\\( \hat{y} \\) is predicted output. \\( \hat{y} = \sigma ([X] . [W]) = \frac{1}{1 + e^{-[X] . [W]}} \label{ref20} \tag{20} \\)
+\\( \hat{y} \\) is predicted output. In matrix format, \\([\hat{y}]_{\scriptscriptstyle 1\times 1}\\)
+\\( \hat{y} = \sigma ([X] . [W]) = \frac{1}{1 + e^{-[X] . [W]}} \label{ref20} \tag{20} \\)
 
-Let loss be squared error loss. For ease of maths we take \\( \frac{1}{2} \\) of it. $$ L  = \frac{1}{2} (y - \hat{y})^{2} $$
+
+
+Like before, we will use half of squared error loss. $$ L  = \frac{1}{2} (y - \hat{y})^{2} $$
+
+Let's compute $$\nabla_{W} L = \frac{\partial L}{\partial w_1} $$
+
 
 #### __1 layer network, multiple inputs (each is a vector)__
 
