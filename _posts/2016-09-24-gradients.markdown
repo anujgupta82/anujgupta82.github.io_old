@@ -133,10 +133,10 @@ Let's compute gradients.
 \begin{equation}
 \nabla_{W} L &= \frac{\partial L}{\partial W} 
 & = \begin{bmatrix}
-         \frac{\partial L}{\partial w_{1}} \\
-         \frac{\partial L}{\partial w_{2}} \\
-         \frac{\partial L}{\partial w_{3}} \\
-         \end{bmatrix}
+     \frac{\partial L}{\partial w_{1}} \\
+     \frac{\partial L}{\partial w_{2}} \\
+     \frac{\partial L}{\partial w_{3}} \\
+     \end{bmatrix}
 \end{equation}         
 
 
