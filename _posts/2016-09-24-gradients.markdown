@@ -34,7 +34,7 @@ Consider a simplest version of a neural net - 1 layer, 1 input node (scalar)
 <div class="thecap">simple neural net</div>
 </div>
 
-Input is (x,y) : x, y both are scalars. In matrix form (just becuase later on every thing will be a matric), they are $$[X]_{\scriptscriptstyle 1\times 1}$$ and $$[y]_{\scriptscriptstyle 1\times 1}$$. Let W be weight matrix. In this case its $$[y]_{\scriptscriptstyle 1\times 1}$$
+Input is (x,y) : x, y both are scalars. In matrix form (later on every thing will be a matrix, so just to be using same notaion we will express scalars as matrix of dimension 1 \times 1), they are $$[X]_{\scriptscriptstyle 1\times 1}$$ and $$[y]_{\scriptscriptstyle 1\times 1}$$. Let W be weight matrix. In this case its $$[y]_{\scriptscriptstyle 1\times 1}$$
 
 
 Predicted output ($$ \hat{y} $$) &= $$\frac{1}{1 + e^{-[X] . [W]}} \label{ref0} \tag{0}$$
