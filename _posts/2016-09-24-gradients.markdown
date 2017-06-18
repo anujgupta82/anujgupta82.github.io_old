@@ -1,8 +1,8 @@
 ---
 layout: post
 comments: true
-title:  "Computing Gradients"
-excerpt: "Gradients behind training Neural Nets"
+title:  "Gradients FOR NEURAL NETS"
+excerpt: "Computing Gradients that go into training Neural Nets"
 date:   2016-09-24 15:40:00
 mathjax: true
 ---
