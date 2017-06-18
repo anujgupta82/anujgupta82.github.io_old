@@ -106,25 +106,13 @@ Input is (\vec{X},y) : X is a vector, while y is a scalars.
 
 \\(X = [x^1 ~~x^2 ~~x^3]\\)		&nbsp; &nbsp; &nbsp; \\(x^i = i^{th}\\) component of \\(\vec{X}\\).
 
-W = \big [ w_1 \big ]
-
-$$
-W &= \begin{bmatrix}
-           x_{1} \\
-           x_{2} \\
-           \vdots \\
-           x_{m}
-         \end{bmatrix}
-$$
-
 $$
 \begin{equation}
-     A=\begin{bmatrix}
-         X_{t_{k}} \\
-         Y_{t_{k}} \\
-         \dot{X}_{t_{k}}\\
-         \dot{Y}_{t_{k}}
-        \end{bmatrix}
+     W=\begin{bmatrix}
+         w_{1} \\
+         w_{2} \\
+         w_{3} \\
+         \end{bmatrix}
 \end{equation}
 $$
 
