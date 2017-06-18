@@ -45,7 +45,7 @@ Let \\( \hat{y} \\) be the predicted output. Then, $$ \hat{y} = \frac{1}{1 + e^{
 
 Let loss be squared error loss. For ease of maths we take \\( \frac{1}{2} \\) of it. $$ L  = \frac{1}{2} (y - \hat{y})^{2} $$
 
-Let's compute gradients, $$\nabla_{\W} L = \frac{\partial L}{\partial W} $$
+Let's compute gradients, $$\nabla_{W} L = \frac{\partial L}{\partial W} $$
 
 <!---
 \begin{equation}
@@ -60,8 +60,8 @@ $$
 \begin{align}
 \frac{\partial L}{\partial W} & = \frac{\partial L}{\partial \hat{y}} \times \frac{\partial \hat{y}}{\partial W} \label{ref1} \tag{1}\\
 \frac{\partial L}{\partial \hat{y}} &= \frac{1}{2} \times 2 \times (y - \hat{y})^{1} \times (-1) \label{ref2} \tag{2}\\
-\frac{\partial \hat{y}}{\partial W} &= \big{(} \frac{1}{1 + e^{-[X] . [W]}} \big{)} \times \big{(}1- \frac{1}{1 + e^{-[X] . [W]}} \big{)} \times x \\
-& = \hat{y} \times (1- \hat{y}) \times x \dots && \text{using \eqref{ref0}} \label{ref3} \tag{3}\\
+\frac{\partial \hat{y}}{\partial W} &= \big{(} \frac{1}{1 + e^{-[X] . [W]}} \big{)} \times \big{(}1- \frac{1}{1 + e^{-[X] . [W]}} \big{)} * X \\
+& = \hat{y} \times (1- \hat{y}) * -X \dots && \text{using \eqref{ref0}} \label{ref3} \tag{3}\\
 \end{align}
 $$
 
@@ -85,6 +85,7 @@ Then, eq \eqref{ref1} reduces to:
 $$ 
 \begin{align}
 \frac{\partial L}{\partial W} = \Delta l_{1} \times x \\
+& = \Delta l_{1} * X \\
 & = [X^{T}] . \Delta l_{1} \label{ref6} \tag{6} \\
 \end{align}
 $$
