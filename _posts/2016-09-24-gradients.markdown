@@ -93,15 +93,22 @@ $$
 
 
 
-
-
-
-
-
-
-
-
 #### __1 layer network, 1 input (vector)__
+
+Our neural net still has 1 layer, but input now is a vector. 
+
+<div class="imgcap">
+<img src="/assets/gradients/NN_2.png">
+<div class="thecap">Neural net with 1 layer, but input is vector</div>
+</div>
+
+Input is (X,y) : X is a vector, while y is a scalars. 
+
+\\(X = [x^1 x^2 x^3]\\)		x^i = i^{th} component of X.
+
+W = 
+
+Thus, in matrix form x,y are $$[X]_{\scriptscriptstyle 1\times 3}$$ and $$[y]_{\scriptscriptstyle 1\times 1}$$. Let W be weight matrix. In this case its $$[W]_{\scriptscriptstyle 3 \times 1}$$
 
 #### __1 layer network, multiple inputs (each is a vector)__
 
