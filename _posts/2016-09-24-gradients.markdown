@@ -129,6 +129,10 @@ Like before, we will use half of squared error loss. $$ L  = \frac{1}{2} (y - \h
 
 Let's compute gradients. 
 
+\begin{equation}
+\nabla_{W} L &= \frac{\partial L}{\partial W} 
+\end{equation}
+
 
 \begin{equation}
 \nabla_{W} L &= \frac{\partial L}{\partial W} 
