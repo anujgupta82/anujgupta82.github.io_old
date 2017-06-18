@@ -102,7 +102,7 @@ Our neural net still has 1 layer, but input now is a vector.
 <div class="thecap">Neural net with 1 layer, but input is vector</div>
 </div>
 
-Input is \\((\vec{X},y)\\) : \vec{X} is a vector, while y is a scalars. 
+Input is \\((\vec{X},y)\\) : \\(\vec{X}\\) is a vector, while y is a scalars. 
 
 \\(X = [x^1 ~~x^2 ~~x^3]\\)		&nbsp; &nbsp; &nbsp; \\(x^i = i^{th}\\) component of \\(\vec{X}\\).
 	
