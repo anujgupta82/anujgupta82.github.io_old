@@ -108,6 +108,16 @@ Input is (\vec{X},y) : X is a vector, while y is a scalars.
 
 W = \big [ w_1 \big ]
 
+$$
+W &= \begin{bmatrix}
+           x_{1} \\
+           x_{2} \\
+           \vdots \\
+           x_{m}
+         \end{bmatrix}
+
+$$
+
 Thus, in matrix form x,y are $$[X]_{\scriptscriptstyle 1\times 3}$$ and $$[y]_{\scriptscriptstyle 1\times 1}$$. Let W be weight matrix. In this case its $$[W]_{\scriptscriptstyle 3 \times 1}$$
 
 #### __1 layer network, multiple inputs (each is a vector)__
