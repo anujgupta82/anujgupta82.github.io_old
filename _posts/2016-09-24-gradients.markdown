@@ -120,7 +120,7 @@ $$
 \end{equation}
 $$
 
-\\( \hat{y} \\) is predicted output. $$ \hat{y} = \sigma ([X] . [W]) = \frac{1}{1 + e^{-[X] . [W]}} \label{ref20} \tag{20}$$
+\\( \hat{y} \\) is predicted output. \\( \hat{y} = \sigma ([X] . [W]) = \frac{1}{1 + e^{-[X] . [W]}} \label{ref20} \tag{20} \\)
 
 Let loss be squared error loss. For ease of maths we take \\( \frac{1}{2} \\) of it. $$ L  = \frac{1}{2} (y - \hat{y})^{2} $$
 
