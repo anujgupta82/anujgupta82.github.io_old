@@ -127,18 +127,18 @@ $$
 
 Like before, we will use half of squared error loss. $$ L  = \frac{1}{2} (y - \hat{y})^{2} $$
 
-Let's compute 
+Let's compute gradients. 
 
-$$
+
 \begin{equation}
-\nabla_{W} L = \frac{\partial L}{\partial W} 
+\nabla_{W} L &= \frac{\partial L}{\partial W} 
 & = \begin{bmatrix}
          \frac{\partial L}{\partial w_{1}} \\
          \frac{\partial L}{\partial w_{2}} \\
          \frac{\partial L}{\partial w_{3}} \\
          \end{bmatrix}
 \end{equation}         
-$$
+
 
 
 
