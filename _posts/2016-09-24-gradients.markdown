@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title:  "Gradients FOR NEURAL NETS"
+title:  "Gradients for Neural Nets"
 excerpt: "Computing Gradients that go into training Neural Nets"
 date:   2016-09-24 15:40:00
 mathjax: true
@@ -41,7 +41,7 @@ Input is (x,y) : x, y both are scalars. (Later on every thing will be a matrix, 
 -->
 
 
-Let \\( \hat{y} \\) be the predicted output. Then, $$ \hat{y} = \frac{1}{1 + e^{-[X] . [W]}} \label{ref0} \tag{0}$$
+Let \\( \hat{y} \\) be the predicted output. Then, $$ \hat{y} = \sigma (Wx) = \frac{1}{1 + e^{-[X] . [W]}} \label{ref0} \tag{0}$$
 
 Let loss be squared error loss. For ease of maths we take \\( \frac{1}{2} \\) of it. $$ L  = \frac{1}{2} (y - \hat{y})^{2} $$
 
