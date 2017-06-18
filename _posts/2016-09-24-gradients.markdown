@@ -106,6 +106,10 @@ Input is (\vec{X},y) : X is a vector, while y is a scalars.
 
 \\(X = [x^1 ~~x^2 ~~x^3]\\)		&nbsp; &nbsp; &nbsp; \\(x^i = i^{th}\\) component of \\(\vec{X}\\).
 	
+
+
+Thus, in matrix form x,y are $$[X]_{\scriptscriptstyle 1\times 3}$$ and $$[y]_{\scriptscriptstyle 1\times 1}$$. W, weight matrix is $$[W]_{\scriptscriptstyle 3 \times 1}$$
+
 $$
 \begin{equation}
      W=\begin{bmatrix}
@@ -115,8 +119,6 @@ $$
          \end{bmatrix}
 \end{equation}
 $$
-
-Thus, in matrix form x,y are $$[X]_{\scriptscriptstyle 1\times 3}$$ and $$[y]_{\scriptscriptstyle 1\times 1}$$. Let W be weight matrix. In this case its $$[W]_{\scriptscriptstyle 3 \times 1}$$
 
 #### __1 layer network, multiple inputs (each is a vector)__
 
