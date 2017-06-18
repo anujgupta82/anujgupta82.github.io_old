@@ -129,12 +129,14 @@ Like before, we will use half of squared error loss. $$ L  = \frac{1}{2} (y - \h
 
 Let's compute 
 $$
+\begin{equation}
 \nabla_{W} L &= \frac{\partial L}{\partial W} 
 & = \begin{bmatrix}
          \frac{\partial L}{\partial w_{1}} \\
          \frac{\partial L}{\partial w_{2}} \\
          \frac{\partial L}{\partial w_{3}} \\
          \end{bmatrix}
+\end{equation}         
 $$
 
 
