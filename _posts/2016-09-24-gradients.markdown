@@ -61,6 +61,7 @@ $$
 \frac{\partial L}{\partial W} & = \frac{\partial L}{\partial \hat{y}} \times \frac{\partial \hat{y}}{\partial W} \label{ref1} \tag{1}\\
 \frac{\partial L}{\partial \hat{y}} &= \frac{1}{2} \times 2 \times (y - \hat{y})^{1} \times (-1) \label{ref2} \tag{2}\\
 \frac{\partial \hat{y}}{\partial W} &= \big{(} \frac{1}{1 + e^{-[X] . [W]}} \big{)} \times \big{(}1- \frac{1}{1 + e^{-[X] . [W]}} \big{)} * X \\
+& = \sigma (Wx) \times (1- \sigma (Wx)) * -X \dots && \text{using \eqref{ref0}} \label{ref3} \tag{3}\\
 & = \hat{y} \times (1- \hat{y}) * -X \dots && \text{using \eqref{ref0}} \label{ref3} \tag{3}\\
 \end{align}
 $$
