@@ -141,9 +141,11 @@ $$
 $$
 
 
+So, lets compute \\( \frac{\partial L}{\partial w_{1}} \\)
 
-
-
+\begin{align}
+\frac{\partial L}{\partial w_1} = \frac{\partial L}{\partial l_1} * \frac{\partial l_1}{\partial w_1}
+\end{align}
 
 
 #### __1 layer network, multiple inputs (each is a vector)__
