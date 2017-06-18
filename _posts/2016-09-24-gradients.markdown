@@ -128,9 +128,10 @@ $$
 Like before, we will use half of squared error loss. $$ L  = \frac{1}{2} (y - \hat{y})^{2} $$
 
 Let's compute 
+
 $$
 \begin{equation}
-\nabla_{W} L &= \frac{\partial L}{\partial W} 
+\nabla_{W} L = \frac{\partial L}{\partial W} 
 & = \begin{bmatrix}
          \frac{\partial L}{\partial w_{1}} \\
          \frac{\partial L}{\partial w_{2}} \\
