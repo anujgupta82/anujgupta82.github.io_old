@@ -174,7 +174,7 @@ Using \eqref{ref17} in \eqref{ref11}
 
 $$
 \begin{equation}
-\nabla_{W} L = \begin{bmatrix}
+\frac{\partial L}{\partial W} = \begin{bmatrix}
      (y - \hat{y}) \times \hat{y} \times (1- \hat{y}) \times x_1 \\
      (y - \hat{y}) \times \hat{y} \times (1- \hat{y}) \times x_2 \\
      (y - \hat{y}) \times \hat{y} \times (1- \hat{y}) \times x_3 \\
@@ -187,14 +187,29 @@ $$
 \begin{equation}
 = [x^1 ~~x^2 ~~x^3] .
 	\begin{bmatrix}
-     (y - \hat{y}) \times \hat{y} \times (1- \hat{y}) \times x_1 \\
-     (y - \hat{y}) \times \hat{y} \times (1- \hat{y}) \times x_2 \\
-     (y - \hat{y}) \times \hat{y} \times (1- \hat{y}) \times x_3 \\
+     (y - \hat{y}) \times \hat{y} \times (1- \hat{y}) \\
+     (y - \hat{y}) \times \hat{y} \times (1- \hat{y}) \\
+     (y - \hat{y}) \times \hat{y} \times (1- \hat{y}) \\
      \end{bmatrix}
 \label{ref19} \tag{19}
 \end{equation}
 $$
 
+Let,  
+
+\begin{align}
+\Delta l_{1} = (y - \hat{y}) \times \hat{y} \times (1- \hat{y}) \label{ref20} \tag{20} \\
+\end{align}
+
+Using \eqref{ref20} in \eqref{ref19}
+
+$$ 
+\begin{align}
+\frac{\partial L}{\partial W} &= \Delta l_{1} \times x \\
+& = \Delta l_{1} * X \\
+& = [X^{T}] . \Delta l_{1} \\
+\end{align}
+$$
 
 #### __1 layer network, multiple inputs (each is a vector)__
 
