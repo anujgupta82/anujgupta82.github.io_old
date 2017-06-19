@@ -125,15 +125,6 @@ $$
 \end{align}
 $$
 
-#### **+ 1 layer network, multiple training examples (each is a vector)**
-Multiple inputs correspond to the scenario of batch training. Since we are dealing with matrices, a key step in every equation is to check if all matrix dimensions are consistent. 
-
-
-#### **+ 2 layer network, 1 training example (vector)**
-
-
-
-#### **+ 2 layer network, multiple training examples (vector)**
 
 
 <!---
