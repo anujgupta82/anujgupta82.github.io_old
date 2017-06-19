@@ -24,7 +24,7 @@ Through out this post we assume:
 
 We will start with the simplest case and increase the complexity gradually. 
 
-#### **+ 1 layer network, 1 input (scalar)**
+#### **+ 1 layer network, 1 training example (scalar)**
 
 Consider a simplest version of a neural net - 1 layer, 1 input node (scalar)
 
@@ -208,15 +208,15 @@ $$
 \end{align}
 $$
 
-#### **+ 1 layer network, multiple inputs (each is a vector)**
+#### **+ 1 layer network, multiple training examples (each is a vector)**
 Multiple inputs correspond to the scenario of batch training. Since we are dealing with matrices, a key step in every equation is to check if all matrix dimensions are consistent. 
 
 
-#### **+ 2 layer network, 1 input (vector)**
+#### **+ 2 layer network, 1 training example (vector)**
 
 
 
-#### **+ 2 layer network, multiple inputs (vector)**
+#### **+ 2 layer network, multiple training examples (vector)**
 
 
 <!---
