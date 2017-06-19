@@ -185,7 +185,8 @@ $$
 
 $$
 \begin{equation}
-&= \begin{bmatrix}
+= [x^1 ~~x^2 ~~x^3] .
+	\begin{bmatrix}
      (y - \hat{y}) \times \hat{y} \times (1- \hat{y}) \times x_1 \\
      (y - \hat{y}) \times \hat{y} \times (1- \hat{y}) \times x_2 \\
      (y - \hat{y}) \times \hat{y} \times (1- \hat{y}) \times x_3 \\
