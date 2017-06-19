@@ -29,3 +29,5 @@ We will start with the simplest case and increase the complexity gradually. To k
 4. [2 layer network, 1 training example (vector)]()
 5. [2 layer network, batch training (>1 training examples where each is a vector)]()
 
+Multiple inputs correspond to the scenario of batch training. Since we are dealing with matrices, a key step in every equation is to check if all matrix dimensions are consistent. 
+
