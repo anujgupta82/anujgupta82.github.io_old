@@ -190,7 +190,7 @@ $$
      (y - \hat{y}) \times \hat{y} \times (1- \hat{y}) \times x_2 \\
      (y - \hat{y}) \times \hat{y} \times (1- \hat{y}) \times x_3 \\
      \end{bmatrix}
-\label{ref18} \tag{18}
+\label{ref19} \tag{19}
 \end{equation}
 $$
 
