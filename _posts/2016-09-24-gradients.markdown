@@ -30,7 +30,7 @@ We will start with the simplest case and increase the complexity gradually.
 Consider a simplest version of a neural net - 1 layer, 1 input node (scalar)
 
 <div class="imgcap">
-<img src="/assets/gradients/NN_1.png">
+<img src="/assets/gradients/NN_1_1.jpg">
 <div class="thecap">simple neural net</div>
 </div>
 
