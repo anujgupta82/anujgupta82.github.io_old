@@ -98,7 +98,7 @@ $$
 Our neural net still has 1 layer, but input now is a vector. 
 
 <div class="imgcap">
-<img src="/assets/gradients/NN_2.png">
+<img src="/assets/gradients/NN_2_2.jpeg">
 <div class="thecap">Neural net with 1 layer, but input is vector</div>
 </div>
 
