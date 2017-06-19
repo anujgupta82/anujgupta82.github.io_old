@@ -23,11 +23,11 @@ Through out this post we assume:
 
 
 We will start with the simplest case and increase the complexity gradually. To keep things simple we will complete it in 5 parts
-  1) 1 layer network, 1 training example (scalar)
-  2) 1 layer network, 1 training example (vector)
-  3) 1 layer network, batch training (>1 training examples where each is a vector)
-  4) 2 layer network, 1 training example (vector)
-  5) 2 layer network, batch training (>1 training examples where each is a vector)
+1. 1 layer network, 1 training example (scalar)
+2. 1 layer network, 1 training example (vector)
+3. 1 layer network, batch training (>1 training examples where each is a vector)
+4. 2 layer network, 1 training example (vector)
+5. 2 layer network, batch training (>1 training examples where each is a vector)
 
 #### **+ 1 layer network, 1 training example (scalar)**
 
