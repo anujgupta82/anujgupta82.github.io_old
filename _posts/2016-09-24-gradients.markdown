@@ -172,6 +172,17 @@ $$
 
 Using \eqref{ref17} in \eqref{ref11}
 
+$$
+\begin{equation}
+\nabla_{W} L = \begin{bmatrix}
+     (y - \hat{y}) \times \hat{y} \times (1- \hat{y}) \times x_1 \\
+     (y - \hat{y}) \times \hat{y} \times (1- \hat{y}) \times x_2 \\
+     (y - \hat{y}) \times \hat{y} \times (1- \hat{y}) \times x_3 \\
+     \end{bmatrix}
+\label{ref18} \tag{18}
+\end{equation}
+$$
+
 
 #### __1 layer network, multiple inputs (each is a vector)__
 
