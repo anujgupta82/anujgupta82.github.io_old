@@ -155,11 +155,11 @@ $$
 
 
 
-#### 2 layer network, 1 input (vector)
+#### __2 layer network, 1 input (vector)__
 
 $$A_{\scriptscriptstyle p\times k}x_{\scriptscriptstyle k\times 1}=b_{\scriptscriptstyle p\times 1}$$
 
-#### 2 layer network, multiple inputs (vector)
+#### __2 layer network, multiple inputs (vector)__
 
 
 <!---
