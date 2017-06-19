@@ -185,7 +185,7 @@ $$
 
 $$
 \begin{equation}
-& = \begin{bmatrix}
+= \begin{bmatrix}
      (y - \hat{y}) \times \hat{y} \times (1- \hat{y}) \times x_1 \\
      (y - \hat{y}) \times \hat{y} \times (1- \hat{y}) \times x_2 \\
      (y - \hat{y}) \times \hat{y} \times (1- \hat{y}) \times x_3 \\
