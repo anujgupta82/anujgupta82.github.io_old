@@ -153,9 +153,14 @@ $$
 \end{align}
 $$
 
-& = \sigma ([X] . [W]) \times (1- \sigma ([X] . [W])) * -x_1 \dots & \text{using \eqref{ref0}} \label{ref3} \tag{3}\\
-& = \hat{y} \times (1- \hat{y}) * -x_1 \dots && \text{using \eqref{ref0}} \label{ref33}\\
+Substituting \eqref{ref13} & \eqref{ref16} in \eqref{ref12}, we get 
 
+$$
+\begin{align}
+\frac{\partial L}{\partial w_1} &= \big{(} (-1) \times (y - \hat{y}) \big{)} \times \big{(} \hat{y} \times (1- \hat{y}) \times -x_1 \big{)}\\ \\
+&= (y - \hat{y}) \times \hat{y} \times (1- \hat{y}) \times x_1 \label{ref4} \tag{4} \\
+\end{align}
+$$
 
 #### __1 layer network, multiple inputs (each is a vector)__
 
