@@ -121,7 +121,7 @@ $$
 $$
 
 \\( \hat{y} \\) is predicted output. In matrix format, \\([\hat{y}]_{\scriptscriptstyle 1\times 1}\\)
-\\( \hat{y} = \sigma ([X] . [W]) = \frac{1}{1 + e^{-[X] . [W]}} \label{ref20} \tag{20} \\)
+\\( \hat{y} = \sigma ([X] . [W]) = \frac{1}{1 + e^{-[X] . [W]}} \label{ref11} \tag{11} \\)
 
 
 
@@ -148,7 +148,8 @@ $$
 \frac{\partial L}{\partial w_1} &= \frac{\partial L}{\partial \hat{y}} * \frac{\partial \hat{y}}{\partial w_1} \label{ref12} \tag{12} \\
 \frac{\partial L}{\partial \hat{y}} &= \frac{1}{2} \times 2 \times (y - \hat{y})^{1} \times (-1) \label{ref13} \tag{13} \\
 \frac{\partial \hat{y}}{\partial w_1} &= \big{(} \frac{1}{1 + e^{-[X] . [W]}} \big{)} \times \big{(}1- \frac{1}{1 + e^{-[X] . [W]}} \big{)} * x_1 \label{ref14} \tag{14}\\
-& = \sigma ([X] . [W]) \times (1- \sigma ([X] . [W])) * -x_1
+& = \sigma ([X] . [W]) \times (1- \sigma ([X] . [W])) * -x_1 & \text{using \eqref{ref0}} \label{ref3} \tag{15}\\
+& = \hat{y} \times (1- \hat{y}) * -x_1 \dots 
 \end{align}
 $$
 
