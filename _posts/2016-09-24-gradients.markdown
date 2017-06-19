@@ -30,7 +30,7 @@ We will start with the simplest case and increase the complexity gradually.
 Consider a simplest version of a neural net - 1 layer, 1 input node (scalar)
 
 <div class="imgcap">
-<img src="/assets/gradients/NN_1_1.jpeg">
+<img src="/assets/gradients/NN_1_1.jpeg" height="300" width="350">
 <div class="thecap">simple neural net</div>
 </div>
 
@@ -98,7 +98,7 @@ $$
 Our neural net still has 1 layer, but input now is a vector. 
 
 <div class="imgcap">
-<img src="/assets/gradients/NN_2_2.jpeg" height="142" width="142">
+<img src="/assets/gradients/NN_2_2.jpeg" height="300" width="350">
 <div class="thecap">Neural net with 1 layer, but input is vector</div>
 </div>
 
