@@ -157,7 +157,7 @@ Substituting \eqref{ref13} & \eqref{ref16} in \eqref{ref12}, we get
 
 $$
 \begin{align}
-\frac{\partial L}{\partial w_1}
+\frac{\partial L}{\partial w_1} &= \big{(} (-1) \times (y - \hat{y}) \big{)}
 \end{align}
 $$
 
