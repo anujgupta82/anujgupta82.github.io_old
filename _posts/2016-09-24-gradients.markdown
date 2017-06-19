@@ -10,7 +10,7 @@ mathjax: true
 
 ### Introduction
 
-Training neural nets is all about [computing gradients](http://deeplearning.stanford.edu/wiki/index.php/Deriving_gradients_using_the_backpropagation_idea). In this post we will systmatically see the maths that goes into computing these gradients. The complexity of calculations depends on 3 things: 
+Training neural nets is all about [computing gradients](http://deeplearning.stanford.edu/wiki/index.php/Deriving_gradients_using_the_backpropagation_idea). In case you are new to this idea, refer to this awesome [post](http://karpathy.github.io/neuralnets/) by karpathy. In this post we will systmatically see the maths that goes into computing these gradients. The complexity of calculations depends on 3 things: 
 
 1. Depth of the network
 2. Number of training examples (1 or more)
