@@ -162,12 +162,13 @@ $$
 \end{align}
 $$
 
+Thus, in general:
 $$
 \begin{align}
-\frac{\partial L}{\partial w_1} &= \big{(} (-1) \times (y - \hat{y}) \big{)} \times \big{(} \hat{y} \times (1- \hat{y}) \times -x_1 \big{)}\\ 
-&= (y - \hat{y}) \times \hat{y} \times (1- \hat{y}) \times x_1 \label{ref4} \tag{4} \\
+\frac{\partial L}{\partial w_1} &= (y - \hat{y}) \times \hat{y} \times (1- \hat{y}) \times x_1
 \end{align}
 $$
+
 
 #### __1 layer network, multiple inputs (each is a vector)__
 
