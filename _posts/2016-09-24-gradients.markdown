@@ -165,7 +165,7 @@ $$
 Thus, in general:
 $$
 \begin{align}
-\frac{\partial L}{\partial w_i} &= (y - \hat{y}) \times \hat{y} \times (1- \hat{y}) \times x_i
+\frac{\partial L}{\partial w_i} &= (y - \hat{y}) \times \hat{y} \times (1- \hat{y}) \times x_i \label{ref17} \tag{17}\\
 \end{align}
 $$
 
