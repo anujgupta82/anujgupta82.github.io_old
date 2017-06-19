@@ -1,8 +1,8 @@
 ---
 layout: post
 comments: true
-title:  "Gradients for Neural Nets"
-excerpt: "Part 2 of series on computing gradients for training Neural Nets"
+title:  "Gradients - Part 2"
+excerpt: "Part 2 of computing gradients for training Neural Nets"
 date:   2016-09-24 15:40:00
 mathjax: true
 ---
