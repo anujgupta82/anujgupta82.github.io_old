@@ -209,12 +209,12 @@ $$
 $$
 
 #### __1 layer network, multiple inputs (each is a vector)__
-
+Multiple inputs correspond to the scenario of batch training. Since we are dealing with matrices, a key step in every equation is to check if all matrix dimensions are consistent. 
 
 
 #### __2 layer network, 1 input (vector)__
 
-$$A_{\scriptscriptstyle p\times k}x_{\scriptscriptstyle k\times 1}=b_{\scriptscriptstyle p\times 1}$$
+
 
 #### __2 layer network, multiple inputs (vector)__
 
