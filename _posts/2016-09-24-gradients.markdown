@@ -205,9 +205,7 @@ Using \eqref{ref20} in \eqref{ref19}
 
 $$ 
 \begin{align}
-\frac{\partial L}{\partial W} &= \Delta l_{1} \times x \\
-& = \Delta l_{1} * X \\
-& = [X^{T}] . \Delta l_{1} \\
+\frac{\partial L}{\partial W} &= [X^{T}] . \Delta l_{1} \\
 \end{align}
 $$
 
