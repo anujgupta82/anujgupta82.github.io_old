@@ -208,15 +208,15 @@ $$
 \end{align}
 $$
 
-#### __1 layer network, multiple inputs (each is a vector)__
+#### __+ 1 layer network, multiple inputs (each is a vector)__
 Multiple inputs correspond to the scenario of batch training. Since we are dealing with matrices, a key step in every equation is to check if all matrix dimensions are consistent. 
 
 
-#### __2 layer network, 1 input (vector)__
+#### __+ 2 layer network, 1 input (vector)__
 
 
 
-#### __2 layer network, multiple inputs (vector)__
+#### __+ 2 layer network, multiple inputs (vector)__
 
 
 <!---
