@@ -121,7 +121,7 @@ $$
 $$
 
 \\( \hat{y} \\) is predicted output. In matrix format, \\([\hat{y}]_{\scriptscriptstyle 1\times 1}\\)
-\\( \hat{y} = \sigma ([X] . [W]) = \frac{1}{1 + e^{-[X] . [W]}} \label{ref11} \tag{11} \\)
+\\( \hat{y} = \sigma ([X] . [W]) = \frac{1}{1 + e^{-[X] . [W]}} \label{ref10} \tag{10} \\)
 
 
 
@@ -137,6 +137,7 @@ $$
      \frac{\partial L}{\partial w_{2}} \\
      \frac{\partial L}{\partial w_{3}} \\
      \end{bmatrix}
+\label{ref11} \tag{11}
 \end{equation}
 $$
 
@@ -168,6 +169,8 @@ $$
 \frac{\partial L}{\partial w_i} &= (y - \hat{y}) \times \hat{y} \times (1- \hat{y}) \times x_i \label{ref17} \tag{17}\\
 \end{align}
 $$
+
+Using \eqref{ref17} in \eqref{ref11}
 
 
 #### __1 layer network, multiple inputs (each is a vector)__
