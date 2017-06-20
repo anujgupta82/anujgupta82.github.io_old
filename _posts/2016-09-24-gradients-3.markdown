@@ -144,9 +144,7 @@ $$
  \Delta l_{1}^{i} = ((y_i - \hat{y}_i) *  [\sigma( X_i . [W])(1 - \sigma( X_i . [W])) ~~~~~~\qquad\forall i \in (1,4) \label{ref17} \tag{7}\\
 $$
 
-Using \label{ref17} in \label{ref16}
-
-Then, 
+Using \eqref{ref17} in \eqref{ref16}, we get:  
 $$
 \begin{align}
 \frac{\partial L}{\partial w_1} =  \Delta l_{1}^{1} \times x_{1}^{1} + \Delta l_{1}^{2} \times x_{2}^{1} + \Delta l_{1}^{3} \times x_{3}^{1} + \Delta l_{1}^{4} \times x_{4}^{1} \label{ref18} \tag{8}\\
