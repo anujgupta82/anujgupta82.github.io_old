@@ -35,10 +35,10 @@ $$
 $$
 
 
-We will start with the simplest case and increase the complexity gradually. To keep things simple we will complete it in 5 parts
-1. [1 layer network, 1 training example (scalar)]()
-2. [1 layer network, 1 training example (vector)]()
-3. [1 layer network, batch training (>1 training examples where each is a vector)]()
+To compute the gradients, we will start with the simplest case and increase the complexity gradually. To keep things simple we will complete it in 5 parts
+1. [1 layer network, 1 training example (scalar)](https://anujgupta82.github.io/2016/09/24/gradients-1/)
+2. [1 layer network, 1 training example (vector)](https://anujgupta82.github.io/2016/09/24/gradients-2/)
+3. [1 layer network, batch training (>1 training examples where each is a vector)](https://anujgupta82.github.io/2016/09/24/gradients-3/)
 4. [2 layer network, 1 training example (vector)]()
 5. [2 layer network, batch training (>1 training examples where each is a vector)]()
 
