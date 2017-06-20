@@ -169,7 +169,7 @@ $$
      \beta_1 \times x_{1}^{3} + \beta_2 \times x_{2}^{3} + \beta_3 \times x_{3}^{3} + \beta_4 \times x_{4}^{3} \\
      \end{bmatrix}
 \label{ref18} \tag{8}
-\end{equation} 
+\end{equation} {\scriptscriptstyle 3 \times 1}
 $$
 
 
