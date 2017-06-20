@@ -47,10 +47,10 @@ $$
 
 Likewise, \\(\vec{\hat{y}}\\) is a vector where 
 
-\\(\hat{y}_i\\) = predicted label for \\(i^{th}\\) example.
+\\(\hat{y}_i\\) = predicted label for \\(i^{th}\\) example. Value of \\(\hat{y}_i\\) is computed using:
 
 $$ 
-\hat{y}_i = \frac{1}{1+e^{-(x_{i}^{1} \times w_1 + x_{i}^{2} \times w_2 + x_{i}^{3} \times w_3)}}
+\hat{y}_i = \frac{1}{1+e^{-(x_{i}^{1} \times w_1 + x_{i}^{2} \times w_2 + x_{i}^{3} \times w_3)}} \label{ref30} \tag{1} 
 $$
 
 
