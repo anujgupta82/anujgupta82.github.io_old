@@ -1,0 +1,87 @@
+---
+layout: post
+comments: true
+title:  "Gradients - Part 3"
+excerpt: "Part 3 of computing gradients for training Neural Nets"
+date:   2016-09-24 15:40:00
+mathjax: true
+---
+
+
+### **1 layer network, multiple training examples (each example is a vector)**
+Multiple training examples correspond to the scenario of batch training. Our neural net still has 1 layer. 
+
+<div class="imgcap">
+<img src="/assets/gradients/NN_2_2.jpeg" height="300" width="350">
+<div class="thecap">Neural net with 1 layer. Input is a matrix</div>
+</div>
+
+#### Input & Output definitions
+
+Input **X** now is a matrix \\( [X]{\scriptscriptstyle 4 \times 3} \\). So, we now have **4** examples, each of which is vector with **3** components. \\(x_{i}^{j}\\) is \\(j^{th}\\) component of \\(i^{th}\\) sample. So 
+
+$$
+\begin{equation}
+     X=\begin{bmatrix}
+     	x_{1}^{1} & x_{1}^{2} & x_{1}^{3} \\
+     	x_{2}^{1} & x_{2}^{2} & x_{2}^{3} \\
+     	x_{3}^{1} & x_{3}^{2} & x_{3}^{3} \\
+     	x_{4}^{1} & x_{4}^{2} & x_{4}^{3} \\
+         \end{bmatrix}
+\end{equation}
+$$
+
+
+\\(\vec{y}\\) is a vector. 
+
+$$
+\begin{equation}
+     y=\begin{bmatrix}
+         y_{1} \\
+         y_{2} \\
+         y_{3} \\
+         y_{4} \\
+         \end{bmatrix}
+\end{equation}
+$$
+
+\\(y_i\\) = True label for \\(i^{th}\\) example.
+
+Likewise, \\(\vec{\hat{y}}\\) is a vector where 
+
+\\(\hat{y}_i\\) = predicted label for \\(i^{th}\\) example. Value of \\(\hat{y}_i\\) is computed using \eqref{ref30}:
+
+$$ 
+\hat{y}_i = \frac{1}{1+e^{-(x_{i}^{1} \times w_1 + x_{i}^{2} \times w_2 + x_{i}^{3} \times w_3)}} \label{ref30} \tag{1} 
+$$
+
+##### Loss
+
+
+#### **+ 2 layer network, 1 training example (vector)**
+
+
+
+#### **+ 2 layer network, multiple training examples (vector)**
+
+
+<!---
+Deriving Policy Gradients. I'd like to also give a sketch of where Policy Gradients come from mathematically. Policy Gradients are a special case of a more general score function gradient estimator. The general case is that when we have an expression of the form \(E_{x \sim p(x \mid \theta)} [f(x)] \) - i.e. the expectation of some scalar valued score function \(f(x)\) under some probability distribution \(p(x;\theta)\) parameterized by some \(\theta\). Hint hint, \(f(x)\) will become our reward function (or advantage function more generally) and \(p(x)\) will be our policy network, which is really a model for \(p(a \mid I)\), giving a distribution over actions for any image \(I\). Then we are interested in finding how we should shift the distribution (through its parameters \(\theta\)) to increase the scores of its samples, as judged by \(f\) (i.e. how do we change the network's parameters so that action samples get higher rewards). We have that:
+
+$$
+\begin{align}
+\nabla_{\theta} E_x[f(x)] &= \nabla_{\theta} \sum_x p(x) f(x) & \text{definition of expectation} \\
+& = \sum_x \nabla_{\theta} p(x) f(x) & \text{swap sum and gradient} \\
+& = \sum_x p(x) \frac{\nabla_{\theta} p(x)}{p(x)} f(x) & \text{both multiply and divide by } p(x) \\
+& = \sum_x p(x) \nabla_{\theta} \log p(x) f(x) & \text{use the fact that } \nabla_{\theta} \log(z) = \frac{1}{z} \nabla_{\theta} z \\
+& = E_x[f(x) \nabla_{\theta} \log p(x) ] & \text{definition of expectation}
+\end{align}
+$$
+-->
+
+
+
+
+
+
+    
