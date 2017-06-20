@@ -9,8 +9,27 @@ mathjax: true
 
 
 #### **+ 1 layer network, multiple training examples (each is a vector)**
-Multiple inputs correspond to the scenario of batch training. Since we are dealing with matrices, a key step in every equation is to check if all matrix dimensions are consistent. 
+Multiple training examples correspond to the scenario of batch training. Our neural net still has 1 layer. 
 
+<div class="imgcap">
+<img src="/assets/gradients/NN_2_2.jpeg" height="300" width="350">
+<div class="thecap">Neural net with 1 layer, but input is vector</div>
+</div>
+
+However, input X now is a matrix \\( [X]{\scriptscriptstyle 4 \times 3} \\). So, we now have 4 examples, each of which is vector with 3 components. \\(x_{i}^{j}\\) is \\(j^{th}\\) component of \\(i^{th}\\) sample. \\(\vec{y}\\) is a vector.
+
+$$
+\begin{equation}
+     y=\begin{bmatrix}
+         y_{1} \\
+         y_{2} \\
+         y_{3} \\
+         y_{4} \\
+         \end{bmatrix}
+\end{equation}
+$$
+
+\\(y^i = True label for i^{th} example.\\)
 
 #### **+ 2 layer network, 1 training example (vector)**
 
