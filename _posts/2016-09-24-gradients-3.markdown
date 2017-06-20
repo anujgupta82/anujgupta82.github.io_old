@@ -131,6 +131,7 @@ $$
 \end{align}
 $$
 
+Likewise, we can compute \\( \frac{\partial L}{\partial w_{2}} \\) and \\( \frac{\partial L}{\partial w_{3}} \\)
 
 
 
