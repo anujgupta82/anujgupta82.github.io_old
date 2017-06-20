@@ -63,10 +63,10 @@ $$
 
 Likewise, \\(\vec{\hat{y}}\\) is a vector where 
 
-\\(\hat{y}_i\\) = predicted label for \\(i^{th}\\) example. Value of \\(\hat{y}_i\\) is computed using \eqref{ref30}:
+\\(\hat{y}_i\\) = predicted label for \\(i^{th}\\) example. Value of \\(\hat{y}_i\\) is computed using \eqref{ref10}:
 
 $$ 
-\hat{y}_i = \frac{1}{1+e^{-(x_{i}^{1} \times w_1 + x_{i}^{2} \times w_2 + x_{i}^{3} \times w_3)}} \label{ref30} \tag{1} 
+\hat{y}_i = \frac{1}{1+e^{-(x_{i}^{1} \times w_1 + x_{i}^{2} \times w_2 + x_{i}^{3} \times w_3)}} \label{ref10} \tag{1} 
 $$
 
 #### **Loss**
@@ -118,10 +118,12 @@ $$
 
 $$
 \begin{align}
-\frac{\partial \hat{y}_i}{w_1} = \sigma(x_{i}^{1} \times w_1 + x_{i}^{2} \times w_2 + x_{i}^{3} \times w_3)(1 - \sigma(x_{i}^{1} \times w_1 + x_{i}^{2} \times w_2 + x_{i}^{3} \times w_3)) \label{ref14} \tag{4}\\
+\frac{\partial \hat{y}_i}{w_1} &= \sigma(x_{i}^{1} \times w_1 + x_{i}^{2} \times w_2 + x_{i}^{3} \times w_3)(1 - \sigma(x_{i}^{1} \times w_1 + x_{i}^{2} \times w_2 + x_{i}^{3} \times w_3)) \times x_{i}^{1}
+& = \sigma( X_i . [W])(1 - \sigma( X_i . [W])) \times x_{i}^{1} \label{ref14} \tag{4}\\
 \end{align}
 $$
 
+Using \eqref{ref13} and \eqref{ref14} in \eqref{ref12}, we get: 
 
 
 
