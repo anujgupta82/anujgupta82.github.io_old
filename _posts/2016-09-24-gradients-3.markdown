@@ -16,6 +16,20 @@ Multiple training examples correspond to the scenario of batch training. Our neu
 <div class="thecap">Neural net with 1 layer. Input is a matrix</div>
 </div>
 
+#### **Weights**
+
+W, weight matrix is $$[W]_{\scriptscriptstyle 3 \times 1}$$
+
+$$
+\begin{equation}
+     W=\begin{bmatrix}
+         w_{1} \\
+         w_{2} \\
+         w_{3} \\
+         \end{bmatrix}
+\end{equation}
+$$
+
 #### **Input & Output definitions**
 
 Input **X** now is a matrix \\( [X]{\scriptscriptstyle 4 \times 3} \\). So, we now have **4** examples, each of which is vector with **3** components. \\(x_{i}^{j}\\) is \\(j^{th}\\) component of \\(i^{th}\\) sample. So 
@@ -57,14 +71,39 @@ $$
 
 #### **Loss**
 
-Like before, we will use half of squared error loss but in this case it is the total gap in all 4 predictions.
+Like before, we will use half of squared error loss but in this case it is the total gap in all 4 predictions. Therefore,
 
 
 $$ L  = \sum\limits_{i=1}^{4} \frac{1}{2} (y_i - \hat{y}_i)^{2} $$
 
+#### **Gradients** 
 
+Let's compute gradients. 
 
+$$
+\begin{equation}
+\nabla_{W} L = \frac{\partial L}{\partial W} \\
+\nabla_{W} L = \begin{bmatrix}
+     \frac{\partial L}{\partial w_{1}} \\
+     \frac{\partial L}{\partial w_{2}} \\
+     \frac{\partial L}{\partial w_{3}} \\
+     \end{bmatrix}
+\label{ref11} \tag{11}
+\end{equation}
+$$
 
+First, lets compute only \\( \frac{\partial L}{\partial w_{1}} \\)
+
+$$
+\begin{align}
+\frac{\partial L}{\partial w_1} &= \frac{\partial \sum\limits_{i=1}^{4} \frac{1}{2} (y_i - \hat{y}_i)^{2}}{\partial w_1} \\
+\frac{\partial L}{\partial w_1} &= \frac{\partial L}{\partial \hat{y}} * \frac{\partial \hat{y}}{\partial w_1} \label{ref12} \tag{12} \\
+\frac{\partial L}{\partial \hat{y}} &= \frac{1}{2} \times 2 \times (y - \hat{y})^{1} \times (-1) \label{ref13} \tag{13} \\
+\frac{\partial \hat{y}}{\partial w_1} &= \big{(} \frac{1}{1 + e^{-[X] . [W]}} \big{)} \times \big{(}1- \frac{1}{1 + e^{-[X] . [W]}} \big{)} * x_1 \label{ref14} \tag{14}\\
+& = \sigma ([X] . [W]) \times (1- \sigma ([X] . [W])) * -x_1 \dots & \text{using \eqref{ref11}} & \label{ref15} \tag{15}\\
+& = \hat{y} \times (1- \hat{y}) * -x_1 \dots & \text{using \eqref{ref11}} & \label{ref16} \tag{16}\\
+\end{align}
+$$
 
 
 
