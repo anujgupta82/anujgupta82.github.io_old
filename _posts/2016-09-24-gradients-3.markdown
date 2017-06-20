@@ -16,7 +16,7 @@ Multiple training examples correspond to the scenario of batch training. Our neu
 <div class="thecap">Neural net with 1 layer. Input is a matrix</div>
 </div>
 
-#### Input & Output definitions
+##### **Input & Output definitions**
 
 Input **X** now is a matrix \\( [X]{\scriptscriptstyle 4 \times 3} \\). So, we now have **4** examples, each of which is vector with **3** components. \\(x_{i}^{j}\\) is \\(j^{th}\\) component of \\(i^{th}\\) sample. So 
 
@@ -55,7 +55,7 @@ $$
 \hat{y}_i = \frac{1}{1+e^{-(x_{i}^{1} \times w_1 + x_{i}^{2} \times w_2 + x_{i}^{3} \times w_3)}} \label{ref30} \tag{1} 
 $$
 
-##### Loss
+##### **Loss**
 
 
 
