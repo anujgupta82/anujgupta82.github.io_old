@@ -57,7 +57,10 @@ $$
 
 #### **Loss**
 
-Loss is total gap in all 4 predictions. 
+Like before, we will use half of squared error loss but in this case it is the total gap in all 4 predictions.
+
+
+$$ L  = \sum\limits_{i=1}^{4} \frac{1}{2} (y_i - \hat{y}_i)^{2} $$
 
 
 
