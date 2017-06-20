@@ -32,7 +32,7 @@ $$
 
 #### **Input & Output definitions**
 
-Input **X** now is a matrix \\( [X]{\scriptscriptstyle 4 \times 3} \\). So, we now have **4** examples, each of which is vector with **3** components. \\(x_{i}^{j}\\) is \\(j^{th}\\) component of \\(i^{th}\\) sample. So 
+Input **X** now is a matrix \\( [X]{\scriptscriptstyle 4 \times 3} \\). \\(X_i\\) is the \\(i^{th}\\) sample. So, we now have **4** examples \\(X_1 \ldots X_4\\) , each of which is vector with **3** components. \\(x_{i}^{j}\\) is \\(j^{th}\\) component of \\(X_i\\) sample. So 
 
 $$
 \begin{equation}
