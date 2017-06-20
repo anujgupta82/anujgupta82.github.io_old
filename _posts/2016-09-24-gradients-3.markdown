@@ -29,7 +29,7 @@ $$
 \end{equation}
 $$
 
-\\(y^i = True label for i^{th} example.\\)
+\\(y^i\\) = True label for \\(i^{th}\\) example.
 
 #### **+ 2 layer network, 1 training example (vector)**
 
