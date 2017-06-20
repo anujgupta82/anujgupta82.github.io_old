@@ -1,14 +1,14 @@
 ---
 layout: post
 comments: true
-title:  "Gradients - Part 3"
-excerpt: "Part 3 of computing gradients for training Neural Nets"
+title:  "Gradients - Part 4"
+excerpt: "Part 4 of computing gradients for training Neural Nets"
 date:   2016-09-24 15:40:00
 mathjax: true
 ---
 
 
-### **1 layer network, multiple training examples (each example is a vector)**
+### **2 layer network, single training example (vector)**
 Multiple training examples correspond to the scenario of batch training. Our neural net still has 1 layer. 
 
 <div class="imgcap">
