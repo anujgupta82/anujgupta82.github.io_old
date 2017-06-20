@@ -88,6 +88,7 @@ $$
 
 Using \eqref{ref17} in \eqref{ref11}
 
+<!--
 $$
 \begin{equation}
 \frac{\partial L}{\partial W} = \begin{bmatrix}
@@ -96,6 +97,19 @@ $$
      (y - \hat{y}) \times \hat{y} \times (1- \hat{y}) \times x_3 \\
      \end{bmatrix}
 \label{ref18} \tag{18}
+\end{equation}
+$$
+-->
+
+$$
+\begin{equation}
+= \begin{bmatrix}
+     x^1 \\
+     x^2 \\
+     x^3 \\
+     \end{bmatrix} 
+     * [(y - \hat{y}) \times \hat{y} \times (1- \hat{y})]
+\label{ref19} \tag{19}
 \end{equation}
 $$
 
