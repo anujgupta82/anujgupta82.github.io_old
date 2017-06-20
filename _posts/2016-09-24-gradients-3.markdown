@@ -147,6 +147,16 @@ $$
 
 Using \eqref{ref15}, \eqref{ref16} and \eqref{ref17} in \eqref{ref11}, we get: 
 
+$$
+\begin{equation}
+\frac{\partial L}{\partial W} = \begin{bmatrix}
+     \frac{\partial L}{\partial w_{1}} \\
+     \frac{\partial L}{\partial w_{2}} \\
+     \sum\limits_{i=1}^{4} (y_i - \hat{y}_i) *  [\sigma( X_i . [W])(1 - \sigma( X_i . [W])) \times x_{i}^{3}] \\
+     \end{bmatrix}
+\label{ref18} \tag{8}
+\end{equation} 
+$$
 
 
     
