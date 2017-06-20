@@ -191,5 +191,9 @@ $$
 \end{equation} 
 $$
 
+$$
+\left[ \begin{array}{c} x_1 \\ x_2 \end{array} \right] = \begin{bmatrix} A & B \\ C & D \end{bmatrix} \times \left[ \begin{array}{c} y_1 \\ y_2 \end{array} \right]
+$$
+
 
     
