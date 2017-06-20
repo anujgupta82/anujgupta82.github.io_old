@@ -22,11 +22,17 @@ Through out this post we assume:
 3. All activations are [sigmoid a.k.a logistic](https://www.quora.com/What-is-the-sigmoid-function-and-what-is-its-use-in-machine-learnings-neural-networks). It is defined as \\( f(u) = \frac{1}{1+e^{-u}}\\). If you plot it, it comes as:
 
 <div class="imgcap">
-<img src="/assets/gradients/logistic.png" height="300" width="350">
+<img src="/assets/gradients/logistic.png" height="200" width="270">
 <div class="thecap">Sigmoid function</div>
 </div>
 
-It easy to see it is smooth and differentiable and bound between 0 and 1. The derivative of the logistic function is simply
+It easy to see it is smooth and differentiable and bound between 0 and 1. The derivative of the logistic function is simply:
+
+$$
+\begin{align}
+\frac{ df(u)}{du} = f(u)(1-f(u))
+\end{align}
+$$
 
 
 We will start with the simplest case and increase the complexity gradually. To keep things simple we will complete it in 5 parts
