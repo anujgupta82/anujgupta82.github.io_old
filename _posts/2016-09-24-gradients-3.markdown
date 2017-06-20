@@ -16,7 +16,19 @@ Multiple training examples correspond to the scenario of batch training. Our neu
 <div class="thecap">Neural net with 1 layer, but input is vector</div>
 </div>
 
-However, input X now is a matrix \\( [X]{\scriptscriptstyle 4 \times 3} \\). So, we now have **4** examples, each of which is vector with **3** components. \\(x_{i}^{j}\\) is \\(j^{th}\\) component of \\(i^{th}\\) sample. 
+However, input **X** now is a matrix \\( [**X**]{\scriptscriptstyle 4 \times 3} \\). So, we now have **4** examples, each of which is vector with **3** components. \\(x_{i}^{j}\\) is \\(j^{th}\\) component of \\(i^{th}\\) sample. So 
+
+$$
+\begin{equation}
+     **X**=\begin{bmatrix}
+     	x_{1}^{1} & x_{1}^{2} & x_{1}^{3} \\
+     	x_{2}^{1} & x_{2}^{2} & x_{2}^{3} \\
+     	x_{3}^{1} & x_{3}^{2} & x_{3}^{3} \\
+     	x_{4}^{1} & x_{4}^{2} & x_{4}^{3} \\
+         \end{bmatrix}
+\end{equation}
+$$
+
 
 \\(\vec{y}\\) is a vector. 
 
