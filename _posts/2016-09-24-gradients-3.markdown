@@ -129,10 +129,19 @@ $$
 \begin{align}
 \frac{\partial L}{\partial w_1} &= \sum\limits_{i=1}^{4} (y_i - \hat{y}_i) *  [\sigma( X_i . [W])(1 - \sigma( X_i . [W])) \times x_{i}^{1}] \label{ref15} \tag{5}\\
 & = (y_1 - \hat{y}_1) * [\sigma( X_1 . [W])(1 - \sigma( X_1 . [W])) \times x_{1}^{1}] + \\
-	(y_2 - \hat{y}_2) * [\sigma( X_2 . [W])(1 - \sigma(X_2 . [W])) \times x_{2}^{1}] + \\
+~~~~~~	(y_2 - \hat{y}_2) * [\sigma( X_2 . [W])(1 - \sigma(X_2 . [W])) \times x_{2}^{1}] + \\
 	(y_3 - \hat{y}_3) * [\sigma( X_3 . [W])(1 - \sigma(X_3 . [W])) \times x_{3}^{1}] + \\
 	(y_4 - \hat{y}_4) * [\sigma( X_4 . [W])(1 - \sigma(X_4 . [W])) \times x_{4}^{1}] \\
 
+\end{align}
+$$
+
+Let, \\( \Beta_i = (y_i - \hat{y}_i) *  [\sigma( X_i . [W])(1 - \sigma( X_i . [W])) \\)
+
+Then,
+$$
+\begin{align}
+\frac{\partial L}{\partial w_1} =  \Beta_1 \times x_{1}^{1} + \Beta_2 \times x_{2}^{1} + \Beta_3 \times x_{3}^{1} + \Beta_4 \times x_{4}^{1}
 \end{align}
 $$
 
