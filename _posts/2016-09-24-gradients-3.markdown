@@ -96,6 +96,12 @@ First, lets compute only \\( \frac{\partial L}{\partial w_{1}} \\)
 
 $$
 \begin{align}
+\frac{\partial L}{\partial w_1} &= \frac{ }{\partial w_1} (\sum\limits_{i=1}^{4} \frac{1}{2} (y_i - \hat{y}_i)^{2})}{\partial w_1}\\
+\end{align}
+$$
+
+$$
+\begin{align}
 \frac{\partial L}{\partial w_1} &= \frac{\partial (\sum\limits_{i=1}^{4} \frac{1}{2} (y_i - \hat{y}_i)^{2})}{\partial w_1} \\
 \end{align}
 $$
