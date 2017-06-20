@@ -89,7 +89,7 @@ $$
      \frac{\partial L}{\partial w_{3}} \\
      \end{bmatrix}
 \label{ref11} \tag{1}
-\end{equation}
+\end{equation} 
 $$
 
 First, lets compute only \\( \frac{\partial L}{\partial w_{1}} \\)
@@ -145,6 +145,7 @@ $$
 \end{align}
 $$
 
+Using \eqref{ref15}, \eqref{ref16} and \eqref{ref17} in \eqref{ref11}, we get: 
 
 
 
