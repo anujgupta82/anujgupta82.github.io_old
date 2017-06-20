@@ -136,7 +136,7 @@ $$
 \end{align}
 $$
 
-Let, \\( \beta_i = (y_i - \hat{y}_i) *  [\sigma( X_i . [W])(1 - \sigma( X_i . [W])) \forall i \in (1,4)\\)
+Let, \\( \beta_i = ((y_i - \hat{y}_i) *  [\sigma( X_i . [W])(1 - \sigma( X_i . [W])) ~~~~~~\qquad\forall i \in (1,4)\\)
 
 Then,
 $$
