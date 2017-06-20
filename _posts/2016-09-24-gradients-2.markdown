@@ -88,7 +88,7 @@ $$
 
 Using \eqref{ref17} in \eqref{ref11}
 
-<!--
+
 $$
 \begin{equation}
 \frac{\partial L}{\partial W} = \begin{bmatrix}
@@ -99,7 +99,7 @@ $$
 \label{ref18} \tag{18}
 \end{equation}
 $$
--->
+
 
 $$
 \begin{equation}
@@ -113,6 +113,7 @@ $$
 \end{equation}
 $$
 
+<!--
 $$
 \begin{equation}
 = [x^1 ~~x^2 ~~x^3] .
@@ -124,6 +125,7 @@ $$
 \label{ref19} \tag{19}
 \end{equation}
 $$
+-->
 
 Let,  
 
