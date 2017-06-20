@@ -8,7 +8,7 @@ mathjax: true
 ---
 
 
-#### **+ 1 layer network, multiple training examples (each is a vector)**
+### **+ 1 layer network, multiple training examples (each is a vector)**
 Multiple training examples correspond to the scenario of batch training. Our neural net still has 1 layer. 
 
 <div class="imgcap">
@@ -16,7 +16,9 @@ Multiple training examples correspond to the scenario of batch training. Our neu
 <div class="thecap">Neural net with 1 layer. Input is a matrix</div>
 </div>
 
-However, input **X** now is a matrix \\( [X]{\scriptscriptstyle 4 \times 3} \\). So, we now have **4** examples, each of which is vector with **3** components. \\(x_{i}^{j}\\) is \\(j^{th}\\) component of \\(i^{th}\\) sample. So 
+#### Input & Output definitions
+
+Input **X** now is a matrix \\( [X]{\scriptscriptstyle 4 \times 3} \\). So, we now have **4** examples, each of which is vector with **3** components. \\(x_{i}^{j}\\) is \\(j^{th}\\) component of \\(i^{th}\\) sample. So 
 
 $$
 \begin{equation}
@@ -47,11 +49,13 @@ $$
 
 Likewise, \\(\vec{\hat{y}}\\) is a vector where 
 
-\\(\hat{y}_i\\) = predicted label for \\(i^{th}\\) example. Value of \\(\hat{y}_i\\) is computed using:
+\\(\hat{y}_i\\) = predicted label for \\(i^{th}\\) example. Value of \\(\hat{y}_i\\) is computed using \eqref{ref30}:
 
 $$ 
 \hat{y}_i = \frac{1}{1+e^{-(x_{i}^{1} \times w_1 + x_{i}^{2} \times w_2 + x_{i}^{3} \times w_3)}} \label{ref30} \tag{1} 
 $$
+
+#### Loss
 
 
 #### **+ 2 layer network, 1 training example (vector)**
