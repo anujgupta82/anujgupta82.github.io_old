@@ -112,13 +112,13 @@ $$
 
 $$
 \begin{align}
-\frac{\partial (\frac{1}{2} (y_i - \hat{y}_i)^{2})}{\partial \hat{y}_i} = (-1) \times (y_i - \hat{y}_i)
+\frac{\partial (\frac{1}{2} (y_i - \hat{y}_i)^{2})}{\partial \hat{y}_i} = (-1) \times (y_i - \hat{y}_i) \label{ref13} \tag{3}
 \end{align}
 $$
 
 $$
 \begin{align}
-\frac{\partial \hat{y}_i}{w_1} = \sigma(x_{i}^{1} \times w_1 + x_{i}^{2} \times w_2 + x_{i}^{3} \times w_3)(1 - \sigma(x_{i}^{1} \times w_1 + x_{i}^{2} \times w_2 + x_{i}^{3} \times w_3))
+\frac{\partial \hat{y}_i}{w_1} = \sigma(x_{i}^{1} \times w_1 + x_{i}^{2} \times w_2 + x_{i}^{3} \times w_3)(1 - \sigma(x_{i}^{1} \times w_1 + x_{i}^{2} \times w_2 + x_{i}^{3} \times w_3)) \label{ref14} \tag{4}\\
 \end{align}
 $$
 
