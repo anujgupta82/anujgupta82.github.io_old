@@ -116,6 +116,12 @@ $$
 \end{align}
 $$
 
+$$
+\begin{align}
+\frac{\partial \hat{y}_i}{w_1} = \sigma(x_{i}^{1} \times w_1 + x_{i}^{2} \times w_2 + x_{i}^{3} \times w_3)(1 - \sigma(x_{i}^{1} \times w_1 + x_{i}^{2} \times w_2 + x_{i}^{3} \times w_3))
+\end{align}
+$$
+
 
 
 
