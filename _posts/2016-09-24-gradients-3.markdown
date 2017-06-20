@@ -18,7 +18,8 @@ Multiple training examples correspond to the scenario of batch training. Our neu
 
 However, input X now is a matrix \\( [X]{\scriptscriptstyle 4 \times 3} \\). So, we now have 4 examples, each of which is vector with 3 components. \\(x_{i}^{j}\\) is \\(j^{th}\\) component of \\(i^{th}\\) sample. \\
 
-\\(\vec{y}\\) is a vector.
+\\(\vec{y}\\) is a vector. ~~~
+
 $$
 \begin{equation}
      y=\begin{bmatrix}
