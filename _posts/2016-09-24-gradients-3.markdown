@@ -124,6 +124,7 @@ $$
 $$
 
 Using \eqref{ref13} and \eqref{ref14} in \eqref{ref12}, we get: 
+
 $$
 \begin{align}
 \frac{\partial L}{\partial w_1} &= \sum\limits_{i=1}^{4} (y_i - \hat{y}_i) *  [\sigma( X_i . [W])(1 - \sigma( X_i . [W])) \times x_{i}^{1}]
