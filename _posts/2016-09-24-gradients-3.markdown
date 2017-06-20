@@ -33,7 +33,7 @@ $$
 
 \\(y_i\\) = True label for \\(i^{th}\\) example.
 
-Like \\(\vec{\hat{y}}\\) is a vector where 
+Likewise, \\(\vec{\hat{y}}\\) is a vector where 
 
 \\(\hat{y}_i\\) = predicted label for \\(i^{th}\\) example.
 
