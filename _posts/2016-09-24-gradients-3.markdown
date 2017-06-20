@@ -8,7 +8,7 @@ mathjax: true
 ---
 
 
-### **+ 1 layer network, multiple training examples (each is a vector)**
+### **1 layer network, multiple training examples (each example is a vector)**
 Multiple training examples correspond to the scenario of batch training. Our neural net still has 1 layer. 
 
 <div class="imgcap">
