@@ -136,12 +136,12 @@ $$
 \end{align}
 $$
 
-Let, \\( \Beta_i = (y_i - \hat{y}_i) *  [\sigma( X_i . [W])(1 - \sigma( X_i . [W])) \\)
+Let, \\( \beta_i = (y_i - \hat{y}_i) *  [\sigma( X_i . [W])(1 - \sigma( X_i . [W])) \\)
 
 Then,
 $$
 \begin{align}
-\frac{\partial L}{\partial w_1} =  \Beta_1 \times x_{1}^{1} + \Beta_2 \times x_{2}^{1} + \Beta_3 \times x_{3}^{1} + \Beta_4 \times x_{4}^{1}
+\frac{\partial L}{\partial w_1} =  \beta_1 \times x_{1}^{1} + \beta_2 \times x_{2}^{1} + \beta_3 \times x_{3}^{1} + \beta_4 \times x_{4}^{1}
 \end{align}
 $$
 
