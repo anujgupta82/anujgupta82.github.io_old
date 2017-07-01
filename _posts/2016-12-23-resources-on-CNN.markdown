@@ -13,8 +13,8 @@ I am new to the world of CNNs. While I have worked with neural nets in the area 
 
 Another good resource is this [blog by Ujjwal](https://ujjwalkarn.me/2016/08/11/intuitive-explanation-convnets/) 
 
+Adam Harley's [blog](http://scs.ryerson.ca/~aharley/neural-networks/) on basic of CNNs. 
 
-
-
+Wanna get a feel of CNNs in action ? check this [awesome visualization by Adam Harley](http://scs.ryerson.ca/~aharley/vis/conv/flat.html). I highly recomend to play with it. 
 
 
