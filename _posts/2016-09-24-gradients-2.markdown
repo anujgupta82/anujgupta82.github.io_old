@@ -11,14 +11,14 @@ mathjax: true
 
 #### **1 layer network, 1 input (vector)**
 
-Our neural net still has 1 layer, but input now is a vector. 
+Our neural net still has 1 layer, but now the input is a vector. 
 
 <div class="imgcap">
 <img src="/assets/gradients/NN_2_2.jpeg" height="300" width="350">
 <div class="thecap">Neural net with 1 layer, but input is vector</div>
 </div>
 
-Input is \\((\vec{X},y)\\) : \\(\vec{X}\\) is a vector, while y is a scalars. 
+Input is \\((\vec{X},y)\\) : \\(\vec{X}\\) is a vector, while y is a scalar. 
 
 \\(X = [x^1 ~~x^2 ~~x^3]\\)		&nbsp; &nbsp; &nbsp; \\(x^i = i^{th}\\) component of \\(\vec{X}\\).
 	
@@ -43,7 +43,7 @@ $$
 
 Like before, we will use half of squared error loss. $$ L  = \frac{1}{2} (y - \hat{y})^{2} $$
 
-Let's compute gradients. 
+Let's first compute gradients. 
 
 $$
 \begin{equation}
