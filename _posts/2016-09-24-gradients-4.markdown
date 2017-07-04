@@ -29,7 +29,7 @@ $$
 \end{equation}
 $$
 
-Second layer (\\(l_2\\)) has weight \\(W_2\\) which is a scalar 
+Second layer (\\(l_2\\)) has weight matrix $$[W_2]_{\scriptscriptstyle 1 \times 1}$$ which is a scalar 
 
 $$
 \begin{equation}
@@ -40,6 +40,29 @@ $$
 $$
 
 ##### **Input & Output definitions**
+
+Input is \\((\vec{X},y)\\) : \\(\vec{X}\\) is a vector, while y is a scalar. 
+
+\\(X = [x^1 ~~x^2 ~~x^3]\\)     &nbsp; &nbsp; &nbsp; \\(x^i = i^{th}\\) component of \\(\vec{X}\\).
+
+Thus, in matrix form x,y are $$[X]_{\scriptscriptstyle 1\times 3}$$ and $$[y]_{\scriptscriptstyle 1\times 1}$$.
+
+Let \\( l_1 \\) be output of layer 1. In matrix format, \\([l_1]_{\scriptscriptstyle 1\times 1}\\)
+\\( l_1 = \sigma ([X] . [W_1]) = \frac{1}{1 + e^{-[X] . [W_1]}} \label{ref10} \tag{10} \\)
+
+
+\\( \hat{y} \\) is predicted output. In matrix format, \\([\hat{y}]_{\scriptscriptstyle 1\times 1}\\)
+\\( \hat{y} = \sigma ([l_1] . [W_2]) = \frac{1}{1 + e^{-[l_1] . [W_2]}} \label{ref11} \tag{11} \\)
+
+
+
+
+
+
+
+
+
+
 
 Input **X** now is a matrix \\( [X]{\scriptscriptstyle 4 \times 3} \\). So, we now have **4** examples, each of which is vector with **3** components. \\(x_{i}^{j}\\) is \\(j^{th}\\) component of \\(i^{th}\\) sample. So 
 
