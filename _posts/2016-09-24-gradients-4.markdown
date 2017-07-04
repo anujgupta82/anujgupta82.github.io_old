@@ -48,11 +48,11 @@ Input is \\((\vec{X},y)\\) : \\(\vec{X}\\) is a vector, while y is a scalar.
 Thus, in matrix form x,y are $$[X]_{\scriptscriptstyle 1\times 3}$$ and $$[y]_{\scriptscriptstyle 1\times 1}$$.
 
 Let \\( l_1 \\) be output of layer 1. In matrix format, \\([l_1]_{\scriptscriptstyle 1\times 1}\\)
-\\( l_1 = \sigma ([X] . [W_1]) = \frac{1}{1 + e^{-[X] . [W_1]}} \label{ref10} \tag{10} \\)
+\\( l_1 = \sigma ([X] . [W_1]) = \frac{1}{1 + e^{-[X] . [W_1]}} \label{ref10} \tag{1} \\)
 
 
 \\( \hat{y} \\) is predicted output. In matrix format, \\([\hat{y}]_{\scriptscriptstyle 1\times 1}\\)
-\\( \hat{y} = \sigma ([l_1] . [W_2]) = \frac{1}{1 + e^{-[l_1] . [W_2]}} \label{ref11} \tag{11} \\)
+\\( \hat{y} = \sigma ([l_1] . [W_2]) = \frac{1}{1 + e^{-[l_1] . [W_2]}} \label{ref11} \tag{2} \\)
 
 
 ##### **Loss**
@@ -67,7 +67,15 @@ There are 2 set of gradients: \\(\nabla_{W_1} L\\) and \\(\nabla_{W_2} L\\). Let
 
 ** \\(\nabla_{W_2} L\\) **
 
-
+$$
+\begin{align}
+\frac{\partial L}{\partial W_2} & = \frac{\partial L}{\partial \hat{y}} \times \frac{\partial \hat{y}}{\partial W_2} \label{ref1} \tag{3}\\
+\frac{\partial L}{\partial \hat{y}} &= \frac{1}{2} \times 2 \times (y - \hat{y})^{1} \times (-1) \label{ref2} \tag{2}\\
+\frac{\partial \hat{y}}{\partial W} &= \big{(} \frac{1}{1 + e^{-[X] . [W]}} \big{)} \times \big{(}1- \frac{1}{1 + e^{-[X] . [W]}} \big{)} * -X \\
+& = \sigma (Wx) \times (1- \sigma (Wx)) * -X \dots && \text{using \eqref{ref0}} \label{ref3} \tag{3}\\
+& = \hat{y} \times (1- \hat{y}) * -X \dots && \text{using \eqref{ref0}} \label{ref33}\\
+\end{align}
+$$
 
 #### **+ 2 layer network, 1 training example (vector)**
 
