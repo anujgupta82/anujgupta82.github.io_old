@@ -21,10 +21,10 @@ In this post we will consider 2 type of networks. In first network, hidden layer
 First layer (\\(l_1\\)) has weight matrix $$[W_1]_{\scriptscriptstyle 3 \times 1}$$
 $$
 \begin{equation}
-     W=\begin{bmatrix}
-         w_{1} \\
-         w_{2} \\
-         w_{3} \\
+     W_1=\begin{bmatrix}
+         w_{1}^{1} \\
+         w_{1}^{2} \\
+         w_{1}^{3} \\
          \end{bmatrix}
 \end{equation}
 $$
