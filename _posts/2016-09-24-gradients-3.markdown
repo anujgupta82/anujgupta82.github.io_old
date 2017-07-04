@@ -10,6 +10,7 @@ mathjax: true
 
 ### **1 layer network, multiple training examples (each example is a vector)**
 Multiple training examples correspond to the scenario of batch training. Each input is still a vector. Our neural net still has 1 layer. 
+For simplicity, assume we have 4 examples, each having 3 components. 
 
 
 <div class="imgcap">
@@ -120,7 +121,7 @@ $$
 $$
 \begin{align}
 \frac{\partial \hat{y}_i}{w_1} &= \sigma(x_{i}^{1} \times w_1 + x_{i}^{2} \times w_2 + x_{i}^{3} \times w_3)(1 - \sigma(x_{i}^{1} \times w_1 + x_{i}^{2} \times w_2 + x_{i}^{3} \times w_3)) \times -x_{i}^{1} \\
-& = \sigma( X_i . [W])(1 - \sigma( X_i . [W])) \times (-1) \times x_{i}^{1} \label{ref14} \tag{4}\\
+& = \sigma( X_i . [W])(1 - \sigma( X_i . [W])) \times -x_{i}^{1} \label{ref14} \tag{4}\\
 \end{align}
 $$
 
