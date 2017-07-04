@@ -64,42 +64,9 @@ Let \\( l_1 \\) be output of layer 1. In matrix format, \\([l_1]_{\scriptscripts
 
 
 
-Input **X** now is a matrix \\( [X]{\scriptscriptstyle 4 \times 3} \\). So, we now have **4** examples, each of which is vector with **3** components. \\(x_{i}^{j}\\) is \\(j^{th}\\) component of \\(i^{th}\\) sample. So 
-
-$$
-\begin{equation}
-     X=\begin{bmatrix}
-     	x_{1}^{1} & x_{1}^{2} & x_{1}^{3} \\
-     	x_{2}^{1} & x_{2}^{2} & x_{2}^{3} \\
-     	x_{3}^{1} & x_{3}^{2} & x_{3}^{3} \\
-     	x_{4}^{1} & x_{4}^{2} & x_{4}^{3} \\
-         \end{bmatrix}
-\end{equation}
-$$
 
 
-\\(\vec{y}\\) is a vector. 
 
-$$
-\begin{equation}
-     y=\begin{bmatrix}
-         y_{1} \\
-         y_{2} \\
-         y_{3} \\
-         y_{4} \\
-         \end{bmatrix}
-\end{equation}
-$$
-
-\\(y_i\\) = True label for \\(i^{th}\\) example.
-
-Likewise, \\(\vec{\hat{y}}\\) is a vector where 
-
-\\(\hat{y}_i\\) = predicted label for \\(i^{th}\\) example. Value of \\(\hat{y}_i\\) is computed using \eqref{ref30}:
-
-$$ 
-\hat{y}_i = \frac{1}{1+e^{-(x_{i}^{1} \times w_1 + x_{i}^{2} \times w_2 + x_{i}^{3} \times w_3)}} \label{ref30} \tag{1} 
-$$
 
 ##### Loss
 
