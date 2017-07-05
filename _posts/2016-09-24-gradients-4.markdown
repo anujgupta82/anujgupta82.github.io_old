@@ -153,7 +153,11 @@ $$
 \end{align}
 $$
 
+Let,  
 
+\begin{align}
+\Delta l_{1} = \Delta l_{2} \times  w_2 \times l_1 \times (1- l_1) \label{ref28} \tag{18} \\
+\end{align}
 
 #### **+ 2 layer network, 1 training example (vector)**
 
