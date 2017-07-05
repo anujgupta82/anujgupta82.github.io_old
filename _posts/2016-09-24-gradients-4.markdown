@@ -89,8 +89,18 @@ $$
 Let,  
 
 \begin{align}
-\Delta l_{1} = (y - \hat{y}) \times \hat{y} \times (1- \hat{y}) \label{ref17} \tag{8} \\
+\Delta l_{2} = (y - \hat{y}) \times \hat{y} \times (1- \hat{y}) \label{ref17} \tag{8} \\
 \end{align}
+
+Then, eq \eqref{ref16} reduces to:   
+$$ 
+\begin{align}
+\frac{\partial L}{\partial W} &= \Delta l_{1} \times x \\
+& = \Delta l_{2} * l_1 \\
+& = [l_1^{T}] . \Delta l_{2} \label{ref6} \tag{6} \\
+\end{align}
+$$
+
 
 #### **+ 2 layer network, 1 training example (vector)**
 
