@@ -241,8 +241,8 @@ Let \\( l_1 \\) be output of layer 1 (hidden layer in this case) . In matrix for
 
 $$
 \begin{align}
-l_1 & = \sigma ([X] . [W_1]) \\
-& = \frac{1}{1 + e^{-[X] . [W_1]}} 
+l_1 & = \sigma ([X] . [W_1]) \label{ref31} \tag{31} \\
+& = \frac{1}{1 + e^{-[X] . [W_1]}} \label{ref32} \tag{32} 
 \end{align}
 $$
 
@@ -250,8 +250,8 @@ $$
 
 $$
 \begin{align}
-l_1^1 = \frac{1}{1 + e^{-(x^1 \times w_1^11 + x^2 \times w_1^21 + x^3 \times w_1^31)}} \\
-l_1^2 = \frac{1}{1 + e^{-(x^1 \times w_1^12 + x^2 \times w_1^22 + x^3 \times w_1^32)}} \\
+l_1^1 = \frac{1}{1 + e^{-(x^1 \times w_1^11 + x^2 \times w_1^21 + x^3 \times w_1^31)}} \label{ref33} \tag{33} \\
+l_1^2 = \frac{1}{1 + e^{-(x^1 \times w_1^12 + x^2 \times w_1^22 + x^3 \times w_1^32)}} \label{ref34} \tag{34} \\
 \end{align}
 $$
 
