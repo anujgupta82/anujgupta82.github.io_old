@@ -262,7 +262,7 @@ $$
 \begin{equation}
      l_1=\begin{bmatrix}
          l_{1}^{1} \\
-         l_{1x}^{2} \\
+         l_{1}^{2} \\
          \end{bmatrix}
 \end{equation}
 $$
@@ -274,7 +274,7 @@ l_1^2 = \frac{1}{1 + e^{-(x^1 \times w_1^12 + x^2 \times w_1^22 + x^3 \times w_1
 \end{align}
 $$
 
-\\( \hat{y} \\) is output of layer 2 as well as predicted output. In matrix format, \\([\hat{y}]_{\scriptscriptstyle 1\times 1}\\)
+\\( \hat{y} \\) is output of layer 2 (\\(l_2\\)) as well as predicted output. In matrix format, \\([\hat{y}]_{\scriptscriptstyle 1\times 1}\\)
 
 $$
 \begin{align}
@@ -283,7 +283,6 @@ $$
 & = \frac{1}{1 + e^{-(l_1^1 W_2^1 + l_1^2 W_2^2)}}
 \end{align}
 $$
-
 
 ##### **Loss**
 Like before, we will use half of squared error loss. $$ L  = \frac{1}{2} (y - \hat{y})^{2} $$
