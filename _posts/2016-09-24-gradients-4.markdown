@@ -246,7 +246,14 @@ l_1 & = \sigma ([X] . [W_1]) \\
 \end{align}
 $$
 
-\\( l_1 \\) has 2 components - \\( l_1^1 \\) and \\( l_1^2 \\), given by
+\\( l_1 \\) has 2 components - \\( l_1^1 \\) and \\( l_1^2 \\), given by:
+
+$$
+\begin{align}
+l_1^1 = \frac{1}{1 + e^{-(x^1 \times w_1^1 + x^2 \times w_1^2 + x^3 \times w_1^3)}} \\
+l_1^2 = \frac{1}{1 + e^{-(x^1 \times w_1^1 + x^2 \times w_1^2 + x^3 \times w_1^3)}} \\
+\end{align}
+$$
 
 ##### **Loss**
 Like before, we will use half of squared error loss. $$ L  = \frac{1}{2} (y - \hat{y})^{2} $$
