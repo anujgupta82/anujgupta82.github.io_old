@@ -146,7 +146,8 @@ $$
 \begin{align}
 \frac{\partial L}{\partial w_{1}^{1}} & = \big(-(y - \hat{y}) \big) \times 
 
-
+\end{align}
+$$
 
 
 
