@@ -136,15 +136,16 @@ $$
 & = \hat{y} \times (1- \hat{y}) * -w_2 \dots && \text{using \eqref{ref11}} \label{ref24} \tag{14}\\
 
 \frac{\partial l_1}{\partial w_1^1} &= \big{(} \frac{1}{1 + e^{-[X] . [W_1]}} \big{)} \times \big{(}1- \frac{1}{1 + e^{-[X] . [W_1]}} \big{)} * -x_1 \label{ref25} \tag{15}\\
+& = l_1 \times (1- l_1) * -x_1 \dots && \text{using \eqref{ref11}} \label{ref26} \tag{16}\\
 
 \end{align}
 $$
 
-Combining, eq \eqref{ref22}, \eqref{ref24} and \eqref{ref25}:  
+Combining, eq \eqref{ref22}, \eqref{ref24} and \eqref{ref26}:  
 
 $$
 \begin{align}
-\frac{\partial L}{\partial w_{1}^{1}} & = \big(-(y - \hat{y}) \big) \times 
+\frac{\partial L}{\partial w_{1}^{1}} & = \big(-(y - \hat{y}) \big) \times \big( \hat{y} \times (1- \hat{y}) * -w_2 \big) \times 
 
 \end{align}
 $$
