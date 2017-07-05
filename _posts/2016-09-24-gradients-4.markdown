@@ -65,7 +65,7 @@ Like before, we will use half of squared error loss. $$ L  = \frac{1}{2} (y - \h
 There are 2 set of gradients: \\(\nabla_{W_1} L\\) and \\(\nabla_{W_2} L\\). Let us first compute \\(\nabla_{W_2} L\\)
 
 
-**\\[(\nabla_{W_2} L]_{\scriptscriptstyle 1\times 1}\\)**
+**\\([\nabla_{W_2} L]_{\scriptscriptstyle 1\times 1}\\)**
 
 $$
 \begin{align}
@@ -101,7 +101,7 @@ $$
 \end{align}
 $$
 
-**\\[(\nabla_{W_1} L]_{\scriptscriptstyle 3\times 1}\\)**
+**\\([\nabla_{W_1} L]_{\scriptscriptstyle 3\times 1}\\)**
 
 
 #### **+ 2 layer network, 1 training example (vector)**
