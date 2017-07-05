@@ -240,24 +240,12 @@ Thus, in matrix form x,y are $$[X]_{\scriptscriptstyle 1\times 3}$$ and $$[y]_{\
 Let \\( l_1 \\) be output of layer 1 (hidden layer in this case) . In matrix format, \\([l_1]_{\scriptscriptstyle 1\times 1}\\)
 
 $$
-\begin{equation}
-l_1 &= \sigma ([X] . [W_1]) \label{ref30} \tag{30} \\
-& = \frac{1}{1 + e^{-[X] . [W_1]}} \label{ref30} \tag{31} \\
-\end{equation}
-$$
-
-\\( l_1 \\) has 2 components -  \\( l_1^1 \\) and \\( l_1^2 \\), given by
-
-$$
 \begin{align}
-l_1 = \frac{1}{1 + e^{-(x^1 \times w_1^1 + x^2 \times w_1^2 + x^3 \times w_1^3)}} \label{ref31} \tag{32} 
+l_1 & = \sigma ([X] . [W_1]) \label{ref0} \tag{0} \\
+& = \frac{1}{1 + e^{-[X] . [W_1]}} \label{ref10} \tag{1} \\
+& = \frac{1}{1 + e^{-(x^1 \times w_1^1 + x^2 \times w_1^2 + x^3 \times w_1^3)}} \label{ref101} \tag{1.1} 
 \end{align}
 $$
-
-
-\\( \hat{y} \\) is predicted output. In matrix format, \\([\hat{y}]_{\scriptscriptstyle 1\times 1}\\)
-\\( \hat{y} = \sigma ([l_1] . [W_2]) = \frac{1}{1 + e^{-[l_1] . [W_2]}} \label{ref11} \tag{2} \\)
-
 
 ##### **Loss**
 Like before, we will use half of squared error loss. $$ L  = \frac{1}{2} (y - \hat{y})^{2} $$
