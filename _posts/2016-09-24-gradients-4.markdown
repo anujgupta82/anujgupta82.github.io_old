@@ -246,7 +246,7 @@ l_1 & = \sigma ([X] . [W_1]) \\
 \end{align}
 $$
 
-
+\\( l_1 \\) has 2 components - \\( l_1^1 \\) and \\( l_1^2 \\), given by
 
 ##### **Loss**
 Like before, we will use half of squared error loss. $$ L  = \frac{1}{2} (y - \hat{y})^{2} $$
