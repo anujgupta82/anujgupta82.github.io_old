@@ -72,8 +72,17 @@ $$
 \frac{\partial L}{\partial W_2} & = \frac{\partial L}{\partial \hat{y}} \times \frac{\partial \hat{y}}{\partial W_2} \label{ref12} \tag{3}\\
 \frac{\partial L}{\partial \hat{y}} &= \frac{1}{2} \times 2 \times (y - \hat{y})^{1} \times (-1) \label{ref13} \tag{4}\\
 \frac{\partial \hat{y}}{\partial W_2} &= \big{(} \frac{1}{1 + e^{-[l_1] . [W_2]}} \big{)} \times \big{(}1- \frac{1}{1 + e^{-[l_1] . [W_2]}} \big{)} * -l_1 \\
-& = \sigma ([l_1] . [W_2]) \times (1- \sigma ([l_1] . [W_2])) * -l_1 \dots && \text{using \eqref{ref0}} \label{ref14} \tag{5}\\
-& = \hat{y} \times (1- \hat{y}) * -l_1 \dots && \text{using \eqref{ref0}} \label{ref15} \tag{6}\\
+& = \sigma ([l_1] . [W_2]) \times (1- \sigma ([l_1] . [W_2])) * -l_1 \dots && \text{using \eqref{ref11}} \label{ref14} \tag{5}\\
+& = \hat{y} \times (1- \hat{y}) * -l_1 \dots && \text{using \eqref{ref11}} \label{ref15} \tag{6}\\
+\end{align}
+$$
+
+Substituting \eqref{ref13} & \eqref{ref15} in \eqref{ref12}, we get 
+
+$$
+\begin{align}
+\frac{\partial L}{\partial W_2} &= \big{(} (-1) \times (y - \hat{y}) \big{)} \times \big{(} \hat{y} \times (1- \hat{y}) \times -l_1 \big{)}\\ \\
+&= (y - \hat{y}) \times \hat{y} \times (1- \hat{y}) \times l_1 \label{ref16} \tag{7} \\
 \end{align}
 $$
 
