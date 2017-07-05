@@ -148,7 +148,7 @@ $$
 \frac{\partial L}{\partial w_{1}^{1}} & = \big(-(y - \hat{y}) \big) \times \big( \hat{y} \times (1- \hat{y}) * -w_2 \big) \times  \big( l_1 \times (1- l_1) * -x^1 \big) \\
 & = \big((y - \hat{y})\hat{y}(1- \hat{y}) * w_2 \big) \times  \big( l_1 \times (1- l_1) * -x^1 \big) \\
 
-& = \big( \Delta l_{2} \times  w_2 \times l_1 \times (1- l_1) \big) \times -x^1  \dots && \text{using \eqref{ref17}} \label{ref27} \tag{17}\\
+& = \big(- \Delta l_{2} \times  w_2 \times l_1 \times (1- l_1) \big) \times x^1  \dots && \text{using \eqref{ref17}} \label{ref27} \tag{17}\\
 
 \end{align}
 $$
