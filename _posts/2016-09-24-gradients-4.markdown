@@ -266,7 +266,6 @@ l_1^2 = \frac{1}{1 + e^{-(x^1 \times w_1^12 + x^2 \times w_1^22 + x^3 \times w_1
 $$
 
 \\( \hat{y} \\) is output of layer 2 as well as predicted output. In matrix format, \\([\hat{y}]_{\scriptscriptstyle 1\times 1}\\)
-\\( \hat{y} = \sigma ([l_1] . [W_2]) = \frac{1}{1 + e^{-[l_1] . [W_2]}} \label{ref35} \tag{35} \\)
 
 $$
 \begin{align}
