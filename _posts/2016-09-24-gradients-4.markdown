@@ -103,6 +103,20 @@ $$
 
 **\\([\nabla_{W_1} L]_{\scriptscriptstyle 3\times 1}\\)**
 
+Now let us compute \\(\nabla_{W_1} L\\)
+
+$$
+\begin{equation}
+\nabla_{W_1} L = \frac{\partial L}{\partial W_1} \\
+\nabla_{W} L = \begin{bmatrix}
+     \frac{\partial L}{\partial w_{1}^{1}} \\
+     \frac{\partial L}{\partial w_{1}^{2}} \\
+     \frac{\partial L}{\partial w_{1}^{3}} \\
+     \end{bmatrix}
+\label{ref11} \tag{1}
+\end{equation} 
+$$
+
 
 #### **+ 2 layer network, 1 training example (vector)**
 
