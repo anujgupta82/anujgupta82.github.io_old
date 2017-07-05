@@ -219,6 +219,26 @@ $$
 \end{equation}
 $$
 
+Second layer (\\(l_2\\)) has weight matrix $$[W_2]_{\scriptscriptstyle 32\times 1}$$
+$$
+\begin{equation}
+     W_2=\begin{bmatrix}
+         w_{2}^{1} \\
+         w_{2}^{2} \\
+         \end{bmatrix}
+\end{equation}
+$$
+
+##### **Input & Output definitions**
+
+Exactly same as previous setting. Input is \\((\vec{X},y)\\) : \\(\vec{X}\\) is a vector, while y is a scalar. 
+
+\\(X = [x^1 ~~x^2 ~~x^3]\\)     &nbsp; &nbsp; &nbsp; \\(x^i = i^{th}\\) component of \\(\vec{X}\\).
+
+Thus, in matrix form x,y are $$[X]_{\scriptscriptstyle 1\times 3}$$ and $$[y]_{\scriptscriptstyle 1\times 1}$$.
+
+Let \\( l_1 \\) be output of layer 1. In matrix format, \\([l_1]_{\scriptscriptstyle 1\times 1}\\)
+
 
 #### **+ 2 layer network, 1 training example (vector)**
 
