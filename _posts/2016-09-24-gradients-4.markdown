@@ -146,9 +146,9 @@ Combining, eq \eqref{ref22}, \eqref{ref24} and \eqref{ref26}:
 $$
 \begin{align}
 \frac{\partial L}{\partial w_{1}^{1}} & = \big(-(y - \hat{y}) \big) \times \big( \hat{y} \times (1- \hat{y}) * -w_2 \big) \times  \big( l_1 \times (1- l_1) * -x_1 \big) \\
-& = \big((y - \hat{y})\hat{y}(1- \hat{y}) * w_2 \big) \times  \big( l_1 \times (1- l_1) * -x_1 \big)
+& = \big((y - \hat{y})\hat{y}(1- \hat{y}) * w_2 \big) \times  \big( l_1 \times (1- l_1) * -x_1 \big) \\
 
-& = \Delta l_{2} \times \big( w_2 \times l_1 \times (1- l_1) \times -x_1 \big) \dots && \text{using \eqref{ref17}} \label{ref27} \tag{17}\\
+& = \big( \Delta l_{2} \times  w_2 \times l_1 \times (1- l_1) \big) \times -x_1  \dots && \text{using \eqref{ref17}} \label{ref27} \tag{17}\\
 
 \end{align}
 $$
