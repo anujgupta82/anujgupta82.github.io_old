@@ -97,7 +97,7 @@ $$
 \begin{align}
 \frac{\partial L}{\partial W} &= \Delta l_{2} \times l_1 \\
 & = \Delta l_{2} * l_1 \\
-& = [l_1^{T}] . \Delta l_{2} \label{ref6} \tag{9} \\
+& = [l_1^{T}] . \Delta l_{2} \label{ref18} \tag{9} \\
 \end{align}
 $$
 
@@ -108,16 +108,26 @@ Now let us compute \\(\nabla_{W_1} L\\)
 $$
 \begin{equation}
 \nabla_{W_1} L = \frac{\partial L}{\partial W_1} \\
-\nabla_{W} L = \begin{bmatrix}
+\nabla_{W_1} L = \begin{bmatrix}
      \frac{\partial L}{\partial w_{1}^{1}} \\
      \frac{\partial L}{\partial w_{1}^{2}} \\
      \frac{\partial L}{\partial w_{1}^{3}} \\
      \end{bmatrix}
-\label{ref31} \tag{10}
+\label{ref20} \tag{10}
 \end{equation} 
 $$
 
 First, lets compute only \\( \frac{\partial L}{\partial w_{1}^{1}} \\)
+
+$$
+\begin{align}
+\frac{\partial L}{\partial w_{1}^{1}} & = \frac{\partial L}{\partial \hat{y}} \times \frac{\partial \hat{y}}{\partial l_1} \times \frac{\partial \hat{l_1}}{\partial w_1^1} \label{ref21} \tag{11}\\
+\frac{\partial L}{\partial \hat{y}} &= \frac{1}{2} \times 2 \times (y - \hat{y})^{1} \times (-1) \label{ref22} \tag{12}\\
+\frac{\partial \hat{y}}{\partial W_2} &= \big{(} \frac{1}{1 + e^{-[l_1] . [W_2]}} \big{)} \times \big{(}1- \frac{1}{1 + e^{-[l_1] . [W_2]}} \big{)} * -l_1 \\
+& = \sigma ([l_1] . [W_2]) \times (1- \sigma ([l_1] . [W_2])) * -l_1 \dots && \text{using \eqref{ref11}} \label{ref14} \tag{5}\\
+& = \hat{y} \times (1- \hat{y}) * -l_1 \dots && \text{using \eqref{ref11}} \label{ref15} \tag{6}\\
+\end{align}
+$$
 
 
 #### **+ 2 layer network, 1 training example (vector)**
