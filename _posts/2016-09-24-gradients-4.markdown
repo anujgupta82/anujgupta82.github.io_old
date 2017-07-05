@@ -241,7 +241,7 @@ Let \\( l_1 \\) be output of layer 1 (hidden layer in this case) . In matrix for
 
 $$
 \begin{align}
-l_1 & = \sigma ([X] . [W_1]) \label{ref30} \tag{30} \\
+l_1 &= \sigma ([X] . [W_1]) \label{ref30} \tag{30} \\
 & = \frac{1}{1 + e^{-[X] . [W_1]}} \label{ref30} \tag{31} \\
 \end{align}
 $$
