@@ -12,6 +12,8 @@ mathjax: true
 
 In this post we will consider 2 type of networks. In first network, hidden layer has only 1 node while in second network hideen layer has more than 1 node. Lets start with the case of hidden layer with only 1 node.
 
+#### **+ 1 hidden layer with 1 node **
+
 
 <div class="imgcap">
 <img src="/assets/gradients/NN_4_1.jpeg" height="300" width="350">
@@ -198,12 +200,8 @@ $$
 \end{align}
 $$
 
+#### **+ 1 hidden layer with > 1 nodes **
 
-#### **+ 2 layer network, 1 training example (vector)**
-
-
-
-#### **+ 2 layer network, multiple training examples (vector)**
 
 
 <!---
