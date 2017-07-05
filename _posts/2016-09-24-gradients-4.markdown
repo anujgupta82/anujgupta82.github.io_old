@@ -189,7 +189,7 @@ $$
 $$
 
 $$
-\frac{\partial L}{\partial W_1} = \left[ \begin{array}{c} x^1 \\ x^2 \\ x^3 \end{array} \right]. \left[ \Delta l_{1} \right]
+\frac{\partial L}{\partial W_1} = \left[ \begin{array}{c} x^1 \\ x^2 \\ x^3 \end{array} \right]_{\scriptscriptstyle 3 \times 1}. \left[ \Delta l_{1} \right]_{\scriptscriptstyle 1 \times 1}
 $$
 
 $$ 
