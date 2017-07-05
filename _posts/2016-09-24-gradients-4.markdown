@@ -202,6 +202,29 @@ $$
 
 #### **+ 1 hidden layer with > 1 nodes **
 
+<div class="imgcap">
+<img src="/assets/gradients/NN_4_2.jpeg" height="300" width="350">
+<div class="thecap">Neural net with 2 layer, 2 nodes in hidden layer. Input is a vector</div>
+</div>
+
+First layer (\\(l_1\\)) has weight matrix $$[W_1]_{\scriptscriptstyle 3 \times 2}$$
+$$
+\begin{equation}
+     W_1=\begin{bmatrix}
+        w_{1}^{11} & w_{1}^{12} \\
+        w_{1}^{21} & w_{1}^{22} \\
+        w_{1}^{31} & w_{1}^{32} \\
+        
+      \end{bmatrix}
+\end{equation}
+$$
+
+
+#### **+ 2 layer network, 1 training example (vector)**
+
+
+
+#### **+ 2 layer network, multiple training examples (vector)**
 
 
 <!---
