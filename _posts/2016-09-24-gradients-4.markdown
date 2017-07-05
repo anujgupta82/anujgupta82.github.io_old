@@ -160,13 +160,14 @@ Let,
 \end{align}
 
 Then, eq \eqref{ref27} reduces to :
+
 $$
 \begin{align}
 \frac{\partial L}{\partial w_{1}^{1}} & = \Delta l_{1} \times -x^1 \\
 \end{align}
 $$
 
-Likewise, 
+Likewise, \\
 $$
 \begin{align}
 \frac{\partial L}{\partial w_{1}^{2}} & = \Delta l_{1} \times -x^2 \\
