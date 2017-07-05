@@ -287,6 +287,9 @@ $$
 ##### **Loss**
 Like before, we will use half of squared error loss. $$ L  = \frac{1}{2} (y - \hat{y})^{2} $$
 
+##### **Gradients**
+
+There are 2 set of gradients: \\(\nabla_{W_1} L\\) and \\(\nabla_{W_2} L\\). Let us first compute \\(\nabla_{W_2} L\\)
 
 
 #### **+ 2 layer network, 1 training example (vector)**
