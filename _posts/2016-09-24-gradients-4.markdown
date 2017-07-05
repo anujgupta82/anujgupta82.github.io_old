@@ -140,7 +140,12 @@ $$
 \end{align}
 $$
 
-Combining, eq \eqref{ref22}, \eqref{ref23} and \eqref{ref25}:  
+Combining, eq \eqref{ref22}, \eqref{ref24} and \eqref{ref25}:  
+
+$$
+\begin{align}
+\frac{\partial L}{\partial w_{1}^{1}} & = \big(-(y - \hat{y}) \big) \times 
+
 
 
 
