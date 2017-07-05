@@ -241,10 +241,20 @@ Let \\( l_1 \\) be output of layer 1 (hidden layer in this case) . In matrix for
 
 $$
 \begin{align}
-l_1 & = \sigma ([X] . [W_1]) \label{ref31} \tag{31} \\
-& = \frac{1}{1 + e^{-[X] . [W_1]}}
+l_1 & = \sigma ([X] . [W_1]) 
+& = \frac{1}{1 + e^{-[X] . [W_1]}} \label{ref32} \tag{32} \\
 \end{align}
 $$
+
+<!--
+$$
+\begin{align}
+l_1 & = \sigma ([X] . [W_1]) \label{ref0} \tag{0} \\
+& = \frac{1}{1 + e^{-[X] . [W_1]}} \label{ref10} \tag{1} \\
+& = \frac{1}{1 + e^{-(x^1 \times w_1^1 + x^2 \times w_1^2 + x^3 \times w_1^3)}} \label{ref101} \tag{1.1} 
+\end{align}
+$$
+-->
 
 \\( l_1 \\) has 2 components - \\( l_1^1 \\) and \\( l_1^2 \\), given by:
 
