@@ -86,6 +86,12 @@ $$
 \end{align}
 $$
 
+Let,  
+
+\begin{align}
+\Delta l_{1} = (y - \hat{y}) \times \hat{y} \times (1- \hat{y}) \label{ref17} \tag{8} \\
+\end{align}
+
 #### **+ 2 layer network, 1 training example (vector)**
 
 
