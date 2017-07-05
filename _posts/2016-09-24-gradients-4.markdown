@@ -250,9 +250,7 @@ Testing this nonsense:
 
 $$
 \begin{align}
-a &= \sigma ([X] . [W_1]) \label{ref01} \tag{100} \\
-& = \frac{1}{1 + e^{-[X] . [W_1]}} \label{ref101} \tag{101} \\
-& = \frac{1}{} \label{ref102} \tag{102} 
+a &= \sigma ([X] . [W_1]) \label{ref100} \tag{100} \\
 \end{align}
 $$
 
