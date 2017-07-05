@@ -282,7 +282,7 @@ $$
 \begin{align}
 \hat{y} & = \sigma ([l_1] . [W_2]) \label{ref135} \tag{35} \\
 & = \frac{1}{1 + e^{-[l_1] . [W_2]}} \label{ref136} \tag{36} \\
-& = \frac{1}{1 + e^{-(l_1^1 W_2^1 + l_1^2 W_2^2)}}
+& = \frac{1}{1 + e^{-(l_1^1 W_2^1 + l_1^2 W_2^2)}} \label{ref137} \tag{37} \\
 \end{align}
 $$
 
