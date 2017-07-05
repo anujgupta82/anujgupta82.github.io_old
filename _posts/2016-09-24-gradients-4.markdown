@@ -271,8 +271,8 @@ $$
 
 $$
 \begin{align}
-l_1^1 = \frac{1}{1 + e^{-(x^1 \times w_1^11 + x^2 \times w_1^21 + x^3 \times w_1^31)}} \label{ref33} \tag{33} \\
-l_1^2 = \frac{1}{1 + e^{-(x^1 \times w_1^12 + x^2 \times w_1^22 + x^3 \times w_1^32)}} \label{ref34} \tag{34} \\
+l_1^1 = \frac{1}{1 + e^{-(x^1 \times w_1^{11} + x^2 \times w_1^{21} + x^3 \times w_1^{31})}} \label{ref33} \tag{33} \\
+l_1^2 = \frac{1}{1 + e^{-(x^1 \times w_1^{12} + x^2 \times w_1^{22} + x^3 \times w_1^{32})}} \label{ref34} \tag{34} \\
 \end{align}
 $$
 
