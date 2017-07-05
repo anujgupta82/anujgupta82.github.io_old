@@ -97,7 +97,7 @@ $$
 \begin{align}
 \frac{\partial L}{\partial W} &= \Delta l_{2} \times l_1 \\
 & = \Delta l_{2} * l_1 \\
-& = [l_1^{T}] . \Delta l_{2} \label{ref6} \tag{6} \\
+& = [l_1^{T}] . \Delta l_{2} \label{ref6} \tag{9} \\
 \end{align}
 $$
 
