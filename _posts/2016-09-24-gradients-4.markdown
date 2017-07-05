@@ -102,7 +102,7 @@ Let,
 Then, eq \eqref{ref16} reduces to:   
 $$ 
 \begin{align}
-\frac{\partial L}{\partial W} &= \Delta l_{2} \times l_1 \\
+\frac{\partial L}{\partial W_2} &= \Delta l_{2} \times l_1 \\
 & = \Delta l_{2} * l_1 \\
 & = [l_1^{T}] . \Delta l_{2} \label{ref18} \tag{9} \\
 \end{align}
@@ -175,7 +175,7 @@ $$
 \end{align}
 $$
 
-
+Using eq \eqref{ref29}, \eqref{ref30}  and \eqref{ref31}  in \eqref{ref20} 
 
 
 #### **+ 2 layer network, 1 training example (vector)**
