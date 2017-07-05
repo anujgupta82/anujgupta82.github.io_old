@@ -49,12 +49,11 @@ Thus, in matrix form x,y are $$[X]_{\scriptscriptstyle 1\times 3}$$ and $$[y]_{\
 
 Let \\( l_1 \\) be output of layer 1. In matrix format, \\([l_1]_{\scriptscriptstyle 1\times 1}\\)
 
-
 $$
 \begin{align}
-l_1 & = \sigma ([X] . [W_1]) \label{ref0} \tag{0} \\)\\
+l_1 & = \sigma ([X] . [W_1]) \label{ref0} \tag{0} \\
 & = \frac{1}{1 + e^{-[X] . [W_1]}} \label{ref10} \tag{1} \\
-& = \frac{1}{1 + e^{-(x^1 \times w_1^1 + x^2 \times w_1^2 + x^3 \times w_1^3)}}
+& = \frac{1}{1 + e^{-(x^1 \times w_1^1 + x^2 \times w_1^2 + x^3 \times w_1^3)}} \label{ref101} \tag{1.1} 
 \end{align}
 $$
 
