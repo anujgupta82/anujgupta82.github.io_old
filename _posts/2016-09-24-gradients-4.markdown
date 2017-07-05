@@ -306,7 +306,7 @@ $$
 \end{equation} 
 $$
 
-Lets, first compute \frac{\partial L}{\partial w_{2}^{1}}
+Lets, first compute \\(\frac{\partial L}{\partial w_{2}^{1}}\\)
 $$
 \begin{align}
 \frac{\partial L}{\partial W_2} & = \frac{\partial L}{\partial \hat{y}} \times \frac{\partial \hat{y}}{\partial W_2} \label{ref41} \tag{41}\\
