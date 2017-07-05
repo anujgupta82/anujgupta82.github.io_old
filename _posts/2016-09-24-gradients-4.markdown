@@ -240,10 +240,10 @@ Thus, in matrix form x,y are $$[X]_{\scriptscriptstyle 1\times 3}$$ and $$[y]_{\
 Let \\( l_1 \\) be output of layer 1 (hidden layer in this case) . In matrix format, \\([l_1]_{\scriptscriptstyle 1\times 1}\\)
 
 $$
-\begin{align}
+\begin{equation}
 l_1 &= \sigma ([X] . [W_1]) \label{ref30} \tag{30} \\
 & = \frac{1}{1 + e^{-[X] . [W_1]}} \label{ref30} \tag{31} \\
-\end{align}
+\end{equation}
 $$
 
 \\( l_1 \\) has 2 components -  \\( l_1^1 \\) and \\( l_1^2 \\), given by
