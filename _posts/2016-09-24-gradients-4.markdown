@@ -271,8 +271,8 @@ $$
 
 $$
 \begin{align}
-l_1^1 = \frac{1}{1 + e^{-(x^1 \times w_1^{11} + x^2 \times w_1^{21} + x^3 \times w_1^{31})}} \label{ref33} \tag{33} \\
-l_1^2 = \frac{1}{1 + e^{-(x^1 \times w_1^{12} + x^2 \times w_1^{22} + x^3 \times w_1^{32})}} \label{ref34} \tag{34} \\
+l_1^1 = \frac{1}{1 + e^{-(x^1 \times w_1^{11} + x^2 \times w_1^{21} + x^3 \times w_1^{31})}} \label{ref133} \tag{33} \\
+l_1^2 = \frac{1}{1 + e^{-(x^1 \times w_1^{12} + x^2 \times w_1^{22} + x^3 \times w_1^{32})}} \label{ref134} \tag{34} \\
 \end{align}
 $$
 
@@ -280,8 +280,8 @@ $$
 
 $$
 \begin{align}
-\hat{y} & = \sigma ([l_1] . [W_2]) \\
-& = \frac{1}{1 + e^{-[l_1] . [W_2]}} \\
+\hat{y} & = \sigma ([l_1] . [W_2]) \label{ref135} \tag{35} \\
+& = \frac{1}{1 + e^{-[l_1] . [W_2]}} \label{ref136} \tag{36} \\
 & = \frac{1}{1 + e^{-(l_1^1 W_2^1 + l_1^2 W_2^2)}}
 \end{align}
 $$
