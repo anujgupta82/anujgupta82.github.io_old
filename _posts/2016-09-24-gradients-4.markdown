@@ -177,6 +177,18 @@ $$
 
 Using eq \eqref{ref29}, \eqref{ref30}  and \eqref{ref31}  in \eqref{ref20} 
 
+$$
+\begin{equation}
+
+\nabla_{W_1} L = \begin{bmatrix}
+     \Delta l_{1} \times x^1 \\
+     \Delta l_{1} \times x^2 \\
+     \Delta l_{1} \times x^3 \\
+     \end{bmatrix}
+\label{ref32} \tag{22}
+\end{equation} 
+$$
+
 
 #### **+ 2 layer network, 1 training example (vector)**
 
