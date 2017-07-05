@@ -52,8 +52,8 @@ Let \\( l_1 \\) be output of layer 1. In matrix format, \\([l_1]_{\scriptscripts
 
 $$
 \begin{align}
-l_1 & = \sigma ([X] . [W_1])
-& = \frac{1}{1 + e^{-[X] . [W_1]}}
+l_1 & = \sigma ([X] . [W_1]) \\
+& = \frac{1}{1 + e^{-[X] . [W_1]}} \\
 & = \frac{1}{1 + e^{-(x^1 \times w_1^1 + x^2 \times w_1^2 + x^3 \times w_1^3)}}
 \end{align}
 $$
@@ -136,7 +136,7 @@ $$
 & = \sigma ([l_1] . [W_2]) \times (1- \sigma ([l_1] . [W_2])) * -w_2 \dots && \text{using \eqref{ref111}} \label{ref23} \tag{13}\\
 & = \hat{y} \times (1- \hat{y}) * -w_2 \dots && \text{using \eqref{ref11}} \label{ref24} \tag{14}\\
 
-\frac{\partial l_1}{\partial w_1^1} &= \big{(} \frac{1}{1 + e^{-[X] . [W_1]}} \big{)} \times \big{(}1- \frac{1}{1 + e^{-[X] . [W_1]}} \big{)} * -l_1 \\
+\frac{\partial l_1}{\partial w_1^1} &= \big{(} \frac{1}{1 + e^{-[X] . [W_1]}} \big{)} \times \big{(}1- \frac{1}{1 + e^{-[X] . [W_1]}} \big{)} * -x_1 \\
 
 \end{align}
 $$
