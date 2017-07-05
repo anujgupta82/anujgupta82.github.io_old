@@ -241,17 +241,12 @@ Let \\( l_1 \\) be output of layer 1 (hidden layer in this case) . In matrix for
 
 $$
 \begin{align}
-l_1 & = \sigma ([X] . [W_1]) \label{ref31} \tag{31} \\
+l_1 & = \sigma ([X] . [W_1]) \label{ref130} \tag{30} \\
+& = \frac{1}{1 + e^{-[X] . [W_1]}} \label{ref131} \tag{31} \\
 \end{align}
 $$
 
-Testing this nonsense:
 
-$$
-\begin{align}
-l_1 &= \sigma ([X] . [W_{1}]) \label{ref100} \tag{100} \\
-\end{align}
-$$
 
 <!--
 $$
