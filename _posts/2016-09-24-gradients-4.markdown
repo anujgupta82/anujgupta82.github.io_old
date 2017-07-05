@@ -207,14 +207,14 @@ $$
 <div class="thecap">Neural net with 2 layer, 2 nodes in hidden layer. Input is a vector</div>
 </div>
 
-First layer (\\(l_1\\)) has weight matrix $$[W_1]_{\scriptscriptstyle 3 \times 2}$$
+First layer (\\(l_1\\)) has weight matrix $$[W_1]_{\scriptscriptstyle 3 \times 2}$$:
+
 $$
 \begin{equation}
      W_1=\begin{bmatrix}
         w_{1}^{11} & w_{1}^{12} \\
         w_{1}^{21} & w_{1}^{22} \\
-        w_{1}^{31} & w_{1}^{32} \\
-        
+        w_{1}^{31} & w_{1}^{32} \\  
       \end{bmatrix}
 \end{equation}
 $$
