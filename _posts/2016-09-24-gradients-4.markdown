@@ -250,7 +250,7 @@ Testing this nonsense:
 $$
 \begin{align}
 a &= \sigma ([X] . [W_1]) \label{ref100} \tag{100} \\
-l_1 &= 
+l_1 &= \sigma ([X] . [W_{1}])
 \end{align}
 $$
 
