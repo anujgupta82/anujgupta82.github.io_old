@@ -545,7 +545,7 @@ Using Eq \eqref{ref176} in \eqref{ref175}, we get:
 
 $$
 \begin{align}
-\frac{\partial L}{\partial W_1}_{\scriptscriptstyle 3 \times 2} 
+\left[ \frac{\partial L}{\partial W_1} \right]_{\scriptscriptstyle 3 \times 2} 
 \end{align}
 $$
 
