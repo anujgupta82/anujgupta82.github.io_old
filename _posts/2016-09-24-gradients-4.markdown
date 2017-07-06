@@ -355,7 +355,7 @@ $$
      \Delta l_{1} \times l_1^1 \\
      \Delta l_{1} \times l_1^2 \\
      \end{bmatrix}
-\label{ref47} \tag{47}
+\label{ref48} \tag{48}
 \end{equation} 
 $$
 
