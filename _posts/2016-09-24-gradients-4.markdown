@@ -545,7 +545,7 @@ Using Eq \eqref{ref176} in \eqref{ref175}, we get:
 
 $$
 \begin{align}
-\left[ \frac{\partial L}{\partial W_1} \right]_{\scriptscriptstyle 3 \times 2} = \left[ \begin{array}{c} x^1 \\ x^2 \\ x^3 \end{array} \right]_{\scriptscriptstyle 3 \times 1} . \left[ \Delta l_{1}^{1}  & \Delta l_{1}^{2} \right]_{\scriptscriptstyle 1 \times 2}
+\left[ \frac{\partial L}{\partial W_1} \right]_{\scriptscriptstyle 3 \times 2} = \left[ \begin{array}{c} x^1 \\ x^2 \\ x^3 \end{array} \right]_{\scriptscriptstyle 3 \times 1} . \left[ \Delta l_{1}^{1}     &     \Delta l_{1}^{2} \right]_{\scriptscriptstyle 1 \times 2}
 \end{align}
 $$
 
