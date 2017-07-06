@@ -406,7 +406,10 @@ Using eq \eqref{ref152}, \eqref{ref154} and \eqref{ref156} in eq \eqref{ref151}
 
 $$
 \begin{align}
-\frac{\partial L}{\partial w_1^{11}} & = -(y - \hat{y}) \times \hat{y} \times (1- \hat{y}) * w_2^1 \times (l_1^1) \times (1-l_1^1) \times x^1
+\frac{\partial L}{\partial w_1^{11}} & = -(y - \hat{y}) \times \hat{y} \times (1- \hat{y}) * w_2^1 \times (l_1^1) \times (1-l_1^1) \times x^1 \label{ref157} \tag{57} \\
+\end{align}
+$$
+
 <!--
 $$
 \begin{align}
