@@ -3,7 +3,7 @@ layout: post
 comments: true
 title:  "Gradients - Part 2"
 excerpt: "Part 2 of computing gradients for training Neural Nets"
-date:   2016-09-24 15:40:00
+date:   2016-08-28 15:40:00
 mathjax: true
 ---
 
