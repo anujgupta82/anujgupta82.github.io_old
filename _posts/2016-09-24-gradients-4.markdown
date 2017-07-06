@@ -461,8 +461,8 @@ $$
 & = \sigma ([l_1] . [W_2]) \times (1- \sigma ([l_1] . [W_2])) * -w_2^2 \dots && \text{using \eqref{ref137}} \label{ref165} \tag{65}\\
 & = \hat{y} \times (1- \hat{y}) * -w_2^2 \dots && \text{using \eqref{ref135}} \label{ref166} \tag{66}\\
 
-\frac{\partial l_1^1}{\partial w_1^{11}} &= \big{(} \frac{1}{1 + e^{-(x^1 \times w_1^{11} + x^2 \times w_1^{21} + x^3 \times w_1^{31})}} \big{)} \times \big{(} 1 - \big{(} \frac{1}{1 + e^{-(x^1 \times w_1^{11} + x^2 \times w_1^{21} + x^3 \times w_1^{31})}} \big{)} \big{)} \times -x^1 \dots && \text{using \eqref{ref133}} \label{ref155} \tag{55}\\
-&= (l_1^1) \times (1-l_1^1) \times -x^1 \label{ref156} \tag{56}
+\frac{\partial l_1^2}{\partial w_1^{12}} &= \big{(} \frac{1}{1 + e^{-(x^1 \times w_1^{11} + x^2 \times w_1^{21} + x^3 \times w_1^{31})}} \big{)} \times \big{(} 1 - \big{(} \frac{1}{1 + e^{-(x^1 \times w_1^{11} + x^2 \times w_1^{21} + x^3 \times w_1^{31})}} \big{)} \big{)} \times -x^1 \dots && \text{using \eqref{ref133}} \label{ref167} \tag{67}\\
+&= (l_1^1) \times (1-l_1^1) \times -x^1 \label{ref168} \tag{68}
 \end{align}
 $$
 
