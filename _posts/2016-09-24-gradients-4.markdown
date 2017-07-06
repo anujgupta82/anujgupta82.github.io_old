@@ -476,6 +476,24 @@ Now, using eq \eqref{ref146} in \eqref{ref169}
 
 $$
 \begin{align}
-\frac{\partial L}{\partial w_1^{11}} & = - \Delta l_{2} * w_2^2 \times (l_1^2) \times (1-l_1^2) \times x^1 \label{ref170} \tag{70} \\
+\frac{\partial L}{\partial w_1^{12}} & = - \Delta l_{2} * w_2^2 \times (l_1^2) \times (1-l_1^2) \times x^1 \label{ref170} \tag{70} \\
 \end{align}
 $$
+
+
+Further, let  
+
+$$
+\begin{align}
+\Delta l_{1}^{2} = -\Delta l_{2} * w_2^2 \times (l_1^2) \times (1-l_1^2) \label{ref171} \tag{71} 
+\end{align}
+$$
+
+Then, 
+
+$$
+\begin{align}
+\frac{\partial L}{\partial w_1^{12}} & = \Delta l_{1}^{2} \times x^1 \label{ref172} \tag{72} 
+\end{align}
+$$
+
