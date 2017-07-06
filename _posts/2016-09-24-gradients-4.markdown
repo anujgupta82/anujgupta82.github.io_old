@@ -343,11 +343,11 @@ $$
 Likewise, 
 $$
 \begin{align}
-\frac{\partial L}{\partial w_2^2} & = \Delta l_{2} \times l_1^2 \label{ref46} \tag{46} \\
+\frac{\partial L}{\partial w_2^2} & = \Delta l_{2} \times l_1^2 \label{ref47} \tag{47} \\
 \end{align}
 $$
 
-Using eq \eqref{ref45} and \eqref{ref46}  in \eqref{ref40} 
+Using eq \eqref{ref45} and \eqref{ref47} in \eqref{ref40} 
 
 $$
 \begin{equation}
