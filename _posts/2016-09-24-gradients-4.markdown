@@ -466,3 +466,8 @@ $$
 \end{align}
 $$
 
+$$
+\begin{align}
+\frac{\partial L}{\partial w_1^{12}} & = -(y - \hat{y}) \times \hat{y} \times (1- \hat{y}) * w_2^2 \times (l_1^2) \times (1-l_1^2) \times x^1 \label{ref169} \tag{69}
+\end{align}
+$$
