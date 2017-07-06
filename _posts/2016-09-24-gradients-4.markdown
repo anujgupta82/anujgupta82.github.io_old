@@ -372,7 +372,19 @@ $$
 \end{align}
 $$
 
+**\\([\nabla_{W_1} L]_{\scriptscriptstyle 3\times 2}\\)**
 
+Lets, first compute \\(\frac{\partial L}{\partial w_{1}^{11}}\\):
+
+$$
+\begin{align}
+\frac{\partial L}{\partial w_1^{11}} & = \frac{\partial L}{\partial \hat{y}} \times \frac{\partial \hat{y}}{\partial l_1^1} \times \frac{\partial l_1^1}{\partial w_1^{11}}\label{ref51} \tag{51}\\
+\frac{\partial L}{\partial \hat{y}} &=  -(y - \hat{y})^{1} \label{ref52} \tag{52}\\
+\frac{\partial \hat{y}}{\partial l_1^1} &= \big{(} \frac{1}{1 + e^{-[l_1] . [W_2]}} \big{)} \times \big{(}1- \frac{1}{1 + e^{-[l_1] . [W_2]}} \big{)} * -l_1^1 \\
+& = \sigma ([l_1] . [W_2]) \times (1- \sigma ([l_1] . [W_2])) * -l_1^1 \dots && \text{using \eqref{ref31}} \label{ref53} \tag{53}\\
+& = \hat{y} \times (1- \hat{y}) * -l_1^1 \dots && \text{using \eqref{ref30}} \label{ref54} \tag{54}\\
+\end{align}
+$$
 <!--
 $$
 \begin{align}
