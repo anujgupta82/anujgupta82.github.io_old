@@ -200,7 +200,7 @@ $$
 \end{align}
 $$
 
-#### **+ 1 hidden layer with > 1 nodes**
+#### **1 hidden layer with \\(\geq\\) 2  nodes**
 
 <div class="imgcap">
 <img src="/assets/gradients/NN_4_2.jpeg" height="300" width="350">
