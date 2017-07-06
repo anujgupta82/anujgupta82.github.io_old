@@ -276,7 +276,7 @@ l_1^2 = \frac{1}{1 + e^{-(x^1 \times w_1^{12} + x^2 \times w_1^{22} + x^3 \times
 \end{align}
 $$
 
-\\( \hat{y} \\) is output of layer 2 (\\(l_2\\)) as well as predicted output. In matrix format, \\([\hat{y}]_{\scriptscriptstyle 1\times 1}\\)
+Let \\( \hat{y} \\) be predicted output. Then as per diagram, it is also the output of layer 2 (\\(l_2\\)). In matrix format, \\([\hat{y}]_{\scriptscriptstyle 1\times 1}\\)
 
 $$
 \begin{align}
