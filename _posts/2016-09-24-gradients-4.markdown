@@ -438,14 +438,14 @@ Likewise,
 $$
 \begin{align}
 \frac{\partial L}{\partial w_1^{21}} & = -\Delta l_{2} * w_2^1 \times (l_1^1) \times (1-l_1^1) \times x^2 \\
-&= \Delta l_{1}^{1} \times x^2 \label{ref159} \tag{59} 
+&= \Delta l_{1}^{1} \times x^2 \label{ref161} \tag{61} 
 \end{align}
 $$
 
 $$
 \begin{align}
 \frac{\partial L}{\partial w_1^{31}} & = -\Delta l_{2} * w_2^1 \times (l_1^1) \times (1-l_1^1) \times x^3 \\
-&= \Delta l_{1}^{1} \times x^3 \label{ref160} \tag{60} \\
+&= \Delta l_{1}^{1} \times x^3 \label{ref162} \tag{62} \\
 \end{align}
 $$
 
