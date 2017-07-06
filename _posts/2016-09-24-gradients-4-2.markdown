@@ -1,0 +1,558 @@
+---
+layout: post
+comments: true
+title:  "Gradients - Part 4"
+excerpt: "Part 4 of computing gradients for training Neural Nets"
+date:   2016-09-24 15:40:00
+mathjax: true
+---
+
+
+### **2 layer network, single training example (vector)**
+
+In this post we will consider 2 type of networks. In first network, hidden layer has only 1 node while in second network hideen layer has more than 1 node. Lets start with the case of hidden layer with only 1 node.
+
+#### **1 hidden layer with 1 node**
+
+
+<div class="imgcap">
+<img src="/assets/gradients/NN_4_1.jpeg" height="300" width="350">
+<div class="thecap">Neural net with 2 layer, 1 node in hidden layer. Input is a vector</div>
+</div>
+
+First layer (\\(l_1\\)) has weight matrix $$[W_1]_{\scriptscriptstyle 3 \times 1}$$
+$$
+\begin{equation}
+     W_1=\begin{bmatrix}
+         w_{1}^{1} \\
+         w_{1}^{2} \\
+         w_{1}^{3} \\
+         \end{bmatrix}
+\end{equation}
+$$
+
+Second layer (\\(l_2\\)) has weight matrix $$[W_2]_{\scriptscriptstyle 1 \times 1}$$ which is a scalar 
+
+$$
+\begin{equation}
+     W_2=\begin{bmatrix}
+         w_{2} \\
+         \end{bmatrix}
+\end{equation}
+$$
+
+##### **Input & Output definitions**
+
+Input is \\((\vec{X},y)\\) : \\(\vec{X}\\) is a vector, while y is a scalar. 
+
+\\(X = [x^1 ~~x^2 ~~x^3]\\)     &nbsp; &nbsp; &nbsp; \\(x^i = i^{th}\\) component of \\(\vec{X}\\).
+
+Thus, in matrix form x,y are $$[X]_{\scriptscriptstyle 1\times 3}$$ and $$[y]_{\scriptscriptstyle 1\times 1}$$.
+
+Let \\( l_1 \\) be output of layer 1. In matrix format, \\([l_1]_{\scriptscriptstyle 1\times 1}\\)
+
+$$
+\begin{align}
+l_1 & = \sigma ([X] . [W_1]) \label{ref0} \tag{0} \\
+& = \frac{1}{1 + e^{-[X] . [W_1]}} \label{ref10} \tag{1} \\
+& = \frac{1}{1 + e^{-(x^1 \times w_1^1 + x^2 \times w_1^2 + x^3 \times w_1^3)}} \label{ref101} \tag{1.1} 
+\end{align}
+$$
+
+
+\\( \hat{y} \\) is predicted output. In matrix format, \\([\hat{y}]_{\scriptscriptstyle 1\times 1}\\)
+\\( \hat{y} = \sigma ([l_1] . [W_2]) = \frac{1}{1 + e^{-[l_1] . [W_2]}} \label{ref11} \tag{2} \\)
+
+
+##### **Loss**
+Like before, we will use half of squared error loss. $$ L  = \frac{1}{2} (y - \hat{y})^{2} $$
+
+
+
+##### **Gradients**
+
+There are 2 set of gradients: \\(\nabla_{W_1} L\\) and \\(\nabla_{W_2} L\\). Let us first compute \\(\nabla_{W_2} L\\)
+
+
+**\\([\nabla_{W_2} L]_{\scriptscriptstyle 1\times 1}\\)**
+
+$$
+\begin{align}
+\frac{\partial L}{\partial W_2} & = \frac{\partial L}{\partial \hat{y}} \times \frac{\partial \hat{y}}{\partial W_2} \label{ref12} \tag{3}\\
+\frac{\partial L}{\partial \hat{y}} &= \frac{1}{2} \times 2 \times (y - \hat{y})^{1} \times (-1) \label{ref13} \tag{4}\\
+\frac{\partial \hat{y}}{\partial W_2} &= \big{(} \frac{1}{1 + e^{-[l_1] . [W_2]}} \big{)} \times \big{(}1- \frac{1}{1 + e^{-[l_1] . [W_2]}} \big{)} * -l_1 \\
+& = \sigma ([l_1] . [W_2]) \times (1- \sigma ([l_1] . [W_2])) * -l_1 \dots && \text{using \eqref{ref11}} \label{ref14} \tag{5}\\
+& = \hat{y} \times (1- \hat{y}) * -l_1 \dots && \text{using \eqref{ref11}} \label{ref15} \tag{6}\\
+\end{align}
+$$
+
+Substituting \eqref{ref13} & \eqref{ref15} in \eqref{ref12}, we get 
+
+$$
+\begin{align}
+\frac{\partial L}{\partial W_2} &= \big{(} (-1) \times (y - \hat{y}) \big{)} \times \big{(} \hat{y} \times (1- \hat{y}) \times -l_1 \big{)}\\ \\
+&= (y - \hat{y}) \times \hat{y} \times (1- \hat{y}) \times l_1 \label{ref16} \tag{7} \\
+\end{align}
+$$
+
+Let,  
+
+\begin{align}
+\Delta l_{2} = (y - \hat{y}) \times \hat{y} \times (1- \hat{y}) \label{ref17} \tag{8} \\
+\end{align}
+
+Then, eq \eqref{ref16} reduces to:   
+$$ 
+\begin{align}
+\frac{\partial L}{\partial W_2} &= \Delta l_{2} \times l_1 \\
+& = \Delta l_{2} * l_1 \\
+& = [l_1]^\intercal . \Delta l_{2} \label{ref18} \tag{9} \\
+\end{align}
+$$
+
+**\\([\nabla_{W_1} L]_{\scriptscriptstyle 3\times 1}\\)**
+
+Now let us compute \\(\nabla_{W_1} L\\)
+
+$$
+\begin{equation}
+\nabla_{W_1} L = \frac{\partial L}{\partial W_1} \\
+\nabla_{W_1} L = \begin{bmatrix}
+     \frac{\partial L}{\partial w_{1}^{1}} \\
+     \frac{\partial L}{\partial w_{1}^{2}} \\
+     \frac{\partial L}{\partial w_{1}^{3}} \\
+     \end{bmatrix}
+\label{ref20} \tag{10}
+\end{equation} 
+$$
+
+First, lets compute only \\( \frac{\partial L}{\partial w_{1}^{1}} \\)
+
+$$
+\begin{align}
+\frac{\partial L}{\partial w_{1}^{1}} & = \frac{\partial L}{\partial \hat{y}} \times \frac{\partial \hat{y}}{\partial l_1} \times \frac{\partial l_1}{\partial w_1^1} \label{ref21} \tag{11}\\
+\frac{\partial L}{\partial \hat{y}} &= \frac{1}{2} \times 2 \times (y - \hat{y})^{1} \times (-1) \label{ref22} \tag{12}\\
+
+\frac{\partial \hat{y}}{\partial l_1} &= \big{(} \frac{1}{1 + e^{-[l_1] . [W_2]}} \big{)} \times \big{(}1- \frac{1}{1 + e^{-[l_1] . [W_2]}} \big{)} * -w_2 \\
+& = \sigma ([l_1] . [W_2]) \times (1- \sigma ([l_1] . [W_2])) * -w_2 \dots && \text{using \eqref{ref11}} \label{ref23} \tag{13}\\
+& = \hat{y} \times (1- \hat{y}) * -w_2 \dots && \text{using \eqref{ref11}} \label{ref24} \tag{14}\\
+
+\frac{\partial l_1}{\partial w_1^1} &= \big{(} \frac{1}{1 + e^{-[X] . [W_1]}} \big{)} \times \big{(}1- \frac{1}{1 + e^{-[X] . [W_1]}} \big{)} * -x^1 \label{ref25} \tag{15}\\
+& = l_1 \times (1- l_1) * -x^1 \dots && \text{using \eqref{ref11}} \label{ref26} \tag{16}\\
+
+\end{align}
+$$
+
+Combining, eq \eqref{ref22}, \eqref{ref24} and \eqref{ref26}:  
+
+$$
+\begin{align}
+\frac{\partial L}{\partial w_{1}^{1}} & = \big(-(y - \hat{y}) \big) \times \big( \hat{y} \times (1- \hat{y}) * -w_2 \big) \times  \big( l_1 \times (1- l_1) * -x^1 \big) \\
+& = \big((y - \hat{y})\hat{y}(1- \hat{y}) * w_2 \big) \times  \big( l_1 \times (1- l_1) * -x^1 \big) \\
+
+& = \big(- \Delta l_{2} \times  w_2 \times l_1 \times (1- l_1) \big) \times x^1  \dots && \text{using \eqref{ref17}} \label{ref27} \tag{17}\\
+
+\end{align}
+$$
+
+Let,  
+
+\begin{align}
+\Delta l_{1} = - \Delta l_{2} \times  w_2 \times l_1 \times (1- l_1) \label{ref28} \tag{18} \\
+\end{align}
+
+Then, eq \eqref{ref27} reduces to :
+
+$$
+\begin{align}
+\frac{\partial L}{\partial w_{1}^{1}} & = \Delta l_{1} \times x^1 \label{ref29} \tag{19} \\
+\end{align}
+$$
+
+Likewise, 
+$$
+\begin{align}
+\frac{\partial L}{\partial w_{1}^{2}} & = \Delta l_{1} \times x^2 \label{ref30} \tag{20} \\
+\frac{\partial L}{\partial w_{1}^{3}} & = \Delta l_{1} \times x^3 \label{ref31} \tag{21} \\
+\end{align}
+$$
+
+Using eq \eqref{ref29}, \eqref{ref30}  and \eqref{ref31}  in \eqref{ref20} 
+
+$$
+\begin{equation}
+\nabla_{W_1} L = \begin{bmatrix}
+     \Delta l_{1} \times x^1 \\
+     \Delta l_{1} \times x^2 \\
+     \Delta l_{1} \times x^3 \\
+     \end{bmatrix}
+\label{ref32} \tag{22}
+\end{equation} 
+$$
+
+$$
+\frac{\partial L}{\partial W_1} = \left[ \begin{array}{c} x^1 \\ x^2 \\ x^3 \end{array} \right]_{\scriptscriptstyle 3 \times 1}. \left[ \Delta l_{1} \right]_{\scriptscriptstyle 1 \times 1}
+$$
+
+$$ 
+\begin{align}
+\frac{\partial L}{\partial W_1} &= [X]^\intercal . \Delta l_{1} \\
+\end{align}
+$$
+
+#### **1 hidden layer with \\(\geq\\) 2  nodes**
+
+We will derive gradients for hidden layer with 2  nodes. 3 or more nodes is a straight forward extension. 
+
+<div class="imgcap">
+<img src="/assets/gradients/NN_4_2.jpeg" height="300" width="350">
+<div class="thecap">Neural net with 2 layer, 2 nodes in hidden layer. Input is a vector</div>
+</div>
+
+First layer (\\(l_1\\)) has weight matrix $$[W_1]_{\scriptscriptstyle 3 \times 2}$$:
+
+$$
+\begin{equation}
+     W_1=\begin{bmatrix}
+        w_{1}^{11} & w_{1}^{12} \\
+        w_{1}^{21} & w_{1}^{22} \\
+        w_{1}^{31} & w_{1}^{32} \\  
+      \end{bmatrix}
+\end{equation}
+$$
+
+Second layer (\\(l_2\\)) has weight matrix $$[W_2]_{\scriptscriptstyle 32\times 1}$$
+$$
+\begin{equation}
+     W_2=\begin{bmatrix}
+         w_{2}^{1} \\
+         w_{2}^{2} \\
+         \end{bmatrix}
+\end{equation}
+$$
+
+##### **Input & Output definitions**
+
+Exactly same as previous setting. Input is \\((\vec{X},y)\\) : \\(\vec{X}\\) is a vector, while y is a scalar. 
+
+\\(X = [x^1 ~~x^2 ~~x^3]\\)     &nbsp; &nbsp; &nbsp; \\(x^i = i^{th}\\) component of \\(\vec{X}\\).
+
+Thus, in matrix form x,y are $$[X]_{\scriptscriptstyle 1\times 3}$$ and $$[y]_{\scriptscriptstyle 1\times 1}$$.
+
+Let \\( l_1 \\) be output of layer 1 (hidden layer in this case) . In matrix format, \\([l_1]_{\scriptscriptstyle 1\times 1}\\)
+
+$$
+\begin{align}
+l_1 & = \sigma ([X] . [W_1]) \label{ref130} \tag{30} \\
+& = \frac{1}{1 + e^{-[X] . [W_1]}} \label{ref131} \tag{31} \\
+\end{align}
+$$
+
+
+
+<!--
+$$
+\begin{align}
+l_1 & = \sigma ([X] . [W_1]) \label{ref0} \tag{0} \\
+& = \frac{1}{1 + e^{-[X] . [W_1]}} \label{ref10} \tag{1} \\
+& = \frac{1}{1 + e^{-(x^1 \times w_1^1 + x^2 \times w_1^2 + x^3 \times w_1^3)}} \label{ref101} \tag{1.1} 
+\end{align}
+$$
+-->
+
+\\( l_1 \\) has 2 components - \\( l_1^1 \\) and \\( l_1^2 \\), given by:
+
+$$
+\begin{equation}
+     l_1=\begin{bmatrix}
+         l_{1}^{1} & l_{1}^{2} \\
+         \end{bmatrix}
+\label{ref132} \tag{32}
+\end{equation}
+$$
+
+$$
+\begin{align}
+l_1^1 = \frac{1}{1 + e^{-(x^1 \times w_1^{11} + x^2 \times w_1^{21} + x^3 \times w_1^{31})}} \label{ref133} \tag{33} \\
+l_1^2 = \frac{1}{1 + e^{-(x^1 \times w_1^{12} + x^2 \times w_1^{22} + x^3 \times w_1^{32})}} \label{ref134} \tag{34} \\
+\end{align}
+$$
+
+Let \\( \hat{y} \\) be predicted output. Then as per diagram, it is also the output of layer 2 (\\(l_2\\)). In matrix format, \\([\hat{y}]_{\scriptscriptstyle 1\times 1}\\)
+
+$$
+\begin{align}
+\hat{y} & = \sigma ([l_1] . [W_2]) \label{ref135} \tag{35} \\
+& = \frac{1}{1 + e^{-[l_1] . [W_2]}} \label{ref136} \tag{36} \\
+& = \frac{1}{1 + e^{-(l_1^1 w_2^1 + l_1^2 w_2^2)}} \label{ref137} \tag{37} \\
+\end{align}
+$$
+
+##### **Loss**
+Like before, we will use half of squared error loss. $$ L  = \frac{1}{2} (y - \hat{y})^{2} $$
+
+##### **Gradients**
+
+There are 2 set of gradients: \\(\nabla_{W_1} L\\) and \\(\nabla_{W_2} L\\). Let us first compute \\(\nabla_{W_2} L\\)
+
+**\\([\nabla_{W_2} L]_{\scriptscriptstyle 2\times 1}\\)**
+
+$$
+\begin{equation}
+\nabla_{W_2} L = \frac{\partial L}{\partial W_2} \\
+\nabla_{W_2} L = \begin{bmatrix}
+     \frac{\partial L}{\partial w_{2}^{1}} \\
+     \frac{\partial L}{\partial w_{2}^{2}} \\
+     \end{bmatrix}
+\label{ref140} \tag{40}
+\end{equation} 
+$$
+
+Lets, first compute \\(\frac{\partial L}{\partial w_{2}^{1}}\\):
+
+$$
+\begin{align}
+\frac{\partial L}{\partial w_2^1} & = \frac{\partial L}{\partial \hat{y}} \times \frac{\partial \hat{y}}{\partial w_2^1} \label{ref141} \tag{41}\\
+\frac{\partial L}{\partial \hat{y}} &= \frac{1}{2} \times 2 \times (y - \hat{y})^{1} \times (-1) \label{ref142} \tag{42}\\
+\frac{\partial \hat{y}}{\partial w_2^1} &= \big{(} \frac{1}{1 + e^{-[l_1] . [W_2]}} \big{)} \times \big{(}1- \frac{1}{1 + e^{-[l_1] . [W_2]}} \big{)} * -l_1^1 \\
+& = \sigma ([l_1] . [W_2]) \times (1- \sigma ([l_1] . [W_2])) * -l_1^1 \dots && \text{using \eqref{ref31}} \label{ref143} \tag{43}\\
+& = \hat{y} \times (1- \hat{y}) * -l_1^1 \dots && \text{using \eqref{ref30}} \label{ref144} \tag{44}\\
+\end{align}
+$$
+
+Substituting \eqref{ref143} & \eqref{ref144} in \eqref{ref141}, we get 
+
+$$
+\begin{align}
+\frac{\partial L}{\partial w_2^1} &= \big{(} (-1) \times (y - \hat{y}) \big{)} \times \big{(} \hat{y} \times (1- \hat{y}) \times -l_1^1 \big{)}\\ \\
+&= (y - \hat{y}) \times \hat{y} \times (1- \hat{y}) \times l_1^1 \label{ref145} \tag{45} \\
+\end{align}
+$$
+
+Let,  
+
+\begin{align}
+\Delta l_{2} = (y - \hat{y}) \times \hat{y} \times (1- \hat{y}) \label{ref146} \tag{46} \\
+\end{align}
+
+Then, eq \eqref{ref145} reduces to:   
+
+$$ 
+\begin{align}
+\frac{\partial L}{\partial w_2^1} &= \Delta l_{2} \times l_1^1 \label{ref147} \tag{47} \\
+\end{align}
+$$
+
+Likewise, 
+$$
+\begin{align}
+\frac{\partial L}{\partial w_2^2} & = \Delta l_{2} \times l_1^2 \label{ref148} \tag{48} \\
+\end{align}
+$$
+
+Using eq \eqref{ref147} and \eqref{ref148} in \eqref{ref140} 
+
+$$
+\begin{equation}
+\nabla_{W_2} L = \begin{bmatrix}
+     \Delta l_{2} \times l_1^1 \\
+     \Delta l_{2} \times l_1^2 \\
+     \end{bmatrix}
+\label{ref149} \tag{49}
+\end{equation} 
+$$
+
+$$
+\frac{\partial L}{\partial W_2} = \left[ \begin{array}{c} l_1^1 \\ l_1^2 \end{array} \right]_{\scriptscriptstyle 2 \times 1}. \left[ \Delta l_{2} \right]_{\scriptscriptstyle 1 \times 1}
+$$
+
+
+$$ 
+\begin{align}
+\frac{\partial L}{\partial W_2} &= [l_{1}]^\intercal . \Delta l_{2} \\
+\end{align}
+$$
+
+**\\([\nabla_{W_1} L]_{\scriptscriptstyle 3\times 2}\\)**
+
+$$
+\begin{equation}
+\nabla_{W_1} L = \frac{\partial L}{\partial W_1} \\
+\nabla_{W_1} L = \begin{bmatrix}
+     \frac{\partial L}{\partial w_{1}^{11}} & \frac{\partial L}{\partial w_{1}^{12}}\\
+     \frac{\partial L}{\partial w_{1}^{21}} & \frac{\partial L}{\partial w_{1}^{22}}\\
+     \frac{\partial L}{\partial w_{1}^{31}} & \frac{\partial L}{\partial w_{1}^{32}}\\
+     \end{bmatrix}
+\label{ref150} \tag{50}
+\end{equation} 
+$$
+
+Lets, first focus on \\(\frac{\partial L}{\partial w_{1}^{11}}\\):
+
+$$
+\begin{align}
+\frac{\partial L}{\partial w_1^{11}} & = \frac{\partial L}{\partial \hat{y}} \times \frac{\partial \hat{y}}{\partial l_1^1} \times \frac{\partial l_1^1}{\partial w_1^{11}}\label{ref151} \tag{51}\\
+\frac{\partial L}{\partial \hat{y}} &=  -(y - \hat{y}) \label{ref152} \tag{52}\\
+\frac{\partial \hat{y}}{\partial l_1^1} &= \big{(} \frac{1}{1 + e^{-[l_1] . [W_2]}} \big{)} \times \big{(}1- \frac{1}{1 + e^{-[l_1] . [W_2]}} \big{)} * -w_2^1 \\
+& = \sigma ([l_1] . [W_2]) \times (1- \sigma ([l_1] . [W_2])) * -w_2^1 \dots && \text{using \eqref{ref137}} \label{ref153} \tag{53}\\
+& = \hat{y} \times (1- \hat{y}) * -w_2^1 \dots && \text{using \eqref{ref135}} \label{ref154} \tag{54}\\
+
+\frac{\partial l_1^1}{\partial w_1^{11}} &= \big{(} \frac{1}{1 + e^{-(x^1 \times w_1^{11} + x^2 \times w_1^{21} + x^3 \times w_1^{31})}} \big{)} \times \big{(} 1 - \big{(} \frac{1}{1 + e^{-(x^1 \times w_1^{11} + x^2 \times w_1^{21} + x^3 \times w_1^{31})}} \big{)} \big{)} \times -x^1 \dots && \text{using \eqref{ref133}} \label{ref155} \tag{55}\\
+&= (l_1^1) \times (1-l_1^1) \times -x^1 \label{ref156} \tag{56}
+\end{align}
+$$
+
+Using eq \eqref{ref152}, \eqref{ref154} and \eqref{ref156} in eq \eqref{ref151}
+
+$$
+\begin{align}
+\frac{\partial L}{\partial w_1^{11}} & = -(y - \hat{y}) \times \hat{y} \times (1- \hat{y}) * w_2^1 \times (l_1^1) \times (1-l_1^1) \times x^1 \label{ref157} \tag{57} \\
+\end{align}
+$$
+
+Now, using eq \eqref{ref146} in \eqref{ref157} 
+
+$$
+\begin{align}
+\frac{\partial L}{\partial w_1^{11}} & = - \Delta l_{2} * w_2^1 \times (l_1^1) \times (1-l_1^1) \times x^1 \label{ref158} \tag{58} \\
+\end{align}
+$$
+
+Further, let  
+
+$$
+\begin{align}
+\Delta l_{1}^{1} = -\Delta l_{2} * w_2^1 \times (l_1^1) \times (1-l_1^1) \label{ref159} \tag{59} 
+\end{align}
+$$
+
+Then, 
+
+$$
+\begin{align}
+\frac{\partial L}{\partial w_1^{11}} & = \Delta l_{1}^{1} \times x^1 \label{ref160} \tag{60} 
+\end{align}
+$$
+
+Likewise, 
+
+$$
+\begin{align}
+\frac{\partial L}{\partial w_1^{21}} & = -\Delta l_{2} * w_2^1 \times (l_1^1) \times (1-l_1^1) \times x^2 \\
+&= \Delta l_{1}^{1} \times x^2 \label{ref161} \tag{61} 
+\end{align}
+$$
+
+$$
+\begin{align}
+\frac{\partial L}{\partial w_1^{31}} & = -\Delta l_{2} * w_2^1 \times (l_1^1) \times (1-l_1^1) \times x^3 \\
+&= \Delta l_{1}^{1} \times x^3 \label{ref162} \tag{62} \\
+\end{align}
+$$
+
+Before we proceed further, Eq \eqref{ref160}, \eqref{ref161} and \eqref{ref162} are key take home equations. 
+
+Now, lets focus on \\(\frac{\partial L}{\partial w_{1}^{12}}\\):
+
+$$
+\begin{align}
+\frac{\partial L}{\partial w_1^{12}} & = \frac{\partial L}{\partial \hat{y}} \times \frac{\partial \hat{y}}{\partial l_1^2} \times \frac{\partial l_1^2}{\partial w_1^{12}}\label{ref163} \tag{63}\\
+\frac{\partial L}{\partial \hat{y}} &=  -(y - \hat{y}) \label{ref164} \tag{64}\\
+\frac{\partial \hat{y}}{\partial l_1^2} &= \big{(} \frac{1}{1 + e^{-[l_1] . [W_2]}} \big{)} \times \big{(}1- \frac{1}{1 + e^{-[l_1] . [W_2]}} \big{)} * -w_2^2 \\
+& = \sigma ([l_1] . [W_2]) \times (1- \sigma ([l_1] . [W_2])) * -w_2^2 \dots && \text{using \eqref{ref137}} \label{ref165} \tag{65}\\
+& = \hat{y} \times (1- \hat{y}) * -w_2^2 \dots && \text{using \eqref{ref135}} \label{ref166} \tag{66}\\
+
+\frac{\partial l_1^2}{\partial w_1^{12}} &= \big{(} \frac{1}{1 + e^{-(x^1 \times w_1^{12} + x^2 \times w_1^{22} + x^3 \times w_1^{32})}} \big{)} \times \big{(} 1 - \big{(} \frac{1}{1 + e^{-(x^1 \times w_1^{12} + x^2 \times w_1^{22} + x^3 \times w_1^{32})}} \big{)} \big{)} \times -x^1 \dots && \text{using \eqref{ref133}} \label{ref167} \tag{67}\\
+&= (l_1^2) \times (1-l_1^2) \times -x^1 \label{ref168} \tag{68}
+\end{align}
+$$
+
+$$
+\begin{align}
+\frac{\partial L}{\partial w_1^{12}} & = -(y - \hat{y}) \times \hat{y} \times (1- \hat{y}) * w_2^2 \times (l_1^2) \times (1-l_1^2) \times x^1 \label{ref169} \tag{69}
+\end{align}
+$$
+
+Now, using eq \eqref{ref146} in \eqref{ref169} 
+
+$$
+\begin{align}
+\frac{\partial L}{\partial w_1^{12}} & = - \Delta l_{2} * w_2^2 \times (l_1^2) \times (1-l_1^2) \times x^1 \label{ref170} \tag{70} \\
+\end{align}
+$$
+
+
+Further, let  
+
+$$
+\begin{align}
+\Delta l_{1}^{2} = -\Delta l_{2} * w_2^2 \times (l_1^2) \times (1-l_1^2) \label{ref171} \tag{71} 
+\end{align}
+$$
+
+Then, 
+
+$$
+\begin{align}
+\frac{\partial L}{\partial w_1^{12}} & = \Delta l_{1}^{2} \times x^1 \label{ref172} \tag{72} 
+\end{align}
+$$
+
+Likewise, 
+
+$$
+\begin{align}
+\frac{\partial L}{\partial w_1^{22}} & = -\Delta l_{2} * w_2^2 \times (l_1^2) \times (1-l_1^2) \times x^2 \\
+&= \Delta l_{1}^{2} \times x^2 \label{ref173} \tag{73} 
+\end{align}
+$$
+
+$$
+\begin{align}
+\frac{\partial L}{\partial w_1^{32}} & = -\Delta l_{2} * w_2^2 \times (l_1^2) \times (1-l_1^2) \times x^3 \\
+&= \Delta l_{1}^{2} \times x^3 \label{ref174} \tag{73} \\
+\end{align}
+$$
+
+Now, we have the pieces. We just need to assemble them. 
+
+Using Eq \eqref{ref160}, \eqref{ref161}, \eqref{ref162} and \eqref{ref172}, \eqref{ref173}, \eqref{ref174} in \eqref{ref150}
+
+$$
+\begin{equation}
+\nabla_{W_1} L = \frac{\partial L}{\partial W_1} \\
+\nabla_{W_1} L = \begin{bmatrix}
+     \Delta l_{1}^{1} \times x^1 & \Delta l_{1}^{2} \times x^1\\
+     \Delta l_{1}^{1} \times x^2 & \Delta l_{1}^{2} \times x^2\\
+     \Delta l_{1}^{1} \times x^3 & \Delta l_{1}^{2} \times x^3\\
+     \end{bmatrix}
+\label{ref175} \tag{75}
+\end{equation} 
+$$
+
+Using the notation used in Eq \eqref{ref132}, let 
+
+$$
+\begin{equation}
+     \Delta l_1=\begin{bmatrix}
+         \Delta l_{1}^{1} & \Delta l_{1}^{2} \\
+         \end{bmatrix}
+\label{ref176} \tag{76}
+\end{equation}
+$$
+
+Using Eq \eqref{ref176} in \eqref{ref175}, we get:
+
+$$
+\begin{align}
+\left[ \frac{\partial L}{\partial W_1} \right]_{\scriptscriptstyle 3 \times 2} = \left[ \begin{array}{c} x^1 \\ x^2 \\ x^3 \end{array} \right]_{\scriptscriptstyle 3 \times 1} . \left[ \Delta l_{1}^{1}    \quad      \Delta l_{1}^{2} \right]_{\scriptscriptstyle 1 \times 2} \label{ref177} \tag{77}
+\end{align}
+$$
+
+
+$$ 
+\begin{align}
+\frac{\partial L}{\partial W_1} &= [X]^\intercal . \Delta l_{1} \\
+\end{align}
+$$
+
