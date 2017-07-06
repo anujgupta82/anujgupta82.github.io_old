@@ -449,62 +449,7 @@ $$
 \end{align}
 $$
 
+Before we proceed further, Eq \eqref{ref160}, \eqref{ref161} and \eqref{ref162} are key take home equations. 
 
+Now, lets focus on \\(\frac{\partial L}{\partial w_{1}^{12}}\\):
 
-
-<!--
-$$
-\begin{align}
-\frac{\partial L}{\partial W_2} & = \frac{\partial L}{\partial \hat{y}} \times \frac{\partial \hat{y}}{\partial W_2} \label{ref12} \tag{3}\\
-\frac{\partial L}{\partial \hat{y}} &= \frac{1}{2} \times 2 \times (y - \hat{y})^{1} \times (-1) \label{ref13} \tag{4}\\
-\frac{\partial \hat{y}}{\partial W_2} &= \big{(} \frac{1}{1 + e^{-[l_1] . [W_2]}} \big{)} \times \big{(}1- \frac{1}{1 + e^{-[l_1] . [W_2]}} \big{)} * -l_1 \\
-& = \sigma ([l_1] . [W_2]) \times (1- \sigma ([l_1] . [W_2])) * -l_1 \dots && \text{using \eqref{ref11}} \label{ref14} \tag{5}\\
-& = \hat{y} \times (1- \hat{y}) * -l_1 \dots && \text{using \eqref{ref11}} \label{ref15} \tag{6}\\
-\end{align}
-$$
-
-
-\eqref{ref133}} \label{ref156} \tag{56}\\
-\end{align}
--->
-
-<!--
-$$
-\begin{align}
-\frac{\partial L}{\partial W_2} & = \frac{\partial L}{\partial \hat{y}} \times \frac{\partial \hat{y}}{\partial W_2} \label{ref12} \tag{3}\\
-\frac{\partial L}{\partial \hat{y}} &= \frac{1}{2} \times 2 \times (y - \hat{y})^{1} \times (-1) \label{ref13} \tag{4}\\
-\frac{\partial \hat{y}}{\partial W_2} &= \big{(} \frac{1}{1 + e^{-[l_1] . [W_2]}} \big{)} \times \big{(}1- \frac{1}{1 + e^{-[l_1] . [W_2]}} \big{)} * -l_1 \\
-& = \sigma ([l_1] . [W_2]) \times (1- \sigma ([l_1] . [W_2])) * -l_1 \dots && \text{using \eqref{ref11}} \label{ref14} \tag{5}\\
-& = \hat{y} \times (1- \hat{y}) * -l_1 \dots && \text{using \eqref{ref11}} \label{ref15} \tag{6}\\
-\end{align}
-$$
--->
-
-
-#### **+ 2 layer network, 1 training example (vector)**
-
-
-
-#### **+ 2 layer network, multiple training examples (vector)**
-
-
-<!---
-Deriving Policy Gradients. I'd like to also give a sketch of where Policy Gradients come from mathematically. Policy Gradients are a special case of a more general score function gradient estimator. The general case is that when we have an expression of the form \(E_{x \sim p(x \mid \theta)} [f(x)] \) - i.e. the expectation of some scalar valued score function \(f(x)\) under some probability distribution \(p(x;\theta)\) parameterized by some \(\theta\). Hint hint, \(f(x)\) will become our reward function (or advantage function more generally) and \(p(x)\) will be our policy network, which is really a model for \(p(a \mid I)\), giving a distribution over actions for any image \(I\). Then we are interested in finding how we should shift the distribution (through its parameters \(\theta\)) to increase the scores of its samples, as judged by \(f\) (i.e. how do we change the network's parameters so that action samples get higher rewards). We have that:
-
-$$
-\begin{align}
-\nabla_{\theta} E_x[f(x)] &= \nabla_{\theta} \sum_x p(x) f(x) & \text{definition of expectation} \\
-& = \sum_x \nabla_{\theta} p(x) f(x) & \text{swap sum and gradient} \\
-& = \sum_x p(x) \frac{\nabla_{\theta} p(x)}{p(x)} f(x) & \text{both multiply and divide by } p(x) \\
-& = \sum_x p(x) \nabla_{\theta} \log p(x) f(x) & \text{use the fact that } \nabla_{\theta} \log(z) = \frac{1}{z} \nabla_{\theta} z \\
-& = E_x[f(x) \nabla_{\theta} \log p(x) ] & \text{definition of expectation}
-\end{align}
-$$
--->
-
-
-
-
-
-
-    
