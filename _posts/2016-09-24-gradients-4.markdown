@@ -351,11 +351,23 @@ Using eq \eqref{ref45} and \eqref{ref47} in \eqref{ref40}
 $$
 \begin{equation}
 \nabla_{W_2} L = \begin{bmatrix}
-     \Delta l_{1} \times l_1^1 \\
-     \Delta l_{1} \times l_1^2 \\
+     \Delta l_{2} \times l_1^1 \\
+     \Delta l_{2} \times l_1^2 \\
      \end{bmatrix}
 \label{ref48} \tag{48}
 \end{equation} 
+$$
+
+$$
+\frac{\partial L}{\partial W_1} = \left[ \begin{array}{c} l_1^1 \\ l_1^2 \end{array} \right]_{\scriptscriptstyle 2 \times 1}. \left[ \Delta l_{2} \right]_{\scriptscriptstyle 1 \times 1}
+$$
+
+
+$$ 
+\begin{align}
+\frac{\partial L}{\partial W_2} &= [(l_{1})^{T}] . \Delta l_{2} \\
+\frac{\partial L}{\partial W_2} &= [(l_{1})^\intercal] . \Delta l_{2} \\
+\end{align}
 $$
 
 
