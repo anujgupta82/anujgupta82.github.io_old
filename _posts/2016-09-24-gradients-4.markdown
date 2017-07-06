@@ -303,7 +303,7 @@ $$
      \frac{\partial L}{\partial w_{2}^{1}} \\
      \frac{\partial L}{\partial w_{2}^{2}} \\
      \end{bmatrix}
-\label{ref40} \tag{40}
+\label{ref140} \tag{40}
 \end{equation} 
 $$
 
@@ -311,11 +311,11 @@ Lets, first compute \\(\frac{\partial L}{\partial w_{2}^{1}}\\):
 
 $$
 \begin{align}
-\frac{\partial L}{\partial w_2^1} & = \frac{\partial L}{\partial \hat{y}} \times \frac{\partial \hat{y}}{\partial w_2^1} \label{ref41} \tag{41}\\
-\frac{\partial L}{\partial \hat{y}} &= \frac{1}{2} \times 2 \times (y - \hat{y})^{1} \times (-1) \label{ref42} \tag{42}\\
+\frac{\partial L}{\partial w_2^1} & = \frac{\partial L}{\partial \hat{y}} \times \frac{\partial \hat{y}}{\partial w_2^1} \label{ref141} \tag{41}\\
+\frac{\partial L}{\partial \hat{y}} &= \frac{1}{2} \times 2 \times (y - \hat{y})^{1} \times (-1) \label{ref142} \tag{42}\\
 \frac{\partial \hat{y}}{\partial w_2^1} &= \big{(} \frac{1}{1 + e^{-[l_1] . [W_2]}} \big{)} \times \big{(}1- \frac{1}{1 + e^{-[l_1] . [W_2]}} \big{)} * -l_1^1 \\
-& = \sigma ([l_1] . [W_2]) \times (1- \sigma ([l_1] . [W_2])) * -l_1^1 \dots && \text{using \eqref{ref31}} \label{ref43} \tag{43}\\
-& = \hat{y} \times (1- \hat{y}) * -l_1^1 \dots && \text{using \eqref{ref30}} \label{ref44} \tag{44}\\
+& = \sigma ([l_1] . [W_2]) \times (1- \sigma ([l_1] . [W_2])) * -l_1^1 \dots && \text{using \eqref{ref31}} \label{ref143} \tag{43}\\
+& = \hat{y} \times (1- \hat{y}) * -l_1^1 \dots && \text{using \eqref{ref30}} \label{ref144} \tag{44}\\
 \end{align}
 $$
 
@@ -324,32 +324,32 @@ Substituting \eqref{ref43} & \eqref{ref44} in \eqref{ref41}, we get
 $$
 \begin{align}
 \frac{\partial L}{\partial w_2^1} &= \big{(} (-1) \times (y - \hat{y}) \big{)} \times \big{(} \hat{y} \times (1- \hat{y}) \times -l_1^1 \big{)}\\ \\
-&= (y - \hat{y}) \times \hat{y} \times (1- \hat{y}) \times l_1^1 \label{ref45} \tag{45} \\
+&= (y - \hat{y}) \times \hat{y} \times (1- \hat{y}) \times l_1^1 \label{ref145} \tag{45} \\
 \end{align}
 $$
 
 Let,  
 
 \begin{align}
-\Delta l_{2} = (y - \hat{y}) \times \hat{y} \times (1- \hat{y}) \label{ref46} \tag{46} \\
+\Delta l_{2} = (y - \hat{y}) \times \hat{y} \times (1- \hat{y}) \label{ref146} \tag{46} \\
 \end{align}
 
 Then, eq \eqref{ref45} reduces to:   
 
 $$ 
 \begin{align}
-\frac{\partial L}{\partial w_2^1} &= \Delta l_{2} \times l_1^1 \label{ref47} \tag{47} \\
+\frac{\partial L}{\partial w_2^1} &= \Delta l_{2} \times l_1^1 \label{ref147} \tag{47} \\
 \end{align}
 $$
 
 Likewise, 
 $$
 \begin{align}
-\frac{\partial L}{\partial w_2^2} & = \Delta l_{2} \times l_1^2 \label{ref48} \tag{48} \\
+\frac{\partial L}{\partial w_2^2} & = \Delta l_{2} \times l_1^2 \label{ref148} \tag{48} \\
 \end{align}
 $$
 
-Using eq \eqref{ref47} and \eqref{ref48} in \eqref{ref40} 
+Using eq \eqref{ref147} and \eqref{ref148} in \eqref{ref140} 
 
 $$
 \begin{equation}
@@ -357,7 +357,7 @@ $$
      \Delta l_{2} \times l_1^1 \\
      \Delta l_{2} \times l_1^2 \\
      \end{bmatrix}
-\label{ref49} \tag{49}
+\label{ref149} \tag{49}
 \end{equation} 
 $$
 
@@ -382,7 +382,7 @@ $$
      \frac{\partial L}{\partial w_{1}^{21}} & \frac{\partial L}{\partial w_{1}^{22}}\\
      \frac{\partial L}{\partial w_{1}^{31}} & \frac{\partial L}{\partial w_{1}^{32}}\\
      \end{bmatrix}
-\label{ref50} \tag{50}
+\label{ref150} \tag{50}
 \end{equation} 
 $$
 
@@ -390,13 +390,17 @@ Lets, first focus on \\(\frac{\partial L}{\partial w_{1}^{11}}\\):
 
 $$
 \begin{align}
-\frac{\partial L}{\partial w_1^{11}} & = \frac{\partial L}{\partial \hat{y}} \times \frac{\partial \hat{y}}{\partial l_1^1} \times \frac{\partial l_1^1}{\partial w_1^{11}}\label{ref51} \tag{51}\\
-\frac{\partial L}{\partial \hat{y}} &=  -(y - \hat{y})^{1} \label{ref52} \tag{52}\\
+\frac{\partial L}{\partial w_1^{11}} & = \frac{\partial L}{\partial \hat{y}} \times \frac{\partial \hat{y}}{\partial l_1^1} \times \frac{\partial l_1^1}{\partial w_1^{11}}\label{ref151} \tag{51}\\
+\frac{\partial L}{\partial \hat{y}} &=  -(y - \hat{y})^{1} \label{ref152} \tag{52}\\
 \frac{\partial \hat{y}}{\partial l_1^1} &= \big{(} \frac{1}{1 + e^{-[l_1] . [W_2]}} \big{)} \times \big{(}1- \frac{1}{1 + e^{-[l_1] . [W_2]}} \big{)} * -l_1^1 \\
-& = \sigma ([l_1] . [W_2]) \times (1- \sigma ([l_1] . [W_2])) * -w_2^1 \dots && \text{using \eqref{ref137}} \label{ref53} \tag{53}\\
-& = \hat{y} \times (1- \hat{y}) * -w_2^1 \dots && \text{using \eqref{ref135}} \label{ref54} \tag{54}\\
+& = \sigma ([l_1] . [W_2]) \times (1- \sigma ([l_1] . [W_2])) * -w_2^1 \dots && \text{using \eqref{ref137}} \label{ref153} \tag{53}\\
+& = \hat{y} \times (1- \hat{y}) * -w_2^1 \dots && \text{using \eqref{ref135}} \label{ref154} \tag{54}\\
+\frac{\partial l_1^1}{\partial w_1^{11}} &= \big{(} \frac{1}{1 + e^{-(x^1 \times w_1^{11} + x^2 \times w_1^{21} + x^3 \times w_1^{31})}} \big{)} \times \big{(} 1 - \big{(} \frac{1}{1 + e^{-(x^1 \times w_1^{11} + x^2 \times w_1^{21} + x^3 \times w_1^{31})}} \big{)} \big{)} \times -x^1 \dots && \text{using \eqref{ref133}} \label{ref155} \tag{55}\\
+
 \end{align}
 $$
+
+
 <!--
 $$
 \begin{align}
