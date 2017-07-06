@@ -409,21 +409,29 @@ $$
 \end{align}
 $$
 
-Now, using eq \eqref{ref146}
+Now, using eq \eqref{ref146} in \eqref{ref157} 
+
+$$
+\begin{align}
+\frac{\partial L}{\partial w_1^{11}} & = - \Delta l_{2} * w_2^1 \times (l_1^1) \times (1-l_1^1) \times x^1 \label{ref158} \tag{58} \\
+\end{align}
+$$
 
 Likewise, 
 
 $$
 \begin{align}
-\frac{\partial L}{\partial w_1^{21}} & = -(y - \hat{y}) \times \hat{y} \times (1- \hat{y}) * w_2^1 \times (l_1^1) \times (1-l_1^1) \times x^2 \label{ref158} \tag{58} \\
+\frac{\partial L}{\partial w_1^{21}} & = -\Delta l_{2} * w_2^1 \times (l_1^1) \times (1-l_1^1) \times x^2 \label{ref159} \tag{59} \\
 \end{align}
 $$
 
 $$
 \begin{align}
-\frac{\partial L}{\partial w_1^{31}} & = -(y - \hat{y}) \times \hat{y} \times (1- \hat{y}) * w_2^1 \times (l_1^1) \times (1-l_1^1) \times x^3 \label{ref159} \tag{59} \\
+\frac{\partial L}{\partial w_1^{31}} & = -\Delta l_{2} * w_2^1 \times (l_1^1) \times (1-l_1^1) \times x^3 \label{ref160} \tag{60} \\
 \end{align}
 $$
+
+
 
 
 <!--
