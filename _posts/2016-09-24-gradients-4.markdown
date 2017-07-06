@@ -417,7 +417,21 @@ $$
 \end{align}
 $$
 
-Further, let \Delta l_{1}^{1} = -\Delta l_{2} * w_2^1 \times (l_1^1) \times (1-l_1^1) 
+Further, let  
+
+$$
+\begin{align}
+\Delta l_{1}^{1} = -\Delta l_{2} * w_2^1 \times (l_1^1) \times (1-l_1^1) \label{ref159} \tag{59} 
+\end{align}
+$$
+
+Then, 
+
+$$
+\begin{align}
+\frac{\partial L}{\partial w_1^{11}} & = \Delta l_{1}^{1} \times x^1 \label{ref160} \tag{60} 
+\end{align}
+$$
 
 Likewise, 
 
