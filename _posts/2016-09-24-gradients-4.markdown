@@ -312,9 +312,9 @@ $$
 \begin{align}
 \frac{\partial L}{\partial w_2^1} & = \frac{\partial L}{\partial \hat{y}} \times \frac{\partial \hat{y}}{\partial w_2^1} \label{ref41} \tag{41}\\
 \frac{\partial L}{\partial \hat{y}} &= \frac{1}{2} \times 2 \times (y - \hat{y})^{1} \times (-1) \label{ref42} \tag{42}\\
-\frac{\partial \hat{y}}{\partial w_2^1} &= \big{(} \frac{1}{1 + e^{-[l_1] . [W_2]}} \big{)} \times \big{(}1- \frac{1}{1 + e^{-[l_1] . [W_2]}} \big{)} * -l_1 \\
-& = \sigma ([l_1] . [W_2]) \times (1- \sigma ([l_1] . [W_2])) * -l_1 \dots && \text{using \eqref{ref31}} \label{ref43} \tag{43}\\
-& = \hat{y} \times (1- \hat{y}) * -l_1 \dots && \text{using \eqref{ref30}} \label{ref44} \tag{44}\\
+\frac{\partial \hat{y}}{\partial w_2^1} &= \big{(} \frac{1}{1 + e^{-[l_1] . [W_2]}} \big{)} \times \big{(}1- \frac{1}{1 + e^{-[l_1] . [W_2]}} \big{)} * -l_1^1 \\
+& = \sigma ([l_1] . [W_2]) \times (1- \sigma ([l_1] . [W_2])) * -l_1^1 \dots && \text{using \eqref{ref31}} \label{ref43} \tag{43}\\
+& = \hat{y} \times (1- \hat{y}) * -l_1^1 \dots && \text{using \eqref{ref30}} \label{ref44} \tag{44}\\
 \end{align}
 $$
 
@@ -322,8 +322,8 @@ Substituting \eqref{ref43} & \eqref{ref44} in \eqref{ref41}, we get
 
 $$
 \begin{align}
-\frac{\partial L}{\partial w_2^1} &= \big{(} (-1) \times (y - \hat{y}) \big{)} \times \big{(} \hat{y} \times (1- \hat{y}) \times -l_1 \big{)}\\ \\
-&= (y - \hat{y}) \times \hat{y} \times (1- \hat{y}) \times l_1 \label{ref45} \tag{45} \\
+\frac{\partial L}{\partial w_2^1} &= \big{(} (-1) \times (y - \hat{y}) \big{)} \times \big{(} \hat{y} \times (1- \hat{y}) \times -l_1^1 \big{)}\\ \\
+&= (y - \hat{y}) \times \hat{y} \times (1- \hat{y}) \times l_1^1 \label{ref45} \tag{45} \\
 \end{align}
 $$
 
@@ -336,10 +336,29 @@ Let,
 Then, eq \eqref{ref45} reduces to:   
 $$ 
 \begin{align}
-\frac{\partial L}{\partial w_2^1} &= \Delta l_{2} \times l_1 \\
-& = \Delta l_{2} * l_1 \\
+\frac{\partial L}{\partial w_2^1} &= \Delta l_{2} \times l_1^1 \\
 \end{align}
 $$
+
+Likewise, 
+$$
+\begin{align}
+\frac{\partial L}{\partial w_2^2} & = \Delta l_{2} \times l_1^2 \label{ref46} \tag{46} \\
+\end{align}
+$$
+
+Using eq \eqref{ref45} and \eqref{ref46}  in \eqref{ref40} 
+
+$$
+\begin{equation}
+\nabla_{W_2} L = \begin{bmatrix}
+     \Delta l_{1} \times l_1^1 \\
+     \Delta l_{1} \times l_1^2 \\
+     \end{bmatrix}
+\label{ref47} \tag{47}
+\end{equation} 
+$$
+
 
 <!--
 $$
