@@ -517,3 +517,14 @@ Now, we have the pieces. We just need to assemble them.
 
 Using Eq \eqref{ref160}, \eqref{ref161}, \eqref{ref162} and \eqref{ref172}, \eqref{ref173}, \eqref{ref174} in \eqref{ref150}
 
+$$
+\begin{equation}
+\nabla_{W_1} L = \frac{\partial L}{\partial W_1} \\
+\nabla_{W_2} L = \begin{bmatrix}
+     \Delta l_{1}^{1} \times x^1 & \Delta l_{1}^{2} \times x^1\\
+     \Delta l_{1}^{1} \times x^2 & \Delta l_{1}^{2} \times x^2\\
+     \Delta l_{1}^{1} \times x^3 & \Delta l_{1}^{2} \times x^3\\
+     \end{bmatrix}
+\label{ref175} \tag{75}
+\end{equation} 
+$$
