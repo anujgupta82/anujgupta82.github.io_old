@@ -200,3 +200,4 @@ $$
 \end{align}
 $$
 
+In the [next post](https://anujgupta82.github.io/2016/09/24/gradients-4-2/) we will see what happens when the hidden layer has more than 1 nodes.
