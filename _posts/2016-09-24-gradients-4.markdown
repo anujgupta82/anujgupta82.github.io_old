@@ -374,7 +374,19 @@ $$
 
 **\\([\nabla_{W_1} L]_{\scriptscriptstyle 3\times 2}\\)**
 
-Lets, first compute \\(\frac{\partial L}{\partial w_{1}^{11}}\\):
+$$
+\begin{equation}
+\nabla_{W_1} L = \frac{\partial L}{\partial W_1} \\
+\nabla_{W_2} L = \begin{bmatrix}
+     \frac{\partial L}{\partial w_{1}^{11}} & \frac{\partial L}{\partial w_{1}^{12}}\\
+     \frac{\partial L}{\partial w_{1}^{21}} & \frac{\partial L}{\partial w_{1}^{22}}\\
+     \frac{\partial L}{\partial w_{1}^{31}} & \frac{\partial L}{\partial w_{1}^{32}}\\
+     \end{bmatrix}
+\label{ref50} \tag{50}
+\end{equation} 
+$$
+
+Lets, first focus on \\(\frac{\partial L}{\partial w_{1}^{11}}\\):
 
 $$
 \begin{align}
