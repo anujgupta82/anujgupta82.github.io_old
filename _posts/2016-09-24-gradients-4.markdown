@@ -366,7 +366,7 @@ $$
 
 $$ 
 \begin{align}
-\frac{\partial L}{\partial W_2} &= [(l_{1})]^\intercal . \Delta l_{2} \\
+\frac{\partial L}{\partial W_2} &= [l_{1}]^\intercal . \Delta l_{2} \\
 \end{align}
 $$
 
