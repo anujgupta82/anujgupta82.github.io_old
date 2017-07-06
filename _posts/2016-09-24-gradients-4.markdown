@@ -417,6 +417,8 @@ $$
 \end{align}
 $$
 
+Further, let \Delta l_{1}^{1} = -\Delta l_{2} * w_2^1 \times (l_1^1) \times (1-l_1^1) 
+
 Likewise, 
 
 $$
@@ -431,7 +433,7 @@ $$
 \end{align}
 $$
 
-
+Further, let \Delta l_{1}^{1} = -\Delta l_{2} * w_2^1 \times (l_1^1) \times (1-l_1^1)
 
 
 <!--
