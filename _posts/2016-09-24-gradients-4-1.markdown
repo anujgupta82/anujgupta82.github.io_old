@@ -61,7 +61,14 @@ $$
 
 
 \\( \hat{y} \\) is predicted output. In matrix format, \\([\hat{y}]_{\scriptscriptstyle 1\times 1}\\)
-\\( \hat{y} = \sigma ([l_1] . [W_2]) = \frac{1}{1 + e^{-[l_1] . [W_2]}} \label{ref11} \tag{2} \\)
+
+$$
+\begin{align}
+\hat{y} & = \sigma ([l_1] . [W_2]) \label{ref11} \tag{2.1} \\
+& = \frac{1}{1 + e^{-[l_1] . [W_2]}} \label{ref112} \tag{2.2} \\
+& = \frac{1}{1 + e^{-(l_1^1 w_2^1 + l_1^2 w_2^2)}} \label{ref113} \tag{2.3} \\
+\end{align}
+$$
 
 
 ##### **Loss**
