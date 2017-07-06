@@ -202,6 +202,8 @@ $$
 
 #### **1 hidden layer with \\(\geq\\) 2  nodes**
 
+We will derive gradients for hidden layer with 2  nodes. 3 or more nodes is a straight forward extension. 
+
 <div class="imgcap">
 <img src="/assets/gradients/NN_4_2.jpeg" height="300" width="350">
 <div class="thecap">Neural net with 2 layer, 2 nodes in hidden layer. Input is a vector</div>
