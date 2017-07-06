@@ -329,6 +329,18 @@ $$
 
 Let,  
 
+\begin{align}
+\Delta l_{2} = (y - \hat{y}) \times \hat{y} \times (1- \hat{y}) \label{ref46} \tag{46} \\
+\end{align}
+
+Then, eq \eqref{ref45} reduces to:   
+$$ 
+\begin{align}
+\frac{\partial L}{\partial w_2^1} &= \Delta l_{2} \times l_1 \\
+& = \Delta l_{2} * l_1 \\
+\end{align}
+$$
+
 <!--
 $$
 \begin{align}
