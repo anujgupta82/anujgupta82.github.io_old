@@ -333,20 +333,21 @@ Let,
 \end{align}
 
 Then, eq \eqref{ref45} reduces to:   
+
 $$ 
 \begin{align}
-\frac{\partial L}{\partial w_2^1} &= \Delta l_{2} \times l_1^1 \\
+\frac{\partial L}{\partial w_2^1} &= \Delta l_{2} \times l_1^1 \label{ref47} \tag{47} \\
 \end{align}
 $$
 
 Likewise, 
 $$
 \begin{align}
-\frac{\partial L}{\partial w_2^2} & = \Delta l_{2} \times l_1^2 \label{ref47} \tag{47} \\
+\frac{\partial L}{\partial w_2^2} & = \Delta l_{2} \times l_1^2 \label{ref48} \tag{48} \\
 \end{align}
 $$
 
-Using eq \eqref{ref45} and \eqref{ref47} in \eqref{ref40} 
+Using eq \eqref{ref47} and \eqref{ref48} in \eqref{ref40} 
 
 $$
 \begin{equation}
@@ -354,12 +355,12 @@ $$
      \Delta l_{2} \times l_1^1 \\
      \Delta l_{2} \times l_1^2 \\
      \end{bmatrix}
-\label{ref48} \tag{48}
+\label{ref49} \tag{49}
 \end{equation} 
 $$
 
 $$
-\frac{\partial L}{\partial W_1} = \left[ \begin{array}{c} l_1^1 \\ l_1^2 \end{array} \right]_{\scriptscriptstyle 2 \times 1}. \left[ \Delta l_{2} \right]_{\scriptscriptstyle 1 \times 1}
+\frac{\partial L}{\partial W_2} = \left[ \begin{array}{c} l_1^1 \\ l_1^2 \end{array} \right]_{\scriptscriptstyle 2 \times 1}. \left[ \Delta l_{2} \right]_{\scriptscriptstyle 1 \times 1}
 $$
 
 
