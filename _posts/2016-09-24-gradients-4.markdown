@@ -313,7 +313,7 @@ $$
 \frac{\partial L}{\partial \hat{y}} &= \frac{1}{2} \times 2 \times (y - \hat{y})^{1} \times (-1) \label{ref42} \tag{42}\\
 \frac{\partial \hat{y}}{\partial w_2^1} &= \big{(} \frac{1}{1 + e^{-[l_1] . [W_2]}} \big{)} \times \big{(}1- \frac{1}{1 + e^{-[l_1] . [W_2]}} \big{)} * -l_1 \\
 & = \sigma ([l_1] . [W_2]) \times (1- \sigma ([l_1] . [W_2])) * -l_1 \dots && \text{using \eqref{ref11}} \label{ref43} \tag{43}\\
-& = \hat{y} \times (1- \hat{y}) * -l_1 \dots && \text{using \eqref{ref11}} \label{ref43} \tag{43}\\
+& = \hat{y} \times (1- \hat{y}) * -l_1 \dots && \text{using \eqref{ref11}} \label{ref44} \tag{44}\\
 \end{align}
 $$
 
