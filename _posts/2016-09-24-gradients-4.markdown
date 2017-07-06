@@ -106,7 +106,7 @@ $$
 \begin{align}
 \frac{\partial L}{\partial W_2} &= \Delta l_{2} \times l_1 \\
 & = \Delta l_{2} * l_1 \\
-& = [l_1^{T}] . \Delta l_{2} \label{ref18} \tag{9} \\
+& = [l_1]^\intercal . \Delta l_{2} \label{ref18} \tag{9} \\
 \end{align}
 $$
 
@@ -196,7 +196,7 @@ $$
 
 $$ 
 \begin{align}
-\frac{\partial L}{\partial W_1} &= [X^{T}] . \Delta l_{1} \\
+\frac{\partial L}{\partial W_1} &= [X]^\intercal . \Delta l_{1} \\
 \end{align}
 $$
 
@@ -552,7 +552,7 @@ $$
 
 $$ 
 \begin{align}
-\frac{\partial L}{\partial W_1} &= [X^{T}] . \Delta l_{1} \\
+\frac{\partial L}{\partial W_1} &= [X]^\intercal . \Delta l_{1} \\
 \end{align}
 $$
 
