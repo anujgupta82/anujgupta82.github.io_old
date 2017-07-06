@@ -37,7 +37,7 @@ $$
 $$
 
 
-To compute the gradients, we will start with the simplest case and increase the complexity gradually. To keep things simple we will complete it in 5 parts
+To compute the gradients, we will start with the simplest case and increase the complexity gradually. To keep things simple we will complete it in 6 parts
 1. [1 layer network, 1 training example (scalar)](https://anujgupta82.github.io/2016/09/24/gradients-1/)
 2. [1 layer network, 1 training example (vector)](https://anujgupta82.github.io/2016/09/24/gradients-2/)
 3. [1 layer network, batch training (>1 training examples where each is a vector)](https://anujgupta82.github.io/2016/09/24/gradients-3/)
