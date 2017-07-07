@@ -150,32 +150,7 @@ $$
 
 {% highlight r %} $$ \mathsf{\frac{\partial L}{\partial W} = [X^{T}] . \Delta l_{1}} $$ {% endhighlight %}
 
-
-Here's another example using type \mathsf
-
-{% highlight r %} $$ \mathsf{Data = PCs} \times \mathsf{Loadings} $$ {% endhighlight %}
-
-which gets displayed as
-
-$$ \mathsf{Data = PCs} \times \mathsf{Loadings} $$
-
-Or even better:
-
-{% highlight r %} \[ \mathbf{X} = \mathbf{Z} \mathbf{P^\mathsf{T}} \] {% endhighlight %}
-
-is displayed as
-
-\[ \mathbf{X} = \mathbf{Z} \mathbf{P^\mathsf{T}} \]
-
-If you want to use subscripts like this \( \mathbf{X}_{n,p} \) you need to scape the underscores with a backslash like so \mathbf{X}\_{n,p}:
-
-{% highlight r %} $$ \mathbf{X}_{n,p} = \mathbf{A}_{n,k} \mathbf{B}_{k,p} $$ {% endhighlight %}
-
-will be displayed as
-
-\[ \mathbf{X}_{n,p} = \mathbf{A}_{n,k} \mathbf{B}_{k,p} \]
-
-
+\[ \mathbf{\frac{\partial L}{\partial W}} = \mathbf{[X^{T}] . \Delta l_{1}} \mathbf{P^\mathsf{T}} \]
 
 
 
