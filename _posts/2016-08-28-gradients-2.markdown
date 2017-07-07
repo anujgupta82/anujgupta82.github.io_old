@@ -40,9 +40,9 @@ Let \\( \hat{y} \\) be predicted output. In matrix format, \\([\hat{y}]_{\script
 
 $$
 \begin{align}
-\hat{y} & = \sigma ([l_1] . [W_2]) \label{ref101} \tag{10.1} \\
-& = \frac{1}{1 + e^{-[l_1] . [W_2]}} \label{ref102} \tag{10.2} \\
-& = \frac{1}{1 + e^{-(l_1^1 w_2^1 + l_1^2 w_2^2)}} \label{ref103} \tag{10.3} \\
+\hat{y} & = \sigma ([X] . [W]) \label{ref101} \tag{10.1} \\
+& = \frac{1}{1 + e^{-[X] . [W]}} \label{ref102} \tag{10.2} \\
+& = \frac{1}{1 + e^{-(x^1 w_1 + x^2 w_2 + x^3 w_3)}} \label{ref103} \tag{10.3} \\
 \end{align}
 $$
 
