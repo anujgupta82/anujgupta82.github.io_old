@@ -148,7 +148,7 @@ $$
 $$
 
 
-
+{% highlight r %} $$ \mathsf{\frac{\partial L}{\partial W} = [X^{T}] . \Delta l_{1}} $$ {% endhighlight %}
 
 
 Here's another example using type \mathsf
