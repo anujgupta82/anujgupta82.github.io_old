@@ -150,7 +150,7 @@ $$
 
 {% highlight r %} $$ \mathsf{\frac{\partial L}{\partial W} = [X^{T}] . \Delta l_{1}} $$ {% endhighlight %}
 
-\[ \mathbf{\frac{\partial L}{\partial W}} = \mathbf{[X^{T}] . \Delta l_{1}} \mathbf{P^\mathsf{T}} \]
+\[ \mathbf{\frac{\partial L}{\partial W}} = \mathbf{[X^{T}] . \Delta l_{1}} \]
 
 
 
