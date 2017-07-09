@@ -10,7 +10,7 @@ mathjax: true
 
 ### **2 layer network, single training example (vector)**
 
-In this post we will consider 2 type of networks. In first network, hidden layer has only 1 node while in second network hideen layer has more than 1 node. Lets start with the case of hidden layer with only 1 node. This part is bit lengthy, but fundamentally not very different from earlier parts. Keep calm and read on :-)
+In this post we will consider 2 type of networks. In first network, hidden layer has only 1 node while in second network hidden layer has more than 1 node. Lets start with the case of hidden layer with only 1 node. This part is bit lengthy, but fundamentally not very different from earlier parts. Keep calm and read on :-)
 
 #### **1 hidden layer with 1 node**
 
@@ -66,7 +66,7 @@ $$
 \begin{align}
 \hat{y} & = \sigma ([l_1] . [W_2]) \label{ref11} \tag{2.1} \\
 & = \frac{1}{1 + e^{-[l_1] . [W_2]}} \label{ref112} \tag{2.2} \\
-& = \frac{1}{1 + e^{-(l_1^1 w_2^1 + l_1^2 w_2^2)}} \label{ref113} \tag{2.3} \\
+& = \frac{1}{1 + e^{-(l_1 w_2)}} \label{ref113} \tag{2.3} \\
 \end{align}
 $$
 
