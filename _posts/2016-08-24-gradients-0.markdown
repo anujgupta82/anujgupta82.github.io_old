@@ -47,3 +47,17 @@ To compute the gradients, we will start with the simplest case and increase the 
 
 Since we will be dealing with matrices, a key step in every equation is to check if all matrix dimensions are consistent. 
 
+
+
+<div class="gallery gallery1">
+  <div class="prev-next-button previous">
+      <svg viewbox="0 0 100 100">
+    <path class="arrow" d="M 50,0 L 60,10 L 20,50 L 60,90 L 50,100 L 0,50 Z" transform=" translate(15,0)">
+  </svg>
+  </div>
+  <div class="prev-next-button next">
+      <svg viewbox="0 0 100 100">
+    <path class="arrow" d="M 50,0 L 60,10 L 20,50 L 60,90 L 50,100 L 0,50 Z "transform="translate(85,100) rotate(180) ">
+  </svg>
+  </div>
+</div>
