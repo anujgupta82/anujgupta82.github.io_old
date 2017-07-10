@@ -427,7 +427,7 @@ import numpy as np
 X = np.array([0,0,1])
 y = np.array([0])
 
-alpha = 0.5
+alpha = 0.5  # learning rate - hyperparameter
 
 W_1 = np.random.random(3,2)
 W_2 = np.random.random(2,1)
