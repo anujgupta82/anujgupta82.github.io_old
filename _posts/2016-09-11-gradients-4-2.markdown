@@ -381,3 +381,15 @@ $$
 \end{align}
 $$
 
+
+$$
+\begin{align}
+\Delta l_{1}^{1} = -\Delta l_{2} * w_2^1 \times (l_1^1) \times (1-l_1^1) \tag{59} 
+\end{align}
+$$
+
+$$
+\begin{align}
+\Delta l_{1}^{2} = -\Delta l_{2} * w_2^2 \times (l_1^2) \times (1-l_1^2) \tag{71} 
+\end{align}
+$$
