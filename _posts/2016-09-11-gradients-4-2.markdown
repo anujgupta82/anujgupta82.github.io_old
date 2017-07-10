@@ -418,7 +418,7 @@ $$
 $$
 
 
-Now, using 4 equations - \eqref{ref146}, \eqref{ref179}, \eqref{ref1491} and \eqref{ref178} one can directly code (bare bones) backpropagation algorithm. 
+Now, using 4 equations - \eqref{ref146}, \eqref{ref179}, \eqref{ref1491} and \eqref{ref178} one can directly code (bare bones) training algorithm. The code is borrowed from the [blog post](http://iamtrask.github.io/2015/07/27/python-network-part2/#viewSource) of Andrew Trask
 
 
 ```
