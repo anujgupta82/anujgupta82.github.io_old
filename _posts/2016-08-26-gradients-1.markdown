@@ -75,9 +75,9 @@ $$
 $$
 
 
+[Prev](https://anujgupta82.github.io/2016/08/24/gradients-0/){: .btn}
 
-
-
+[Next](https://anujgupta82.github.io/2016/08/28/gradients-2/){: .btn}
 
 
 

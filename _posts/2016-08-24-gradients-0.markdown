@@ -47,7 +47,7 @@ To compute the gradients, we will start with the simplest case and increase the 
 
 Since we will be dealing with matrices, a key step in every equation is to check if all matrix dimensions are consistent. 
 
-[Next](https://anujgupta82.github.io/2016/08/28/gradients-2/){: .btn}
+[Next](https://anujgupta82.github.io/2016/08/26/gradients-1/){: .btn}
 
 <!--
 {% include button.html button_name="Next" button_class="primary" %}
