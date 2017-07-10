@@ -393,3 +393,11 @@ $$
 \Delta l_{1}^{2} = -\Delta l_{2} * w_2^2 \times (l_1^2) \times (1-l_1^2) \tag{71} 
 \end{align}
 $$
+
+Therefore, 
+
+$$
+\begin{align}
+\Delta l_1 = \left[ \Delta l_{2} * w_2^1 \times (l_1^1) \times (1-l_1^1)    \quad      \Delta l_{2} * w_2^2 \times (l_1^2) \times (1-l_1^2) \right]
+\end{align}
+$$
