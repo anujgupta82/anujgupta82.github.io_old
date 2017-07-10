@@ -399,6 +399,6 @@ Therefore,
 $$
 \begin{align}
 \Delta l_1 &= \left[ \Delta l_{2} * w_2^1 \times (l_1^1) \times (1-l_1^1)    \quad      \Delta l_{2} * w_2^2 \times (l_1^2) \times (1-l_1^2) \right]
-
+&= (\left[ \Delta l_{2} \right] . \left[ W_2 \right]^\intercal) \times (l_1^1) \times (1-l_1^1)
 \end{align}
 $$
