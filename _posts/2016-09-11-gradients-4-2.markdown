@@ -415,3 +415,5 @@ $$
 \frac{\partial L}{\partial W_1} &= [X]^\intercal . \Delta l_{1} \tag{78} \\
 \end{align}
 $$
+
+Now, using 4 equations - \eqref{ref146}, \eqref{ref179}, \eqref{ref1491} and \eqref{ref178} one can directly code backpropagation algorithm
