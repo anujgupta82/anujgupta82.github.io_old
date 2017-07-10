@@ -422,11 +422,11 @@ Now, using 4 equations - \eqref{ref146}, \eqref{ref179}, \eqref{ref1491} and \eq
 
 
 ```
-    import numpy as np
+import numpy as np
 
-    X = np.array([0,0,1])
-    y = np.array([0])
+X = np.array([0,0,1])
+y = np.array([0])
 
-    
+
 
 ```
