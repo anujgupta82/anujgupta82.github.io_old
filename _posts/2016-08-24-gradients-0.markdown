@@ -52,14 +52,14 @@ Since we will be dealing with matrices, a key step in every equation is to check
 <div class="gallery gallery1">
   
   <div class="prev-next-button previous">
-      <svg viewbox="0 0 100 100">
-    <path class="arrow" d="M 10,0 L 6,1 L 2,5 L 6,9 L 5,10 L 0,5 Z " transform=" translate(15,0)">
+      <svg viewbox="0 0 10 10">
+    <path class="arrow" d="M 50,0 L 60,10 L 20,50 L 60,90 L 50,100 L 0,50 Z " transform=" translate(15,0)">
   </svg>
   </div>
 
   <div class="prev-next-button next">
-      <svg viewbox="0 0 100 100">
-    <path class="arrow" d="M 10,0 L 6,1 L 2,5 L 6,9 L 5,10 L 0,5 Z " transform="translate(85,100) rotate(180) ">
+      <svg viewbox="0 0 20 20">
+    <path class="arrow" d="M 50,0 L 60,10 L 20,50 L 60,90 L 50,100 L 0,50 Z "transform="translate(85,100) rotate(180) ">
   </svg>
   </div>
 
