@@ -377,7 +377,7 @@ __To summerize the take home, lets (re)write the key equations__:
 
 $$
 \begin{align}
-\Delta l_1 = \left[ \Delta l_{1}^{1}    \quad      \Delta l_{1}^{2} \right]
+\Delta l_1 = \left[ \Delta l_{1}^{1}    \quad      \Delta l_{1}^{2} \right] \tag{76} 
 \end{align}
 $$
 
