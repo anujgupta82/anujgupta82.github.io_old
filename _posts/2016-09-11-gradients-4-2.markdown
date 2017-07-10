@@ -181,7 +181,7 @@ $$
 
 $$ 
 \begin{align}
-\frac{\partial L}{\partial W_2} &= [l_{1}]^\intercal . \Delta l_{2} \\
+\frac{\partial L}{\partial W_2} &= [l_{1}]^\intercal . \Delta l_{2} \label{ref1491} \tag{49.1} \\
 \end{align}
 $$
 
@@ -364,7 +364,7 @@ $$
 
 $$ 
 \begin{align}
-\frac{\partial L}{\partial W_1} &= [X]^\intercal . \Delta l_{1} \\
+\frac{\partial L}{\partial W_1} &= [X]^\intercal . \Delta l_{1} \label{ref178} \tag{78} \\
 \end{align}
 $$
 
@@ -399,7 +399,19 @@ Therefore,
 $$
 \begin{align}
 \Delta l_1 &= \left[ \Delta l_{2} * w_2^1 \times (l_1^1) \times (1-l_1^1)    \quad      \Delta l_{2} * w_2^2 \times (l_1^2) \times (1-l_1^2) \right] \\
-&= (\left[ \Delta l_{2} \right]_{\scriptscriptstyle 1 \times 1} . \left[ W_2 ^\intercal \right]_{\scriptscriptstyle 1 \times 2}) \times (l_1^1) \times (1-l_1^1) \label{ref178} \tag{78}
+&= (\left[ \Delta l_{2} \right]_{\scriptscriptstyle 1 \times 1} . \left[ W_2 ^\intercal \right]_{\scriptscriptstyle 1 \times 2}) \times (l_1^1) \times (1-l_1^1) \label{ref179} \tag{79}
 \end{align}
 $$
 
+
+$$ 
+\begin{align}
+\frac{\partial L}{\partial W_2} &= [l_{1}]^\intercal . \Delta l_{2} \tag{49.1} \\
+\end{align}
+$$
+
+$$ 
+\begin{align}
+\frac{\partial L}{\partial W_1} &= [X]^\intercal . \Delta l_{1} \tag{78} \\
+\end{align}
+$$
