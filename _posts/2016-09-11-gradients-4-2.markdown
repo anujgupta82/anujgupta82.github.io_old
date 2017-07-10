@@ -399,7 +399,7 @@ Therefore,
 $$
 \begin{align}
 \Delta l_1 &= \left[ \Delta l_{2} * w_2^1 \times (l_1^1) \times (1-l_1^1)    \quad      \Delta l_{2} * w_2^2 \times (l_1^2) \times (1-l_1^2) \right] \\
-&= (\left[ \Delta l_{2} \right]_{\scriptscriptstyle 1 \times 1} . \left[ W_2 ^\intercal \right]_{\scriptscriptstyle 1 \times 2}) \times (l_1^1) \times (1-l_1^1) \label{ref179} \tag{79}
+&= (\left[ \Delta l_{2} \right]_{\scriptscriptstyle 1 \times 1} . \left[ W_2 ^\intercal \right]_{\scriptscriptstyle 1 \times 2}) \times (l_1) \times (1-l_1) \label{ref179} \tag{79}
 \end{align}
 $$
 
@@ -410,10 +410,13 @@ $$
 \end{align}
 $$
 
+```
 $$ 
 \begin{align}
 \frac{\partial L}{\partial W_1} &= [X]^\intercal . \Delta l_{1} \tag{78} \\
 \end{align}
 $$
+```
 
-Now, using 4 equations - \eqref{ref146}, \eqref{ref179}, \eqref{ref1491} and \eqref{ref178} one can directly code backpropagation algorithm
+Now, using 4 equations - \eqref{ref146}, \eqref{ref179}, \eqref{ref1491} and \eqref{ref178} one can directly code backpropagation algorithm. 
+
