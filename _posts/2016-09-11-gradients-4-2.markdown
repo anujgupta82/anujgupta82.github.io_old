@@ -368,3 +368,9 @@ $$
 \end{align}
 $$
 
+
+__To summerize the take home, lets (re)write the key equations__:
+
+\begin{align}
+\Delta l_{2} = (y - \hat{y}) \times \hat{y} \times (1- \hat{y}) \tag{46} \\
+\end{align}
