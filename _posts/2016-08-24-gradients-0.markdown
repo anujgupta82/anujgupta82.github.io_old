@@ -60,6 +60,14 @@ $$
 \end{align}
 $$
 
+likewise, 
+
+$$
+\begin{align}
+\frac{ d\sigma(ax)}{dx} = a(\sigma(x))(1-\sigma(x))
+\end{align}
+$$
+
 Still not clear ? Read this [blog](http://kawahara.ca/how-to-compute-the-derivative-of-a-sigmoid-function-fully-worked-example/).
 
 
