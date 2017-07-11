@@ -28,9 +28,10 @@ Through out this post we assume:
 <div class="thecap">Sigmoid function</div>
 </div>
 
-It easy to see it is smooth and differentiable and bound between 0 and 1 [No? not straight forward - need to fix this]. \\
+It easy to see it is smooth and differentiable and bound between 0 and 1 [No? not straight forward - need to fix this]. 
 
 ### <a name="Derivative"></a>Derivative
+[create an anchor](#anchors-in-markdown)
 The derivative of the logistic function(\\(\sigma\\)) is simply:
 
 $$
