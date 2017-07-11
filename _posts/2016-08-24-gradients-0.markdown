@@ -36,7 +36,15 @@ $$
 \end{align}
 $$
 
-To see this: 
+From where this comes ? read on:
+
+$$
+\begin{align}
+\frac{ d\sigma(x)}{dx} &= \frac{d}{dx} \big[ \frac{1}{1+e^{-x}}\big]
+
+\sigma(x)(1-\sigma(x))
+\end{align}
+$$
 
 Still not clear ? Read this [blog](http://kawahara.ca/how-to-compute-the-derivative-of-a-sigmoid-function-fully-worked-example/).
 
