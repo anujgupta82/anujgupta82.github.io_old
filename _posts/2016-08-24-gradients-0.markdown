@@ -64,7 +64,7 @@ likewise,
 
 $$
 \begin{align}
-\frac{d}{dx}\sigma(ax) = a(\sigma(x))(1-\sigma(x))
+\frac{d}{dx}\sigma(ax) = a(\sigma(ax))(1-\sigma(ax))
 \end{align}
 $$
 
