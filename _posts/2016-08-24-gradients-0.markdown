@@ -29,7 +29,6 @@ Through out this post we assume:
 </div>
 
 It easy to see it is smooth and differentiable and bound between 0 and 1 [No? not straight forward - need to fix this]. 
-
 ##### [Derivative](#derivative-anchors)
 The derivative of the logistic function(\\(\sigma\\)) is simply:
 
