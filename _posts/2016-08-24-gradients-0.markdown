@@ -32,7 +32,7 @@ It easy to see it is smooth and differentiable and bound between 0 and 1 [No? no
 
 $$
 \begin{align}
-\frac{d}{dx}\sigma(x) = \sigma(x)(1-\sigma(x))
+\frac{d}{dx}\sigma(x) = \sigma(x)(1-\sigma(x)) \label{refA} \tag{A}\\
 \end{align}
 $$
 
@@ -64,7 +64,7 @@ likewise,
 
 $$
 \begin{align}
-\frac{d}{dx}\sigma(ax) = a(\sigma(ax))(1-\sigma(ax))
+\frac{d}{dx}\sigma(ax) = a(\sigma(ax))(1-\sigma(ax)) \label{refC} \tag{C}
 \end{align}
 $$
 
