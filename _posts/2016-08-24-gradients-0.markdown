@@ -55,6 +55,8 @@ $$
 
 &= \frac{1}{(1+e^{-x})} . \big( 1 - \frac{e^{-x}}{(1+e^{-x})} \big) \\
 
+&= \sigma(x)(1-\sigma(x))
+
 \end{align}
 $$
 
