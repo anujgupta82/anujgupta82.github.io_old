@@ -68,7 +68,7 @@ $$
 \end{align}
 $$
 
-Still not clear ? Read this [blog](http://kawahara.ca/how-to-compute-the-derivative-of-a-sigmoid-function-fully-worked-example/).
+We will be using the above result a lot, so make sure you understand it. If it is not clear, have a look at this [post](http://kawahara.ca/how-to-compute-the-derivative-of-a-sigmoid-function-fully-worked-example/).
 
 
 To compute the gradients, we will start with the simplest case and increase the complexity gradually. To keep things simple we will complete it in 6 parts
