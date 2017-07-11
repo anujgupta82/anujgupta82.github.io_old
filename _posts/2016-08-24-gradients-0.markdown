@@ -43,7 +43,7 @@ From where this comes ? read on:
 $$
 \begin{align}
 
-\frac{d}{dx}\sigma(x) &= \frac{d}{dx} \big[ \frac{1}{1+e^{-x}}\big] \\
+\frac{d}{dx}\sigma(x) &= \frac{d}{dx} \big[ \frac{1}{1+e^{-x}}\big] \label{refB} \tag{B}\\
 
 &= \frac{d}{dx} (1+e^{-x})^{-1} \\
 
@@ -57,7 +57,7 @@ $$
 
 &= \frac{1}{(1+e^{-x})} . \big( 1 - \frac{e^{-x}}{(1+e^{-x})} \big) \\
 
-&= \sigma(x)(1-\sigma(x))
+&= \sigma(x)(1-\sigma(x)) \label{refC} \tag{C}
 
 \end{align}
 $$
@@ -66,7 +66,7 @@ likewise,
 
 $$
 \begin{align}
-\frac{d}{dx}\sigma(ax) = a(\sigma(ax))(1-\sigma(ax)) \label{refC} \tag{C}
+\frac{d}{dx}\sigma(ax) = a(\sigma(ax))(1-\sigma(ax)) \label{refD} \tag{D}
 \end{align}
 $$
 
