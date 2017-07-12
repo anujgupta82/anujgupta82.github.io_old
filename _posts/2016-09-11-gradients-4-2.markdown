@@ -222,7 +222,7 @@ Using eq \eqref{ref152}, \eqref{ref154} and \eqref{ref156} in eq \eqref{ref151}
 $$
 \begin{align}
 \frac{\partial L}{\partial w_1^{11}} & = -(y - \hat{y}) \times \hat{y} \times (1- \hat{y}) * w_2^1 \times (l_1^1) \times (1-l_1^1) \times x^1 \\
-& = -(\hat{y} - y) \times \hat{y} \times (1- \hat{y}) * w_2^1 \times (l_1^1) \times (1-l_1^1) \times x^1 \label{ref157} \tag{57} \\
+& = (\hat{y} - y) \times \hat{y} \times (1- \hat{y}) * w_2^1 \times (l_1^1) \times (1-l_1^1) \times x^1 \label{ref157} \tag{57} \\
 \end{align}
 $$
 
@@ -230,7 +230,7 @@ Now, using eq \eqref{ref146} in \eqref{ref157}
 
 $$
 \begin{align}
-\frac{\partial L}{\partial w_1^{11}} & = - \Delta l_{2} * w_2^1 \times (l_1^1) \times (1-l_1^1) \times x^1 \label{ref158} \tag{58} \\
+\frac{\partial L}{\partial w_1^{11}} & = \Delta l_{2} * w_2^1 \times (l_1^1) \times (1-l_1^1) \times x^1 \label{ref158} \tag{58} \\
 \end{align}
 $$
 
@@ -238,7 +238,7 @@ Further, let
 
 $$
 \begin{align}
-\Delta l_{1}^{1} = -\Delta l_{2} * w_2^1 \times (l_1^1) \times (1-l_1^1) \label{ref159} \tag{59} 
+\Delta l_{1}^{1} = \Delta l_{2} * w_2^1 \times (l_1^1) \times (1-l_1^1) \label{ref159} \tag{59} 
 \end{align}
 $$
 
@@ -254,14 +254,14 @@ Likewise,
 
 $$
 \begin{align}
-\frac{\partial L}{\partial w_1^{21}} & = -\Delta l_{2} * w_2^1 \times (l_1^1) \times (1-l_1^1) \times x^2 \\
+\frac{\partial L}{\partial w_1^{21}} & = \Delta l_{2} * w_2^1 \times (l_1^1) \times (1-l_1^1) \times x^2 \\
 &= \Delta l_{1}^{1} \times x^2 \label{ref161} \tag{61} 
 \end{align}
 $$
 
 $$
 \begin{align}
-\frac{\partial L}{\partial w_1^{31}} & = -\Delta l_{2} * w_2^1 \times (l_1^1) \times (1-l_1^1) \times x^3 \\
+\frac{\partial L}{\partial w_1^{31}} & = \Delta l_{2} * w_2^1 \times (l_1^1) \times (1-l_1^1) \times x^3 \\
 &= \Delta l_{1}^{1} \times x^3 \label{ref162} \tag{62} \\
 \end{align}
 $$
