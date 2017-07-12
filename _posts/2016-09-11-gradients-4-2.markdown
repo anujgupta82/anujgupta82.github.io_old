@@ -126,9 +126,10 @@ $$
 \begin{align}
 \frac{\partial L}{\partial w_2^1} & = \frac{\partial L}{\partial \hat{y}} \times \frac{\partial \hat{y}}{\partial w_2^1} \label{ref141} \tag{41}\\
 \frac{\partial L}{\partial \hat{y}} &= \frac{1}{2} \times 2 \times (y - \hat{y})^{1} \times (-1) \label{ref142} \tag{42}\\
-\frac{\partial \hat{y}}{\partial w_2^1} &= \big{(} \frac{1}{1 + e^{-[l_1] . [W_2]}} \big{)} \times \big{(}1- \frac{1}{1 + e^{-[l_1] . [W_2]}} \big{)} * -l_1^1 \dots && \text{using \eqref{ref137}} \\
-& = \sigma ([l_1] . [W_2]) \times (1- \sigma ([l_1] . [W_2])) * -l_1^1 \dots && \text{using \eqref{ref136}} \label{ref143} \tag{43}\\
-& = \hat{y} \times (1- \hat{y}) * -l_1^1 \dots && \text{using \eqref{ref135}} \label{ref144} \tag{44}\\
+
+\frac{\partial \hat{y}}{\partial w_2^1} &= \big{(} \frac{1}{1 + e^{-[l_1] . [W_2]}} \big{)} \times \big{(}1- \frac{1}{1 + e^{-[l_1] . [W_2]}} \big{)} * l_1^1 \dots && \text{using \eqref{ref137}} \\
+& = \sigma ([l_1] . [W_2]) \times (1- \sigma ([l_1] . [W_2])) * l_1^1 \dots && \text{using \eqref{ref136}} \label{ref143} \tag{43}\\
+& = \hat{y} \times (1- \hat{y}) * l_1^1 \dots && \text{using \eqref{ref135}} \label{ref144} \tag{44}\\
 \end{align}
 $$
 
@@ -136,15 +137,16 @@ Substituting \eqref{ref143} & \eqref{ref144} in \eqref{ref141}, we get
 
 $$
 \begin{align}
-\frac{\partial L}{\partial w_2^1} &= \big{(} (-1) \times (y - \hat{y}) \big{)} \times \big{(} \hat{y} \times (1- \hat{y}) \times -l_1^1 \big{)}\\ \\
-&= (y - \hat{y}) \times \hat{y} \times (1- \hat{y}) \times l_1^1 \label{ref145} \tag{45} \\
+\frac{\partial L}{\partial w_2^1} &= \big{(} (-1) \times (y - \hat{y}) \big{)} \times \big{(} \hat{y} \times (1- \hat{y}) \times l_1^1 \big{)}\\ \\
+&= -(y - \hat{y}) \times \hat{y} \times (1- \hat{y}) \times l_1^1  \\
+&= (\hat{y} - y) \times \hat{y} \times (1- \hat{y}) \times l_1^1 \label{ref145} \tag{45} \\
 \end{align}
 $$
 
 Let,  
 
 \begin{align}
-\Delta l_{2} = (y - \hat{y}) \times \hat{y} \times (1- \hat{y}) \label{ref146} \tag{46} \\
+\Delta l_{2} = (\hat{y} - y) \times \hat{y} \times (1- \hat{y}) \label{ref146} \tag{46} \\
 \end{align}
 
 Then, eq \eqref{ref145} reduces to:   
