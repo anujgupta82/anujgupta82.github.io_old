@@ -320,14 +320,14 @@ Likewise,
 
 $$
 \begin{align}
-\frac{\partial L}{\partial w_1^{22}} & = -\Delta l_{2} * w_2^2 \times (l_1^2) \times (1-l_1^2) \times x^2 \\
+\frac{\partial L}{\partial w_1^{22}} & = \Delta l_{2} * w_2^2 \times (l_1^2) \times (1-l_1^2) \times x^2 \\
 &= \Delta l_{1}^{2} \times x^2 \label{ref173} \tag{73} 
 \end{align}
 $$
 
 $$
 \begin{align}
-\frac{\partial L}{\partial w_1^{32}} & = -\Delta l_{2} * w_2^2 \times (l_1^2) \times (1-l_1^2) \times x^3 \\
+\frac{\partial L}{\partial w_1^{32}} & = \Delta l_{2} * w_2^2 \times (l_1^2) \times (1-l_1^2) \times x^3 \\
 &= \Delta l_{1}^{2} \times x^3 \label{ref174} \tag{73} \\
 \end{align}
 $$
@@ -378,7 +378,7 @@ $$
 __To summerize the take home, lets (re)write the key equations__:
 
 \begin{align}
-\Delta l_{2} = (y - \hat{y}) \times \hat{y} \times (1- \hat{y}) \tag{46} \\
+\Delta l_{2} = (\hat{y} - y) \times \hat{y} \times (1- \hat{y}) \tag{46} \\
 \end{align}
 
 $$
@@ -390,13 +390,13 @@ $$
 
 $$
 \begin{align}
-\Delta l_{1}^{1} = -\Delta l_{2} * w_2^1 \times (l_1^1) \times (1-l_1^1) \tag{59} 
+\Delta l_{1}^{1} = \Delta l_{2} * w_2^1 \times (l_1^1) \times (1-l_1^1) \tag{59} 
 \end{align}
 $$
 
 $$
 \begin{align}
-\Delta l_{1}^{2} = -\Delta l_{2} * w_2^2 \times (l_1^2) \times (1-l_1^2) \tag{71} 
+\Delta l_{1}^{2} = \Delta l_{2} * w_2^2 \times (l_1^2) \times (1-l_1^2) \tag{71} 
 \end{align}
 $$
 
