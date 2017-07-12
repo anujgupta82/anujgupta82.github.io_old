@@ -457,4 +457,4 @@ for i in range(1000):
 
 ```
 
-[__Prev__](https://anujgupta82.github.io/2016/09/11/gradients-4-1/)
+[__Prev__](https://anujgupta82.github.io/2016/09/04/gradients-4-1/)
