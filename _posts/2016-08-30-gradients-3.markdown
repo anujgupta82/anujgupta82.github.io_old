@@ -150,7 +150,7 @@ $$
 
 Let, 
 $$
- \Delta l_{1}^{i} = ((y_i - \hat{y}_i) *  [\sigma( X_i . [W])(1 - \sigma( X_i . [W]))] ~~~~~~\qquad\forall i \in (1,4) \label{ref17} \tag{7}\\
+ \Delta l_{1}^{i} = ((\hat{y}_i - y_i) *  [\sigma( X_i . [W])(1 - \sigma( X_i . [W]))] ~~~~~~\qquad\forall i \in (1,4) \label{ref17} \tag{7}\\
 $$
 
 Using \eqref{ref17} in \eqref{ref16}, we get:  
