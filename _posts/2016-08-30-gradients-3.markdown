@@ -203,6 +203,7 @@ $$
 \end{align}
 $$
 
+In the [next post](https://anujgupta82.github.io/2016/09/11/gradients-4-2/) we will see what happens when the network has a hidden layer.
 
 
 [__Prev__](https://anujgupta82.github.io/2016/08/28/gradients-2/) [__Next__](https://anujgupta82.github.io/2016/09/04/gradients-4-1/)
