@@ -81,6 +81,7 @@ Substituting \eqref{ref13} & \eqref{ref16} in \eqref{ref12}, we get
 $$
 \begin{align}
 \frac{\partial L}{\partial w_1} &= \big{(} (-1) \times (y - \hat{y}) \big{)} \times \big{(} \hat{y} \times (1- \hat{y}) \times x_1 \big{)} \\
+& = -(y - \hat{y}) \times \hat{y} \times (1- \hat{y}) \times x_1\\
 & = (\hat{y} - y) \times \hat{y} \times (1- \hat{y}) \times x_1
 \end{align}
 $$
