@@ -415,17 +415,15 @@ __To summerize the take home, lets (re)write the key equations__:
 \Delta l_{2} = (\hat{y} - y) \times \hat{y} \times (1- \hat{y}) \tag{46} \\
 \end{align}
 
+$$ 
+\begin{align}
+\frac{\partial L}{\partial W_1} &= [X]^\intercal . \Delta l_{1} \tag{78} \\
+\end{align}
+$$
 
 $$ 
 \begin{align}
 \frac{\partial L}{\partial W_2} &= [l_{1}]^\intercal . \Delta l_{2} \tag{49.1} \\
-\end{align}
-$$
-
-
-$$ 
-\begin{align}
-\frac{\partial L}{\partial W_1} &= [X]^\intercal . \Delta l_{1} \tag{78} \\
 \end{align}
 $$
 
