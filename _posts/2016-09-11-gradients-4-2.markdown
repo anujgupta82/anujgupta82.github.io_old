@@ -450,3 +450,5 @@ for i in range(1000):
     W_2 = W_2 - alpha * (X.T).dot(layer_1_delta)
 
 ```
+
+[__Prev__](https://anujgupta82.github.io/2016/09/11/gradients-4-1/)
