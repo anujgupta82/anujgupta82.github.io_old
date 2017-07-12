@@ -88,7 +88,7 @@ $$
 Thus, in general:
 $$
 \begin{align}
-\frac{\partial L}{\partial w_i} &= (y - \hat{y}) \times \hat{y} \times (1- \hat{y}) \times x_i \label{ref17} \tag{17}\\
+\frac{\partial L}{\partial w_i} &= (\hat{y} - y) \times \hat{y} \times (1- \hat{y}) \times x_i \label{ref17} \tag{17}\\
 \end{align}
 $$
 
@@ -98,9 +98,9 @@ Using \eqref{ref17} in \eqref{ref11}
 $$
 \begin{equation}
 \frac{\partial L}{\partial W} = \begin{bmatrix}
-     (y - \hat{y}) \times \hat{y} \times (1- \hat{y}) \times x_1 \\
-     (y - \hat{y}) \times \hat{y} \times (1- \hat{y}) \times x_2 \\
-     (y - \hat{y}) \times \hat{y} \times (1- \hat{y}) \times x_3 \\
+     (\hat{y} - y) \times \hat{y} \times (1- \hat{y}) \times x_1 \\
+     (\hat{y} - y) \times \hat{y} \times (1- \hat{y}) \times x_2 \\
+     (\hat{y} - y) \times \hat{y} \times (1- \hat{y}) \times x_3 \\
      \end{bmatrix}
 \label{ref18} \tag{18}
 \end{equation}
@@ -114,7 +114,7 @@ $$
      x^2 \\
      x^3 \\
      \end{bmatrix} 
-     * [(y - \hat{y}) \times \hat{y} \times (1- \hat{y})]
+     * [(\hat{y} - y) \times \hat{y} \times (1- \hat{y})]
 \label{ref19} \tag{19}
 \end{equation}
 $$
