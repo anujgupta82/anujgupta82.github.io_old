@@ -136,7 +136,7 @@ $$
 Let,  
 
 \begin{align}
-\Delta l_{1} = (y - \hat{y}) \times \hat{y} \times (1- \hat{y}) \label{ref20} \tag{20} \\
+\Delta l_{1} = (\hat{y} - y) \times \hat{y} \times (1- \hat{y}) \label{ref20} \tag{20} \\
 \end{align}
 
 Using \eqref{ref20} in \eqref{ref19}
