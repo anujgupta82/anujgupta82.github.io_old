@@ -33,6 +33,16 @@ Joan  | saag paneer | medium | $11
 Sally  | vindaloo        | mild       | $14
 Erin   | lamb madras | HOT      | $5
 
+|             |          Grouping           ||
+First Header  | Second Header | Third Header |
+ ------------ | :-----------: | -----------: |
+Content       |          *Long Cell*        ||
+Content       |   **Cell**    |         Cell |
+
+New section   |     More      |         Data |
+And more      | With an escaped '\|'         ||  
+[Prototype table]
+
 
 <!--
 {% include button.html button_name="Next" button_class="primary" %}
