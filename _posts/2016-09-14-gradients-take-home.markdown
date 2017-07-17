@@ -43,6 +43,10 @@ New section   |     More      |         Data |
 And more      | With an escaped '\|'         ||  
 [Prototype table]
 
+| foo | bar |
+| --- | --- |
+| baz | bim |
+
 
 <!--
 {% include button.html button_name="Next" button_class="primary" %}
