@@ -17,7 +17,7 @@ In this post, based on our conclusions in last post, we will try and generalise 
 <div class="thecap">simple neural net</div>
 </div>
 
-Imagine we have a network with 1 input layer \\(L_0\\), 1 output layer \\(L_3\\) and 2 hidden layers \\(L_1\\), \\(L_2\\) respectively. Further, let \\(l_i\\) be output of layer \\(L_i\\). Also, by design, \\(l_1 = X\\) [input] and \\(l_3 = \hat{y}\\) [output]
+Imagine we have a (Feed forward) network with 1 input layer \\(L_0\\), 1 output layer \\(L_3\\) and 2 hidden layers \\(L_1\\), \\(L_2\\) respectively. Further, let \\(l_i\\) be output of layer \\(L_i\\). Also, by design, \\(l_1 = X\\) [input] and \\(l_3 = \hat{y}\\) [output]. Let \\(W_{ij}\\) be weights between layers \\(L_i\\) and \\(L_j\\). We have 3 weight matrices - \\(W_{01}\\), \\(W_{12}\\) and \\(W_{23}\\)
 
 
 
