@@ -408,12 +408,14 @@ $$
 __To summerize the take home, lets (re)write the key equations__:
 
 \begin{align}
-\Delta l_{1} = (\left[ \Delta l_{2} \right] . \left[ W_2 ^\intercal \right]) \times (l_1) \times (1-l_1) \tag{79}\\
+\Delta l_{2} = (\hat{y} - y) \times \hat{y} \times (1- \hat{y}) \tag{46} \\
 \end{align}
 
 \begin{align}
-\Delta l_{2} = (\hat{y} - y) \times \hat{y} \times (1- \hat{y}) \tag{46} \\
+\Delta l_{1} = (\left[ \Delta l_{2} \right] . \left[ W_2 ^\intercal \right]) \times (l_1) \times (1-l_1) \tag{79}\\
 \end{align}
+
+
 
 $$ 
 \begin{align}

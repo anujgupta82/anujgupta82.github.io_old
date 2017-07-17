@@ -1,0 +1,90 @@
+---
+layout: post
+comments: true
+title:  "Gradients - summary"
+excerpt: "Take home on Computing Gradients that go into training Neural Nets"
+date:   2016-09-14 01:23:00
+mathjax: true
+---
+
+
+### Introduction
+
+Training neural nets is all about [computing gradients](http://deeplearning.stanford.edu/wiki/index.php/Deriving_gradients_using_the_backpropagation_idea). In case you are new to this idea, refer to this awesome [post](http://karpathy.github.io/neuralnets/) by Andrej Karpathy. Briefly, deep down every ML problem is an optimization problem. We want to "learn" (find) the weights which will result in least average loss. The way we do it is - start with arbitrary wieghts and keep adjusting them in small quantities until we get them right i.e. arrive at a set of values for which loss function has least value. Gradients tells us by how much should we adjust each of the weights. Not clear - check this [video](https://www.youtube.com/watch?v=yFPLyDwVifc) by Andrew NG and this [blog](http://www.offconvex.org/2016/12/20/backprop/) by Sanjeev Arora.
+
+In this post we will focus on the maths that goes into computing these gradients - we will systematically derive gradients. The complexity of calculations depends on 3 things: 
+
+1. Depth of the network
+2. Number of training examples (1 or more)
+3. Number of components in input (1=scalar, >1=vector)
+
+Through out this post we assume:
+1. There is no bias term.
+2. `.` is matrix multiplication, `*` is element wise product and `X` is normal multiplication. 
+3. All activations are [sigmoid a.k.a logistic](https://www.quora.com/What-is-the-sigmoid-function-and-what-is-its-use-in-machine-learnings-neural-networks). It is defined as \\( f(u) = \frac{1}{1+e^{-u}}\\). If you plot it, it comes as:
+
+<div class="imgcap">
+<img src="/assets/gradients/logistic.png" height="200" width="270">
+<div class="thecap">Sigmoid function</div>
+</div>
+
+It easy to see it is smooth and differentiable and bound between 0 and 1 [No? not straight forward - need to fix this]. 
+##### [Derivative](#derivative-anchors)
+The derivative of the logistic function(\\(\sigma\\)) is simply:
+
+$$
+\begin{align}
+\frac{d}{dx}\sigma(x) = \sigma(x)(1-\sigma(x)) \label{refA} \tag{A}\\
+\end{align}
+$$
+
+From where this comes ? read on:
+
+$$
+\begin{align}
+
+\frac{d}{dx}\sigma(x) &= \frac{d}{dx} \big[ \frac{1}{1+e^{-x}}\big] \label{refB} \tag{B}\\
+
+&= \frac{d}{dx} (1+e^{-x})^{-1} \\
+
+&= -(1+e^{-x})^{-2}(-e^{-x})  \\
+
+&= \frac{e^{-x}}{(1+e^{-x})^2}  \\
+
+&= \frac{1}{(1+e^{-x})} . \frac{e^{-x}}{(1+e^{-x})} \\
+
+&= \frac{1}{(1+e^{-x})} . \frac{1  + e^{-x} -1}{(1+e^{-x})} \\
+
+&= \frac{1}{(1+e^{-x})} . \big( 1 - \frac{e^{-x}}{(1+e^{-x})} \big) \\
+
+&= \sigma(x)(1-\sigma(x)) \label{refC} \tag{C}
+
+\end{align}
+$$
+
+likewise, 
+
+$$
+\begin{align}
+\frac{d}{dx}\sigma(ax) = a(\sigma(ax))(1-\sigma(ax)) \label{refD} \tag{D}
+\end{align}
+$$
+
+We will be using the above result a lot, so make sure you understand it. If it is not clear, have a look at this [post](http://kawahara.ca/how-to-compute-the-derivative-of-a-sigmoid-function-fully-worked-example/).
+
+
+To compute the gradients, we will start with the simplest case and increase the complexity gradually. To keep things simple we will complete it in 6 parts
+1. [1 layer network, 1 training example (scalar)](https://anujgupta82.github.io/2016/08/26/gradients-1/)
+2. [1 layer network, 1 training example (vector)](https://anujgupta82.github.io/2016/08/28/gradients-2/)
+3. [1 layer network, batch training (>1 training examples where each is a vector)](https://anujgupta82.github.io/2016/08/30/gradients-3/)
+4. [2 layer network with 1 node hidden layer, 1 training example (vector)](https://anujgupta82.github.io/2016/09/04/gradients-4-1/)
+5. [2 layer network with 2 node hidden layer, 1 training example (vector)](https://anujgupta82.github.io/2016/09/11/gradients-4-2/)
+6. [2 layer network, batch training (>1 training examples where each is a vector)]()
+
+Since we will be dealing with matrices, a key step in every equation is to check if all matrix dimensions are consistent. 
+
+[Next](https://anujgupta82.github.io/2016/08/26/gradients-1/){: .btn}
+
+<!--
+{% include button.html button_name="Next" button_class="primary" %}
+-->
