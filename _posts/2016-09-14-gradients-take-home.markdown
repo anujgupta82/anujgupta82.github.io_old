@@ -27,6 +27,13 @@ Imagine we have a (Feed forward) network with 1 input layer \\(L_0\\), 1 output 
 | col 3 is | right-aligned |    $1 |
 
 
+Name | Lunch order | Spicy      | Owes
+------- | ---------------- | ---------- | ---------:
+Joan  | saag paneer | medium | $11
+Sally  | vindaloo        | mild       | $14
+Erin   | lamb madras | HOT      | $5
+
+
 <!--
 {% include button.html button_name="Next" button_class="primary" %}
 -->
